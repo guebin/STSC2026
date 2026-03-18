@@ -9,7 +9,7 @@
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2026-03-11">
 
-<title>STSC2026 - 02wk: 생성형 인공지능의 발전</title>
+<title>STSC2026 - 02wk: 생성형 인공지능의 발전 (1)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -61,8 +61,6 @@ div.csl-indent {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -162,7 +160,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">02wk: 생성형 인공지능의 발전</h1>
+      <h1 class="title">02wk: 생성형 인공지능의 발전 (1)</h1>
                       </div>
   </div>
     
@@ -214,19 +212,6 @@ window.Quarto = {
   <li><a href="#a.-타임라인" id="toc-a.-타임라인" class="nav-link" data-scroll-target="#a.-타임라인">A. 타임라인</a></li>
   <li><a href="#b.-주요-경쟁-구도" id="toc-b.-주요-경쟁-구도" class="nav-link" data-scroll-target="#b.-주요-경쟁-구도">B. 주요 경쟁 구도</a></li>
   <li><a href="#c.-저의-구독-정보" id="toc-c.-저의-구독-정보" class="nav-link" data-scroll-target="#c.-저의-구독-정보">C. 저의 구독 정보</a></li>
-  </ul></li>
-  <li><a href="#주요개념" id="toc-주요개념" class="nav-link" data-scroll-target="#주요개념">3. 주요개념</a>
-  <ul class="collapse">
-  <li><a href="#a.-rag" id="toc-a.-rag" class="nav-link" data-scroll-target="#a.-rag">A. RAG</a></li>
-  <li><a href="#b.-바이브코딩" id="toc-b.-바이브코딩" class="nav-link" data-scroll-target="#b.-바이브코딩">B. 바이브코딩</a></li>
-  <li><a href="#c.-mcp" id="toc-c.-mcp" class="nav-link" data-scroll-target="#c.-mcp">C. MCP</a></li>
-  <li><a href="#d.-agentic-coding" id="toc-d.-agentic-coding" class="nav-link" data-scroll-target="#d.-agentic-coding">D. Agentic Coding</a></li>
-  </ul></li>
-  <li><a href="#ai활용에-대한-비판" id="toc-ai활용에-대한-비판" class="nav-link" data-scroll-target="#ai활용에-대한-비판">4. AI활용에 대한 비판</a>
-  <ul class="collapse">
-  <li><a href="#a.-바이브코딩에-대한-비판" id="toc-a.-바이브코딩에-대한-비판" class="nav-link" data-scroll-target="#a.-바이브코딩에-대한-비판">A. 바이브코딩에 대한 비판</a></li>
-  <li><a href="#b.-francis-geng의-연구" id="toc-b.-francis-geng의-연구" class="nav-link" data-scroll-target="#b.-francis-geng의-연구">B. Francis Geng의 연구</a></li>
-  <li><a href="#c.-왼쪽길을-지지하는-사람들의-의견" id="toc-c.-왼쪽길을-지지하는-사람들의-의견" class="nav-link" data-scroll-target="#c.-왼쪽길을-지지하는-사람들의-의견">C. 왼쪽길을 지지하는 사람들의 의견</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -539,225 +524,6 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-</section>
-</section>
-<section id="주요개념" class="level1">
-<h1>3. 주요개념</h1>
-<section id="a.-rag" class="level2">
-<h2 class="anchored" data-anchor-id="a.-rag">A. RAG</h2>
-<ul>
-<li>Retrieval-Augmented Generation, 줄여서 RAG는 AI 언어 모델이 외부 지식 기반을 참조하여 답변을 생성하는 구조</li>
-<li>전통적인 LLM은 학습된 데이터만을 기반으로 응답하지만 RAG는 (1) 질의에 관련된 정보를 외부 문서나 데이터베이스에서 가져오고 (2) 검색된 정보를 바탕으로 답변을 생성.</li>
-<li>효과: 정확도 향상 (외부사실에 기반하므로 환각문제 최소화), 최신성 확보 (학습 이후 업데이트된 정보도 실시간 반영가능), 특정분야 대응성 강화 (기업문서나 전문 도메인자료를 응답에 활용할 수 있음.)</li>
-</ul>
-<table class="table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 80%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>구분</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>RAG 이전</strong></td>
-<td>- 모델은 학습된 파라미터 안에서만 답변 가능<br>- 최신 정보 반영 어려움 <br>- 특정 도메인 전문 지식 부족<br>- “죄송하지만 2021년 9월 이후의 데이터는 모릅니다.”라는 한계</td>
-</tr>
-<tr class="even">
-<td><strong>RAG 이후</strong></td>
-<td>- “내가 올린 문서에서 관련 부분 찾아 요약해줘”<br>→ 벡터DB에서 검색 후 LLM이 결합해 답변<br><br>- “최신 논문 내용을 반영해 설명해줘”<br>→ 외부 지식베이스 + 모델 결합으로 최신성 확보<br><br>- “우리 회사 데이터 기준으로 리포트 작성해줘”<br>→ 사내 문서/DB 연동해 맞춤형 응답 생성</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="b.-바이브코딩" class="level2">
-<h2 class="anchored" data-anchor-id="b.-바이브코딩">B. 바이브코딩</h2>
-<div class="img-fluid quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/02wk_vibe_coding.jpg" class="img-fluid figure-img"></p>
-<figcaption>Figure: 바이브코딩이 탄생한 첫 트윗 <span class="citation" data-cites="lees_designinsight_2025"><a href="#ref-lees_designinsight_2025" role="doc-biblioref">[36]</a></span></figcaption>
-</figure>
-</div>
-<ul>
-<li>Andrej Karpathy가 2025년 2월에 대중화한 인공 지능 지원 소프트웨어 개발 기술</li>
-<li>개발자가 프로젝트나 작업을 대규모 언어 모델 (LLM)에 설명하면, LLM은 프롬프트 를 기반으로 코드를 생성</li>
-<li>개발자는 코드를 검토하거나 수정하지 않고, 도구와 실행 결과만을 사용하여 코드를 평가하고 LLM에 개선 사항을 요청</li>
-<li>바이브 코딩 옹호자들은 이를 통해 아마추어 프로그래머 조차도 소프트웨어 엔지니어링에 필요한 광범위한 교육과 기술 없이 소프트웨어를 생산할 수 있다고 말함</li>
-</ul>
-<p><em>Examples</em></p>
-<ul>
-<li><a href="https://www.youtube.com/shorts/cOM_iR1wsQ8" class="uri">https://www.youtube.com/shorts/cOM_iR1wsQ8</a></li>
-<li><a href="https://www.youtube.com/shorts/CFvpagumlv0" class="uri">https://www.youtube.com/shorts/CFvpagumlv0</a></li>
-</ul>
-</section>
-<section id="c.-mcp" class="level2">
-<h2 class="anchored" data-anchor-id="c.-mcp">C. MCP</h2>
-<ul>
-<li>Model Context Protocol (MCP)은 AI 어시스턴트가 외부 데이터 소스와 도구에 안전하고 통제된 방식으로 접근할 수 있도록 하는 개방형 표준 프로토콜을 의미.</li>
-<li>MCP는 AI 모델과 외부 시스템 간의 표준화된 인터페이스를 제공. 이를 통해 AI는 파일 시스템, 데이터베이스, 웹 API, 비즈니스 시스템 등 다양한 컨텍스트 소스에 접근할 수 있음.</li>
-</ul>
-<p><em>Examples</em></p>
-<ul>
-<li><a href="https://www.youtube.com/shorts/XPACEy2JlOk" class="uri">https://www.youtube.com/shorts/XPACEy2JlOk</a></li>
-</ul>
-<table class="table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 80%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>구분</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>MCP 이전</strong></td>
-<td>- ChatGPT: “저는 당신의 이메일을 볼 수 없어서…”<br>- Claude: “제가 당신의 캘린더에 접근할 수 없어서…”<br>- Gemini: “죄송하지만 개인 파일은 확인할 수 없습니다…”</td>
-</tr>
-<tr class="even">
-<td><strong>MCP 이후</strong></td>
-<td>- “지난 3개월간 가장 중요했던 이메일 10개 요약해줘”<br>→ Gmail MCP 서버가 실제 이메일 데이터 분석<br><br>- “내일 회의 준비를 위해 관련 문서들 정리해줘”<br>→ Calendar + Drive + Slack MCP가 연동되어 완벽한 브리핑 생성<br><br>- “이번 프로젝트 진행상황을 팀에게 보고서로 만들어줘”<br>→ Jira + GitHub + 내 작업 로그를 종합한 자동 리포트</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="d.-agentic-coding" class="level2">
-<h2 class="anchored" data-anchor-id="d.-agentic-coding">D. Agentic Coding</h2>
-<ul>
-<li>에이전틱 코딩은 AI 에이전트가 자율적으로 코딩 작업을 수행하는 패러다임. 단순히 코드 생성을 넘어서, 계획 수립부터 실행, 테스트, 디버깅까지 전체 개발 과정을 AI가 주도적으로 처리.</li>
-<li>ChatCPT에게는 답을 물어볼 수 있고, Claude Code에게는 일을 시킬 수 있다.</li>
-</ul>
-<hr>
-<div class="img-fluid quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://guebin.github.io/rda251022/figs/AgenticCoding.png" class="img-fluid figure-img"></p>
-<figcaption>Figure: 바이브코딩과 에이전틱 코딩의 차이점 <span class="citation" data-cites="sapkota2025vibe"><a href="#ref-sapkota2025vibe" role="doc-biblioref">[37]</a></span></figcaption>
-</figure>
-</div>
-<p><code>-</code> 제가 이해한 에이전틱 코딩</p>
-<ul>
-<li>사건: 제 연구실에 있던 정수기에서 물이 샜습니다.</li>
-</ul>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">대화1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">대화2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">대화3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">대화4</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/02wk_waterpurifier1.png" height="1000" class="figure-img"></p>
-<figcaption>.</figcaption>
-</figure>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/02wk_waterpurifier2.png" height="1000" class="figure-img"></p>
-<figcaption>.</figcaption>
-</figure>
-</div>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/02wk_waterpurifier3.png" height="1000" class="figure-img"></p>
-<figcaption>.</figcaption>
-</figure>
-</div>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/02wk_waterpurifier4.png" height="1000" class="figure-img"></p>
-<figcaption>.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<p><strong><em>에이전틱 코딩의 활용</em></strong></p>
-<p><code>예제</code> – 관심있는 연구논문 정리</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">이메일1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">이메일2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">동영상</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p><img src="figs/02wk_email1.png" height="400"></p>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p><img src="figs/02wk_email2.png" height="400"></p>
-</div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="./movs/02wk_mov1.mov"></video></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="ai활용에-대한-비판" class="level1">
-<h1>4. AI활용에 대한 비판</h1>
-<section id="a.-바이브코딩에-대한-비판" class="level2">
-<h2 class="anchored" data-anchor-id="a.-바이브코딩에-대한-비판">A. 바이브코딩에 대한 비판</h2>
-<ul>
-<li>Programmer Simon Willison (바이브코딩 옹호자) said:</li>
-</ul>
-<blockquote class="blockquote">
-<p>“If an LLM wrote every line of your code, but you’ve reviewed, tested, and understood it all, that’s not vibe coding in my book—that’s using an LLM as a typing assistant.”</p>
-</blockquote>
-<ul>
-<li>저의 생각: 아무리 바이브 코딩이 좋다고 해도 사이먼 윌리슨의 발언은 좀 과하지 않나??</li>
-</ul>
-<p><em>Examples</em></p>
-<ul>
-<li><a href="https://www.youtube.com/shorts/NXIIqHXWsTk" class="uri">https://www.youtube.com/shorts/NXIIqHXWsTk</a></li>
-<li><a href="https://www.youtube.com/shorts/KzewB6tX8p8" class="uri">https://www.youtube.com/shorts/KzewB6tX8p8</a></li>
-</ul>
-</section>
-<section id="b.-francis-geng의-연구" class="level2">
-<h2 class="anchored" data-anchor-id="b.-francis-geng의-연구">B. Francis Geng의 연구</h2>
-<ul>
-<li><p>Francis Geng 연구팀은 “바이브 코딩(Vibe Coding)”이라는 새로운 프로그래밍 워크플로우에서 학생들이 AI 도구와 어떻게 상호작용하는지, 그리고 이러한 상호작용이 프로그래밍 경험 수준에 따라 어떻게 다른지 조사하였음 <span class="citation" data-cites="geng2025exploring"><a href="#ref-geng2025exploring" role="doc-biblioref">[38]</a></span></p></li>
-<li><p>실험설계: 연구에는 <strong>북미 연구 중심 대학의 두 컴퓨터 과학 강좌에서 모집된 총 19명의 학생</strong>이 참여했음: 초급 프로그래밍(CS1) 과정 학생 9명과 고급 소프트웨어 공학(SWE) 과정 학생 10명. 모든 참가자는 브라우저 기반 AI 통합 IDE인 <strong>Replit 플랫폼을 사용하여 개인 예산 관리 웹 애플리케이션을 구축하는 개방형 과제</strong>를 수행.</p></li>
-</ul>
-<p><strong>발견1</strong>: 학생들은 대부분의 시간을 AI가 만든 프로토타입을 테스트하는데 사용함.</p>
-<div class="img-fluid quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://guebin.github.io/rda251022/1022_files/figure-revealjs/dcb28e3e-1-image.png" class="img-fluid figure-img"></p>
-<figcaption>Figure: 학생들의 사용시간을 시각화한 도넛 차트</figcaption>
-</figure>
-</div>
-<hr>
-<ul>
-<li>학생들이 가장 많이 한 활동은 프로토타입 상호작용임. (64%) 즉, “내가 만든 앱이 제대로 돌아가는가?” 확인하는데 쓰였음.</li>
-<li>두번째로 많이 한 행동은 프롬프트 작성 (21%):
-<ul>
-<li>심지어 프롬프트를 작성한 이유 중 가장 많은것은 새기능 요청이 아니라 디버깅 요청임 (61%)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
-</ul></li>
-<li>실제 코드를 짜거나 들여다보고 고치는데 쓴 시간은 거의 없었음. (7%)
-<ul>
-<li>이마저도 90.37%는 단순 코드 해석에 투자하였으며,</li>
-<li>직접적인 코드 수정은 9.63%에 불과했음.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
-</ul></li>
-</ul>
-<hr>
-<p><strong>발견2</strong>: 초보자와 숙력자의 차이 (프로프트 작성 능력의 차이) <img src="https://guebin.github.io/rda251022/1022_files/figure-revealjs/62c3fca1-1-image.png" class="img-fluid" alt="Figure: 초보자의 숙련자의 프롬프트 차이"></p>
-<hr>
-</section>
-<section id="c.-왼쪽길을-지지하는-사람들의-의견" class="level2">
-<h2 class="anchored" data-anchor-id="c.-왼쪽길을-지지하는-사람들의-의견">C. 왼쪽길을 지지하는 사람들의 의견</h2>
-<ul>
-<li>AI시대 코딩에 필요한 역량을 요약하면 아래와 같음:
-<ul>
-<li>테스트 &amp; 디버깅</li>
-<li>풍부한 맥락의 프롬프팅: 기술적 정확성으로 문제를 설명하는 능력</li>
-<li>코드 이해력: AI 결과물을 이해하는 기술</li>
-</ul></li>
-<li>쉽게 말하면, 코딩 할 줄 알아야 한다는 의미.</li>
-</ul>
 
 
 
@@ -871,21 +637,10 @@ window.Quarto = {
 <div id="ref-anthropic_agent_teams_2026" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[35] </div><div class="csl-right-inline">Anthropic, <span>“Introducing <span>Claude Opus</span> 4.6.”</span> <a href="https://www.anthropic.com/news/claude-opus-4-6" class="uri">https://www.anthropic.com/news/claude-opus-4-6</a>, Feb. 05, 2026.</div>
 </div>
-<div id="ref-lees_designinsight_2025" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[36] </div><div class="csl-right-inline">J. 이종원 (Lee, <span>“이종원의 디자인 인사이트.”</span> <a href="https://idesignexp.com/main" class="uri">https://idesignexp.com/main</a>, 2025.</div>
-</div>
-<div id="ref-sapkota2025vibe" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[37] </div><div class="csl-right-inline">R. Sapkota, K. I. Roumeliotis, and M. Karkee, <span>“Vibe coding vs. Agentic coding: Fundamentals and practical implications of agentic ai,”</span> <em>arXiv preprint arXiv:2505.19443</em>, 2025.</div>
-</div>
-<div id="ref-geng2025exploring" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[38] </div><div class="csl-right-inline">F. Geng <em>et al.</em>, <span>“Exploring student-AI interactions in vibe coding,”</span> <em>arXiv preprint arXiv:2507.22614</em>, 2025.</div>
-</div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>이라고 하는데 사실 저도 잘 모르겠습니다<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>결국 AI를 이용하여, AI가 만든 버그를 고치는 일을 하는것에 더 많은 시간을 쓰는 셈, 한마디로 바이브코딩이 아니라 바이브디버깅<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>당연한 이야기이긴한데, 바이브코딩 환경이 학습자와 코드를 멀어지게 만드는 효과가 있음<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1271,7 +1026,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
