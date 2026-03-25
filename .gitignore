@@ -1,2 +1,4 @@
 /.quarto/
 /pp2024/
+
+**/*.quarto_ipynb
