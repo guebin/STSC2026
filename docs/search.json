@@ -1,87 +1,10 @@
 [
   {
-    "objectID": "posts/Quiz2.html",
-    "href": "posts/Quiz2.html",
-    "title": "Quiz2 (2026.03.25)",
+    "objectID": "posts/Quiz1.html",
+    "href": "posts/Quiz1.html",
+    "title": "Quiz1: 레벨테스트",
     "section": "",
-    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n\n문제 1. 미분 – 40점\n함수 \\(f(x)=\\sin(0.5x)\\) 를 입력하면 도함수를 리턴하는 함수를 파이썬으로 구현하라. 이러한 함수를 이용하여 \\(f(x)\\), \\(f'(x)\\), \\(f''(x)\\), \\(f^{(3)}(x)\\), \\(f^{(4)}(x)\\)의 그래프를 한 Figure에 모두 그려라. (범례는 표현하지 않아도 감점없음)\n\n\\(x\\)의 범위는 \\((-6,6)\\) 로 할 것.\ntip: 욕심부려서 \\(h\\)의 값을 너무 작게 설정하면 그림이 예쁘게 안나옵니다.\n\n\n\n문제 2. 적분 – 50점\n몬테카를로 시뮬레이션을 이용하여 다음을 계산하라.\n(1) 다음 적분값을 근사계산하라.\n\\[\\int_{-1.96}^{1.96} \\frac{1}{\\sqrt{2\\pi}}e^{-x^2/2} \\, dx\\]\n(2) 시뮬레이션을 이용하여 원주율 \\(\\pi\\)를 추정하라.\n\n\n문제 3. AI도구이해 – 10점\n다음 상황에 적절한 AI 도구를 하나이상 나열하시오.\n(1) 인용 출처를 함께 제시하면서 최신 정보를 빠르게 조사하고 싶다.\n(2) PDF, 강의자료, 논문 묶음을 넣고 요약 및 질의응답을 하고 싶다. 이때 업로드한 자료에 들어 있는 내용만을 근거로 답변을 받고 싶다.\n(3) 터미널에서 여러 단계의 코딩 작업을 자율적으로 시키고 싶다.\n(4) 웹을 돌아다니며 사용자를 대신해 탐색하고 브라우저 작업을 수행하는 도구가 필요하다.\n(5) AI를 이용하여 이미지 합성 결과물을 만들고 싶다."
-  },
-  {
-    "objectID": "posts/02wk.html",
-    "href": "posts/02wk.html",
-    "title": "02wk: 생성형 인공지능의 발전 (1)",
-    "section": "",
-    "text": "Figure: Hidden Figures, An incredible & inspiring untold true story about three women at NASA who were instrumental in one of history’s greatest operations – the launch of astronaut John Glenn into orbit. [1]\n\n\n\nhttps://www.youtube.com/watch?v=Z_Swk1JjWj8\n\n\n\n\nFigure: 히든피겨스에 달린 댓글들\n\n\n\n\n\n\n\n\nFigure: 주판 (이미지출처: 구글 제미나이)\n\n\n\n전설의 암산왕: https://www.youtube.com/watch?v=RQnn_vOwmNU\n1950년 6·25 전쟁 이후 국가 정책 차원에서 주산 교육이 상업교육 과정에 도입되었으며, 1960년대에는 초등학교로까지 확대 보급되었다. 이 시기에는 7급부터 1급까지의 주산 급수 제도가 운영되었고, 교육부와 대한상공회의소가 주관하는 주산능력검정시험이 시행되면서 주산의 위상은 더욱 강화되었다. 그러나 1980년대 후반 전자계산기가 빠르게 보급되면서 주산 교육은 급속히 쇠퇴하였다. 결국 1991년에는 주산능력검정시험마저 폐지되었고, 이후 7차 교육과정부터는 수학 교과서에서 주산 교육이 완전히 사라지게 되었다. [2]\n\n\n\n\n\n\n\n\n\n\n\n\n구분\n기술 등장 전 인재 정의\n기술 등장 후 인재 정의\n\n\n\n\n수학\n계산을 정확하고 빠르게 하는 사람\n계산도구(=컴퓨터)를 활용한 문제해결과 응용에 강한 사람\n\n\n프로그래밍\n코드를 직접 작성하고 디버깅할 수 있는 사람\nAI를 활용해 아이디어를 빠르게 구현·검증하고 창의적 문제 해결에 집중하는 사람1\n\n\n\n\n새로운 기술은 인재의 기준을 바꾼다. 계산기의 등장은 암산 능력을 최고라 여기던 시대를 끝냈다.\nGPT의 등장은 코더에게 어떤 의미일까?\n\n\n\n\n\n\n\nFigure: 우리는 왼쪽으로 가야하는가? 아니면 오른쪽으로 가야하는가? (이미지출처: 구글 제미나이)"
-  },
-  {
-    "objectID": "posts/02wk.html#a.-hidden-figures",
-    "href": "posts/02wk.html#a.-hidden-figures",
-    "title": "02wk: 생성형 인공지능의 발전 (1)",
-    "section": "",
-    "text": "Figure: Hidden Figures, An incredible & inspiring untold true story about three women at NASA who were instrumental in one of history’s greatest operations – the launch of astronaut John Glenn into orbit. [1]\n\n\n\nhttps://www.youtube.com/watch?v=Z_Swk1JjWj8\n\n\n\n\nFigure: 히든피겨스에 달린 댓글들"
-  },
-  {
-    "objectID": "posts/02wk.html#b.-주산",
-    "href": "posts/02wk.html#b.-주산",
-    "title": "02wk: 생성형 인공지능의 발전 (1)",
-    "section": "",
-    "text": "Figure: 주판 (이미지출처: 구글 제미나이)\n\n\n\n전설의 암산왕: https://www.youtube.com/watch?v=RQnn_vOwmNU\n1950년 6·25 전쟁 이후 국가 정책 차원에서 주산 교육이 상업교육 과정에 도입되었으며, 1960년대에는 초등학교로까지 확대 보급되었다. 이 시기에는 7급부터 1급까지의 주산 급수 제도가 운영되었고, 교육부와 대한상공회의소가 주관하는 주산능력검정시험이 시행되면서 주산의 위상은 더욱 강화되었다. 그러나 1980년대 후반 전자계산기가 빠르게 보급되면서 주산 교육은 급속히 쇠퇴하였다. 결국 1991년에는 주산능력검정시험마저 폐지되었고, 이후 7차 교육과정부터는 수학 교과서에서 주산 교육이 완전히 사라지게 되었다. [2]"
-  },
-  {
-    "objectID": "posts/02wk.html#c.-기술은-인재의-기준을-바꾼다",
-    "href": "posts/02wk.html#c.-기술은-인재의-기준을-바꾼다",
-    "title": "02wk: 생성형 인공지능의 발전 (1)",
-    "section": "",
-    "text": "구분\n기술 등장 전 인재 정의\n기술 등장 후 인재 정의\n\n\n\n\n수학\n계산을 정확하고 빠르게 하는 사람\n계산도구(=컴퓨터)를 활용한 문제해결과 응용에 강한 사람\n\n\n프로그래밍\n코드를 직접 작성하고 디버깅할 수 있는 사람\nAI를 활용해 아이디어를 빠르게 구현·검증하고 창의적 문제 해결에 집중하는 사람1\n\n\n\n\n새로운 기술은 인재의 기준을 바꾼다. 계산기의 등장은 암산 능력을 최고라 여기던 시대를 끝냈다.\nGPT의 등장은 코더에게 어떤 의미일까?"
-  },
-  {
-    "objectID": "posts/02wk.html#d.-코딩공부를-꼭-해야할까",
-    "href": "posts/02wk.html#d.-코딩공부를-꼭-해야할까",
-    "title": "02wk: 생성형 인공지능의 발전 (1)",
-    "section": "",
-    "text": "Figure: 우리는 왼쪽으로 가야하는가? 아니면 오른쪽으로 가야하는가? (이미지출처: 구글 제미나이)"
-  },
-  {
-    "objectID": "posts/02wk.html#a.-타임라인",
-    "href": "posts/02wk.html#a.-타임라인",
-    "title": "02wk: 생성형 인공지능의 발전 (1)",
-    "section": "A. 타임라인",
-    "text": "A. 타임라인\n2022년: 혁명의 시작\n\n2022년 11월\n\nChatGPT 출시\n\n2022년 12월\n\nPerplexity 출시: 인용 정보를 제공 [3]\n\n\n\n2023년: 경쟁과 다양화\n\n2023년 2월\n\nGoogle Bard 발표 [4]\n\nChatGPT 대항마로 발표\n시연 오류로 주가 급락 [5], [6]\n\n\n2023년 3월\n\nGPT-4 출시 [7]\n\n멀티모달 능력 (텍스트+이미지) 첫 도입\n\nClaude 1.0 출시 [8]\nCursor AI 출시 [9]\n\nVS Code 기반 AI 코딩 어시스턴트 // 살펴보기\n\n\n2023년 7월\n\nDeepSeek 설립 [10]\n\n중국 항저우, High-Flyer 헤지펀드가 창립\n\nClaude 2 출시 [8]\n\n2023년 12월\n\nGoogle Gemini 1.0 발표 [11]\n\n\n\n2024년: 멀티모달과 도구의 폭발\n\n2024년 2월\n\nOpenAI Sora 데모 공개 [12]\n\n2024년 3월\n\nGoogle Gemini 1.5 Pro 발표 [13]\nClaude 3 (Opus, Sonnet, Haiku) 출시 [8]\n\n2024년 5월\n\nGPT-4o 출시 [14]\n\n텍스트 + 이미지 + 비디오 지원\n\n\n2024년 6월\n\nClaude 3.5 Sonnet + Artifacts 출시 [8] // 살펴보기1, 살펴보기2\n\n2024년 7월\n\nSearchGPT (ChatGPT Search) [15]\n\n이제 ChatGPT 역시 RAG 도입!\n\n\n2024년 9월\n\nOpenAI o1 추론 모델 출시 [16]\n\n“생각하는 AI”, 수학에서 PhD 수준\n\n\n2024년 11월\n\nWindsurf 출시 (Cursor AI와 경쟁) [17]\nMCP 출시 (Anthropic이 오픈소스로 공개) [18]\n\nAI 시스템과 외부 데이터 소스 연결의 표준 프로토콜 // 살펴보기\n“AI의 USB-C” - 통합 인터페이스로 N×M 통합 문제 해결\nClaude Desktop에서 첫 지원, Google Drive, Slack, GitHub 등 서버 제공\n\n\n\n\n2025년: 에이전트 시대와 글로벌 경쟁\n\n2025년 1월\n\nDeepSeek-R1 출시 - “AI의 스푸트니크 순간” [19], [20], [21]\n\n600만 달러로 OpenAI o1과 동등 성능 달성\n앱이 며칠 만에 ChatGPT 제치고 미국 App Store 1위\nMIT 라이선스 완전 오픈소스, API 96% 저렴\nNvidia 주가 18% 급락, 미국 빅테크 동반 하락 [22]\n\n\n2025년 2월\n\nNotebookLM 출시 [23], [24]\n\n문서를 팟캐스트로 변환, 대학생들에게 인기\n\nClaude 3.7 Sonnet + Claude Code 연구 프리뷰 [25]\n바이브코딩(Vibe Coding) 용어 등장 [26]\n\nAI와의 직관적이고 대화형 협업 방식을 지칭하는 개념 최초 제시\n전통적 코딩에서 자연어 기반 창작으로의 패러다임 전환 정의\n세간에서 꽤나 화제를 모으며 개발자 커뮤니티 전반에 확산\n\n\n2025년 5월\n\nClaude Code 정식 출시 [27]\n\n터미널 기반 AI 에이전트 프로그래밍\n에이전트형 코딩의 시대 본격화\n\n\n2025년 7월\n\nGoogle Gemini CLI 출시 [28]\n\n에이전트형 코딩 진영 강화: 자율적 다단계 작업 수행\nGoogle의 Claude Code 대항마\n\nPerplexity Comet 브라우저 출시 [29] // 살펴보기\n\n2025년 8월\n\n나노바나나(Nano Banana) 등장 [30]\n\n2025년 10월\n\nOpenAI Codex 정식 출시(GA) [31]\n\n2025년 11월\n\n구글 Antigravity(안티그래비티) 출시 [32]\nClawdbot(클로드봇) 최초 출시 // 살펴보기\n\n\n\n2026년: 현재 진행형\n\n2026년 1월\n\nClawdbot: Anthropic의 상표권 압박, ‘Clawd’ 명칭 사용 중단 요구 [33]\nClawdbot: ’Moltbot’을 거쳐 최종적으로 ’OpenClaw’로 개명, 오픈소스 정신 강조\n\n2026년 2월\n\nOpenAI, OpenClaw 개발자 전격 영입 [34]\nClaude Code Agent Teams(멀티에이전트시대) [35]"
-  },
-  {
-    "objectID": "posts/02wk.html#b.-주요-경쟁-구도",
-    "href": "posts/02wk.html#b.-주요-경쟁-구도",
-    "title": "02wk: 생성형 인공지능의 발전 (1)",
-    "section": "B. 주요 경쟁 구도",
-    "text": "B. 주요 경쟁 구도\n\n모델: ChatGPT vs Claude vs Gemini\n에이전틱 AI: Codex vs Claude Code vs Gemini CLI\n통합개발환경: Cursor vs Antigravity (VSCode도 여전히 건재)\n이미지/영상 생성: 나노바나나, DALL-E, Midjourney, Sora\n브라우저 제어 에이전트: Perplexity Comet, Atlas, Claude for Chrome\n기타: NotebookLM (문서→팟캐스트), Gemini for Workspace"
-  },
-  {
-    "objectID": "posts/02wk.html#c.-저의-구독-정보",
-    "href": "posts/02wk.html#c.-저의-구독-정보",
-    "title": "02wk: 생성형 인공지능의 발전 (1)",
-    "section": "C. 저의 구독 정보",
-    "text": "C. 저의 구독 정보\n\n\n\n서비스\n요금제\n월 요금\n\n\n\n\nChatGPT\nPlus \\(\\to\\) Pro \\(\\to\\) Plus\n$20 \\(\\to\\) $200 \\(\\to\\) $20\n\n\nPerplexity\nPro\n$20\n\n\nCursor AI\nPro \\(\\to\\) 해지\n$20 \\(\\to\\) $0\n\n\nClaude\nPro \\(\\to\\) Max 20x\n$20 \\(\\to\\) $200\n\n\nGemini + NotebookLM\nAI Pro\n$20"
-  },
-  {
-    "objectID": "posts/02wk.html#footnotes",
-    "href": "posts/02wk.html#footnotes",
-    "title": "02wk: 생성형 인공지능의 발전 (1)",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\n이라고 하는데 사실 저도 잘 모르겠습니다↩︎"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "통계전산특강 (2026)",
-    "section": "",
-    "text": "질문하는 방법\n\n이메일: guebin@jbnu.ac.kr\n직접방문: 자연과학대학 본관 205호\nZoom: 이메일로 미리 시간을 정할 것\n\n강의노트\n\n\n\n\n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMar 25, 2026\n\n\nQuiz2 (2026.03.25)\n\n\n최규빈 \n\n\n\n\n\n\nMar 18, 2026\n\n\n03wk: 생성형 인공지능의 발전 (2)\n\n\n최규빈 \n\n\n\n\n\n\nMar 11, 2026\n\n\n02wk: 생성형 인공지능의 발전 (1)\n\n\n최규빈 \n\n\n\n\n\n\nMar 4, 2026\n\n\nQuiz1: 레벨테스트\n\n\n최규빈 \n\n\n\n\n\n\nNo matching items"
+    "text": "1. 파이썬 기본문법\n(1) for 문을 사용하여 아래와 같은 수열을 정의하라. (\\(a_1,\\dots,a_{100}\\) 까지 선언할 것)\n\n\\(a_1=a_2=1\\)\n\\(a_{n} = a_{n-1} + a_{n-2}\\) where \\(n\\geq 2\\)\n\n## 정답은 아래와 같음\n[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987,\n 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393,\n 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887,\n 9227465, 14930352, 24157817, 39088169, 63245986, 102334155,\n 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903,\n 2971215073, 4807526976, 7778742049, 12586269025, 20365011074,\n 32951280099, 53316291173, 86267571272, 139583862445, 225851433717,\n 365435296162, 591286729879, 956722026041, 1548008755920,\n 2504730781961, 4052739537881, 6557470319842, 10610209857723,\n 17167680177565, 27777890035288, 44945570212853, 72723460248141,\n 117669030460994, 190392490709135, 308061521170129, 498454011879264,\n 806515533049393, 1304969544928657, 2111485077978050,\n 3416454622906707, 5527939700884757, 8944394323791464,\n 14472334024676221, 23416728348467685, 37889062373143906,\n 61305790721611591, 99194853094755497, 160500643816367088,\n 259695496911122585, 420196140727489673, 679891637638612258,\n 1100087778366101931, 1779979416004714189, 2880067194370816120,\n 4660046610375530309, 7540113804746346429, 12200160415121876738,\n 19740274219868223167, 31940434634990099905, 51680708854858323072,\n 83621143489848422977, 135301852344706746049, 218922995834555169026,\n 354224848179261915075]\n(2) 3-(1)의 결과로 나온 숫자들의 자리수를 카운트하는 파이썬코드를 리스트 컴프리헨션을 이용하여 구현하라.\nhint 3-(1)를 풀지못하였더라도 아래의 리스트를 입력하면 이 문제를 풀 수 있음.\n\nlst = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987,\n 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393,\n 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887,\n 9227465, 14930352, 24157817, 39088169, 63245986, 102334155,\n 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903,\n 2971215073, 4807526976, 7778742049, 12586269025, 20365011074,\n 32951280099, 53316291173, 86267571272, 139583862445, 225851433717,\n 365435296162, 591286729879, 956722026041, 1548008755920,\n 2504730781961, 4052739537881, 6557470319842, 10610209857723,\n 17167680177565, 27777890035288, 44945570212853, 72723460248141,\n 117669030460994, 190392490709135, 308061521170129, 498454011879264,\n 806515533049393, 1304969544928657, 2111485077978050,\n 3416454622906707, 5527939700884757, 8944394323791464,\n 14472334024676221, 23416728348467685, 37889062373143906,\n 61305790721611591, 99194853094755497, 160500643816367088,\n 259695496911122585, 420196140727489673, 679891637638612258,\n 1100087778366101931, 1779979416004714189, 2880067194370816120,\n 4660046610375530309, 7540113804746346429, 12200160415121876738,\n 19740274219868223167, 31940434634990099905, 51680708854858323072,\n 83621143489848422977, 135301852344706746049, 218922995834555169026,\n 354224848179261915075]\n\n## 답은 아래와 같다. \n[ 1,  1,  1,  1,  1,  1,  2,  2,  2,  2,  2,  3,  3,  3,  3,  3,  4,\n  4,  4,  4,  5,  5,  5,  5,  5,  6,  6,  6,  6,  6,  7,  7,  7,  7,\n  7,  8,  8,  8,  8,  9,  9,  9,  9,  9, 10, 10, 10, 10, 10, 11, 11,\n  11, 11, 11, 12, 12, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 14,\n  15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 17, 17, 17, 17, 17, 18, 18,\n  18, 18, 19, 19, 19, 19, 19, 20, 20, 20, 20, 20, 21, 21, 21 ]\n(3) 3-(1)의 결과로 나온 숫자들의 유일한 숫자의 수를 카운트하는 파이썬코드를 리스트 컴프리헨션을 이용하여 구현하라. (여기에서 17711 은 유일한 숫자가 “1,7” 2개이며, 10946은 유일한 숫자가 “1,0,9,4,6” 5개 이다.\n## 답은 아래와 같다. \n[ 1,  1,  1,  1,  1,  1,  2,  2,  2,  1,  2,  2,  2,  2,  3,  3,  4,\n  4,  3,  3,  5,  2,  5,  4,  4,  4,  5,  4,  5,  5,  6,  7,  6,  5,\n  6,  7,  6,  6,  7,  6,  6,  6,  4,  6,  6,  6,  7,  8,  6,  7,  8,\n  7,  7,  6,  8,  7,  7,  7,  8,  8, 10,  9, 10,  9,  6,  7,  9,  8,\n  7,  8,  9,  9,  8, 10,  8,  9,  8,  8,  7,  8,  9,  8,  8,  8,  7,\n  9,  8,  7,  7,  9,  8, 10,  9,  9,  7,  9,  8, 10,  9, 10 ]\n\n문제의 뜻이 이해안되면 질문할 것\n\n(4) 3-(1)의 결과로 나온 숫자들 중 짝수에 해당하는 숫자가 몇개인지 카운트하는 코드를 작성하라.\n\n\n2. 데코레이터\n아래의 코드를 관찰하고 올바르게 해석한 학생을 모두 골라라.\n\ndef double_result(func):\n    def wrapper(*args, **kwargs):\n        result = func(*args, **kwargs)\n        return result * 2\n    return wrapper\n\ndef add(a, b):\n    return a + b\n\n@double_result\ndef add2(a, b):\n    return a + b\n\n민수: 데코레이터는 함수 결과를 두 배로 만들어 반환하므로 add2(4, 4)의 결과는 8 * 2 = 16이다. 출력 결과는 16이다.\n선철: add(-2, 2) 와 add2(-2, 2)의 출력결과는 같다.\n예지: 데코레이터는 매개변수(=함수의 입력값)를 두 배로 해서 함수에 전달한다. 그래서 add2(4, 4)는 (4 * 2) + (4 * 2)가 되어 출력 결과는 16이다.\n준현: 데코레이터는 add2 함수의 입력값을 곱해서 리턴하도록 동작한다. 따라서 add2(4, 4)의 결과는 (4 * 4) = 16 이 출력된다.\n\n\n3. 상속\n아래의 코드를 관찰하고 올바르게 해석한 학생을 모두 골라라.\n\nclass Dummy:\n    def __init__(self, a):\n        self.a = a\n\nclass Dummy2(Dummy):\n    def __init__(self, a):\n        super().__init__(a)\n        self.a = self.a + 1\n\nclass Dummy3(Dummy):\n    def __init__(self, a):\n        super().__init__(a)\n        self.a = self.a + 2\n\nclass Dummy4(Dummy3, Dummy2):\n    def __init__(self, a):\n        super(Dummy2, self).__init__(a)\n        self.a = self.a + 3\n\n민지: Dummy4 인스턴스를 생성할 때 super(Dummy2, self).__init__(a)가 호출되어, MRO에 따라 먼저 Dummy3의 __init__ 메소드가 실행된다. 그 후 Dummy4의 __init__ 에서 self.a = self.a + 3 이 실행된다.\n시혁: Dummy4 인스턴스를 생성할 때 super(Dummy2, self).__init__(a)가 호출되면 Dummy2의 __init__이 실행된다. 그 후 Dummy4의 __init__ 에서 self.a = self.a + 3 이 실행된다.\n희진: Dummy4는 다중 상속을 받았으므로 Dummy2, 3의 __init__이 모두 실행된다. 그 후 Dummy4의 __init__ 에서 self.a = self.a + 3 이 실행된다.\n팜하니: Dummy4는 다중 상속을 사용하므로 Dummy, Dummy2, Dummy3 의 __init__ 순서대로 모두 호출한다. 그리고 마지막으로 Dummy4의 __init__ 에서 self.a = self.a + 3 이 실행된다.\n\n\n4. Git\n아래의 Git 명령어 시퀀스를 관찰하고 올바르게 해석한 학생을 모두 골라라.\nmkdir myproject && cd myproject\ngit init\necho \"hello\" &gt; a.txt\ngit add a.txt\ngit commit -m \"first commit\"\n\ngit checkout -b feature\necho \"world\" &gt;&gt; a.txt\ngit commit -am \"add world\"\necho \"!\" &gt;&gt; a.txt\ngit commit -am \"add exclamation\"\n\ngit checkout main\necho \"bye\" &gt;&gt; a.txt\ngit commit -am \"add bye\"\n\ngit merge feature\n민수: git merge feature 실행 시 충돌(conflict)이 발생한다. main과 feature 브랜치 모두 a.txt의 두 번째 줄을 서로 다르게 수정했기 때문이다.\n선철: git checkout -b feature는 현재 커밋에서 새로운 브랜치를 만들고 그 브랜치로 이동하는 명령어이다. 따라서 feature 브랜치의 a.txt는 처음에 “hello”만 들어있다.\n예지: git commit -am에서 -a 옵션은 이미 Git이 추적하고 있는(tracked) 파일의 변경사항만 자동으로 스테이징한다. 새로운 파일(untracked)은 포함되지 않는다.\n준현: 충돌이 발생했으므로 사용자가 직접 충돌을 해결한 뒤 git add와 git commit을 실행해야 merge가 완료된다.\n\n\n5. IDE\n사용해본 경험이 있는 IDE를 모두 선택하시오. (복수 선택 가능)\n\n주피터노트북 / 주피터랩 (Jupyter Notebook / JupyterLab)\nVSCode 혹은 VSCode Forks (Cursor, Windsurf 등)\nRStudio\nPyCharm\nGoogle Colab\nVim / Neovim\nSpyder\n기타 (직접 작성: _______________)\n\n\n\n6. 구독서비스\n현재 구독 중인 AI 서비스를 모두 선택하고, 해당 요금제를 표시하시오. (복수 선택 가능)\n\n\n\n\n서비스\n요금제\n\n\n\n\n☐\nChatGPT (OpenAI)\n무료 / Plus($20) / Pro($200)\n\n\n☐\nClaude (Anthropic)\n무료 / Pro($20) / Max($100/$200)\n\n\n☐\nGemini (Google)\n무료 / Advanced($20)\n\n\n☐\nCopilot (Microsoft/GitHub)\n무료 / Pro($10) / Pro+($39)\n\n\n☐\nCursor\n무료 / Pro($20) / Ultra($200)\n\n\n☐\nWindsurf\n무료 / Pro($15)\n\n\n☐\nPerplexity\n무료 / Pro($20)\n\n\n☐\nGrok (xAI)\n무료 / Premium($30)\n\n\n☐\n기타 (직접 작성: _______________)\n\n\n\n\n\n\n7. AI 개념\n아래의 개념에 대해서 아는 대로 서술하시오.\n(1) 바이브코딩 (Vibe Coding)\n(서술)\n(2) 에이전틱 AI (Agentic AI)\n(서술)\n(3) MCP (Model Context Protocol)\n(서술)\n(4) RAG (Retrieval-Augmented Generation)\n(서술)"
   },
   {
     "objectID": "posts/03wk.html",
@@ -154,10 +77,87 @@
     "text": "Footnotes\n\n\n결국 AI를 이용하여, AI가 만든 버그를 고치는 일을 하는것에 더 많은 시간을 쓰는 셈, 한마디로 바이브코딩이 아니라 바이브디버깅↩︎\n당연한 이야기이긴한데, 바이브코딩 환경이 학습자와 코드를 멀어지게 만드는 효과가 있음↩︎"
   },
   {
-    "objectID": "posts/Quiz1.html",
-    "href": "posts/Quiz1.html",
-    "title": "Quiz1: 레벨테스트",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "1. 파이썬 기본문법\n(1) for 문을 사용하여 아래와 같은 수열을 정의하라. (\\(a_1,\\dots,a_{100}\\) 까지 선언할 것)\n\n\\(a_1=a_2=1\\)\n\\(a_{n} = a_{n-1} + a_{n-2}\\) where \\(n\\geq 2\\)\n\n## 정답은 아래와 같음\n[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987,\n 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393,\n 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887,\n 9227465, 14930352, 24157817, 39088169, 63245986, 102334155,\n 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903,\n 2971215073, 4807526976, 7778742049, 12586269025, 20365011074,\n 32951280099, 53316291173, 86267571272, 139583862445, 225851433717,\n 365435296162, 591286729879, 956722026041, 1548008755920,\n 2504730781961, 4052739537881, 6557470319842, 10610209857723,\n 17167680177565, 27777890035288, 44945570212853, 72723460248141,\n 117669030460994, 190392490709135, 308061521170129, 498454011879264,\n 806515533049393, 1304969544928657, 2111485077978050,\n 3416454622906707, 5527939700884757, 8944394323791464,\n 14472334024676221, 23416728348467685, 37889062373143906,\n 61305790721611591, 99194853094755497, 160500643816367088,\n 259695496911122585, 420196140727489673, 679891637638612258,\n 1100087778366101931, 1779979416004714189, 2880067194370816120,\n 4660046610375530309, 7540113804746346429, 12200160415121876738,\n 19740274219868223167, 31940434634990099905, 51680708854858323072,\n 83621143489848422977, 135301852344706746049, 218922995834555169026,\n 354224848179261915075]\n(2) 3-(1)의 결과로 나온 숫자들의 자리수를 카운트하는 파이썬코드를 리스트 컴프리헨션을 이용하여 구현하라.\nhint 3-(1)를 풀지못하였더라도 아래의 리스트를 입력하면 이 문제를 풀 수 있음.\n\nlst = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987,\n 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393,\n 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887,\n 9227465, 14930352, 24157817, 39088169, 63245986, 102334155,\n 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903,\n 2971215073, 4807526976, 7778742049, 12586269025, 20365011074,\n 32951280099, 53316291173, 86267571272, 139583862445, 225851433717,\n 365435296162, 591286729879, 956722026041, 1548008755920,\n 2504730781961, 4052739537881, 6557470319842, 10610209857723,\n 17167680177565, 27777890035288, 44945570212853, 72723460248141,\n 117669030460994, 190392490709135, 308061521170129, 498454011879264,\n 806515533049393, 1304969544928657, 2111485077978050,\n 3416454622906707, 5527939700884757, 8944394323791464,\n 14472334024676221, 23416728348467685, 37889062373143906,\n 61305790721611591, 99194853094755497, 160500643816367088,\n 259695496911122585, 420196140727489673, 679891637638612258,\n 1100087778366101931, 1779979416004714189, 2880067194370816120,\n 4660046610375530309, 7540113804746346429, 12200160415121876738,\n 19740274219868223167, 31940434634990099905, 51680708854858323072,\n 83621143489848422977, 135301852344706746049, 218922995834555169026,\n 354224848179261915075]\n\n## 답은 아래와 같다. \n[ 1,  1,  1,  1,  1,  1,  2,  2,  2,  2,  2,  3,  3,  3,  3,  3,  4,\n  4,  4,  4,  5,  5,  5,  5,  5,  6,  6,  6,  6,  6,  7,  7,  7,  7,\n  7,  8,  8,  8,  8,  9,  9,  9,  9,  9, 10, 10, 10, 10, 10, 11, 11,\n  11, 11, 11, 12, 12, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 14,\n  15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 17, 17, 17, 17, 17, 18, 18,\n  18, 18, 19, 19, 19, 19, 19, 20, 20, 20, 20, 20, 21, 21, 21 ]\n(3) 3-(1)의 결과로 나온 숫자들의 유일한 숫자의 수를 카운트하는 파이썬코드를 리스트 컴프리헨션을 이용하여 구현하라. (여기에서 17711 은 유일한 숫자가 “1,7” 2개이며, 10946은 유일한 숫자가 “1,0,9,4,6” 5개 이다.\n## 답은 아래와 같다. \n[ 1,  1,  1,  1,  1,  1,  2,  2,  2,  1,  2,  2,  2,  2,  3,  3,  4,\n  4,  3,  3,  5,  2,  5,  4,  4,  4,  5,  4,  5,  5,  6,  7,  6,  5,\n  6,  7,  6,  6,  7,  6,  6,  6,  4,  6,  6,  6,  7,  8,  6,  7,  8,\n  7,  7,  6,  8,  7,  7,  7,  8,  8, 10,  9, 10,  9,  6,  7,  9,  8,\n  7,  8,  9,  9,  8, 10,  8,  9,  8,  8,  7,  8,  9,  8,  8,  8,  7,\n  9,  8,  7,  7,  9,  8, 10,  9,  9,  7,  9,  8, 10,  9, 10 ]\n\n문제의 뜻이 이해안되면 질문할 것\n\n(4) 3-(1)의 결과로 나온 숫자들 중 짝수에 해당하는 숫자가 몇개인지 카운트하는 코드를 작성하라.\n\n\n2. 데코레이터\n아래의 코드를 관찰하고 올바르게 해석한 학생을 모두 골라라.\n\ndef double_result(func):\n    def wrapper(*args, **kwargs):\n        result = func(*args, **kwargs)\n        return result * 2\n    return wrapper\n\ndef add(a, b):\n    return a + b\n\n@double_result\ndef add2(a, b):\n    return a + b\n\n민수: 데코레이터는 함수 결과를 두 배로 만들어 반환하므로 add2(4, 4)의 결과는 8 * 2 = 16이다. 출력 결과는 16이다.\n선철: add(-2, 2) 와 add2(-2, 2)의 출력결과는 같다.\n예지: 데코레이터는 매개변수(=함수의 입력값)를 두 배로 해서 함수에 전달한다. 그래서 add2(4, 4)는 (4 * 2) + (4 * 2)가 되어 출력 결과는 16이다.\n준현: 데코레이터는 add2 함수의 입력값을 곱해서 리턴하도록 동작한다. 따라서 add2(4, 4)의 결과는 (4 * 4) = 16 이 출력된다.\n\n\n3. 상속\n아래의 코드를 관찰하고 올바르게 해석한 학생을 모두 골라라.\n\nclass Dummy:\n    def __init__(self, a):\n        self.a = a\n\nclass Dummy2(Dummy):\n    def __init__(self, a):\n        super().__init__(a)\n        self.a = self.a + 1\n\nclass Dummy3(Dummy):\n    def __init__(self, a):\n        super().__init__(a)\n        self.a = self.a + 2\n\nclass Dummy4(Dummy3, Dummy2):\n    def __init__(self, a):\n        super(Dummy2, self).__init__(a)\n        self.a = self.a + 3\n\n민지: Dummy4 인스턴스를 생성할 때 super(Dummy2, self).__init__(a)가 호출되어, MRO에 따라 먼저 Dummy3의 __init__ 메소드가 실행된다. 그 후 Dummy4의 __init__ 에서 self.a = self.a + 3 이 실행된다.\n시혁: Dummy4 인스턴스를 생성할 때 super(Dummy2, self).__init__(a)가 호출되면 Dummy2의 __init__이 실행된다. 그 후 Dummy4의 __init__ 에서 self.a = self.a + 3 이 실행된다.\n희진: Dummy4는 다중 상속을 받았으므로 Dummy2, 3의 __init__이 모두 실행된다. 그 후 Dummy4의 __init__ 에서 self.a = self.a + 3 이 실행된다.\n팜하니: Dummy4는 다중 상속을 사용하므로 Dummy, Dummy2, Dummy3 의 __init__ 순서대로 모두 호출한다. 그리고 마지막으로 Dummy4의 __init__ 에서 self.a = self.a + 3 이 실행된다.\n\n\n4. Git\n아래의 Git 명령어 시퀀스를 관찰하고 올바르게 해석한 학생을 모두 골라라.\nmkdir myproject && cd myproject\ngit init\necho \"hello\" &gt; a.txt\ngit add a.txt\ngit commit -m \"first commit\"\n\ngit checkout -b feature\necho \"world\" &gt;&gt; a.txt\ngit commit -am \"add world\"\necho \"!\" &gt;&gt; a.txt\ngit commit -am \"add exclamation\"\n\ngit checkout main\necho \"bye\" &gt;&gt; a.txt\ngit commit -am \"add bye\"\n\ngit merge feature\n민수: git merge feature 실행 시 충돌(conflict)이 발생한다. main과 feature 브랜치 모두 a.txt의 두 번째 줄을 서로 다르게 수정했기 때문이다.\n선철: git checkout -b feature는 현재 커밋에서 새로운 브랜치를 만들고 그 브랜치로 이동하는 명령어이다. 따라서 feature 브랜치의 a.txt는 처음에 “hello”만 들어있다.\n예지: git commit -am에서 -a 옵션은 이미 Git이 추적하고 있는(tracked) 파일의 변경사항만 자동으로 스테이징한다. 새로운 파일(untracked)은 포함되지 않는다.\n준현: 충돌이 발생했으므로 사용자가 직접 충돌을 해결한 뒤 git add와 git commit을 실행해야 merge가 완료된다.\n\n\n5. IDE\n사용해본 경험이 있는 IDE를 모두 선택하시오. (복수 선택 가능)\n\n주피터노트북 / 주피터랩 (Jupyter Notebook / JupyterLab)\nVSCode 혹은 VSCode Forks (Cursor, Windsurf 등)\nRStudio\nPyCharm\nGoogle Colab\nVim / Neovim\nSpyder\n기타 (직접 작성: _______________)\n\n\n\n6. 구독서비스\n현재 구독 중인 AI 서비스를 모두 선택하고, 해당 요금제를 표시하시오. (복수 선택 가능)\n\n\n\n\n서비스\n요금제\n\n\n\n\n☐\nChatGPT (OpenAI)\n무료 / Plus($20) / Pro($200)\n\n\n☐\nClaude (Anthropic)\n무료 / Pro($20) / Max($100/$200)\n\n\n☐\nGemini (Google)\n무료 / Advanced($20)\n\n\n☐\nCopilot (Microsoft/GitHub)\n무료 / Pro($10) / Pro+($39)\n\n\n☐\nCursor\n무료 / Pro($20) / Ultra($200)\n\n\n☐\nWindsurf\n무료 / Pro($15)\n\n\n☐\nPerplexity\n무료 / Pro($20)\n\n\n☐\nGrok (xAI)\n무료 / Premium($30)\n\n\n☐\n기타 (직접 작성: _______________)\n\n\n\n\n\n\n7. AI 개념\n아래의 개념에 대해서 아는 대로 서술하시오.\n(1) 바이브코딩 (Vibe Coding)\n(서술)\n(2) 에이전틱 AI (Agentic AI)\n(서술)\n(3) MCP (Model Context Protocol)\n(서술)\n(4) RAG (Retrieval-Augmented Generation)\n(서술)"
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "통계전산특강 (2026)",
+    "section": "",
+    "text": "질문하는 방법\n\n이메일: guebin@jbnu.ac.kr\n직접방문: 자연과학대학 본관 205호\nZoom: 이메일로 미리 시간을 정할 것\n\n강의노트\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 25, 2026\n\n\nQuiz2 (2026.03.25)\n\n\n최규빈 \n\n\n\n\nMar 18, 2026\n\n\n03wk: 생성형 인공지능의 발전 (2)\n\n\n최규빈 \n\n\n\n\nMar 11, 2026\n\n\n02wk: 생성형 인공지능의 발전 (1)\n\n\n최규빈 \n\n\n\n\nMar 4, 2026\n\n\nQuiz1: 레벨테스트\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/02wk.html",
+    "href": "posts/02wk.html",
+    "title": "02wk: 생성형 인공지능의 발전 (1)",
+    "section": "",
+    "text": "Figure: Hidden Figures, An incredible & inspiring untold true story about three women at NASA who were instrumental in one of history’s greatest operations – the launch of astronaut John Glenn into orbit. [1]\n\n\n\nhttps://www.youtube.com/watch?v=Z_Swk1JjWj8\n\n\n\n\nFigure: 히든피겨스에 달린 댓글들\n\n\n\n\n\n\n\n\nFigure: 주판 (이미지출처: 구글 제미나이)\n\n\n\n전설의 암산왕: https://www.youtube.com/watch?v=RQnn_vOwmNU\n1950년 6·25 전쟁 이후 국가 정책 차원에서 주산 교육이 상업교육 과정에 도입되었으며, 1960년대에는 초등학교로까지 확대 보급되었다. 이 시기에는 7급부터 1급까지의 주산 급수 제도가 운영되었고, 교육부와 대한상공회의소가 주관하는 주산능력검정시험이 시행되면서 주산의 위상은 더욱 강화되었다. 그러나 1980년대 후반 전자계산기가 빠르게 보급되면서 주산 교육은 급속히 쇠퇴하였다. 결국 1991년에는 주산능력검정시험마저 폐지되었고, 이후 7차 교육과정부터는 수학 교과서에서 주산 교육이 완전히 사라지게 되었다. [2]\n\n\n\n\n\n\n\n\n\n\n\n\n구분\n기술 등장 전 인재 정의\n기술 등장 후 인재 정의\n\n\n\n\n수학\n계산을 정확하고 빠르게 하는 사람\n계산도구(=컴퓨터)를 활용한 문제해결과 응용에 강한 사람\n\n\n프로그래밍\n코드를 직접 작성하고 디버깅할 수 있는 사람\nAI를 활용해 아이디어를 빠르게 구현·검증하고 창의적 문제 해결에 집중하는 사람1\n\n\n\n\n새로운 기술은 인재의 기준을 바꾼다. 계산기의 등장은 암산 능력을 최고라 여기던 시대를 끝냈다.\nGPT의 등장은 코더에게 어떤 의미일까?\n\n\n\n\n\n\n\nFigure: 우리는 왼쪽으로 가야하는가? 아니면 오른쪽으로 가야하는가? (이미지출처: 구글 제미나이)"
+  },
+  {
+    "objectID": "posts/02wk.html#a.-hidden-figures",
+    "href": "posts/02wk.html#a.-hidden-figures",
+    "title": "02wk: 생성형 인공지능의 발전 (1)",
+    "section": "",
+    "text": "Figure: Hidden Figures, An incredible & inspiring untold true story about three women at NASA who were instrumental in one of history’s greatest operations – the launch of astronaut John Glenn into orbit. [1]\n\n\n\nhttps://www.youtube.com/watch?v=Z_Swk1JjWj8\n\n\n\n\nFigure: 히든피겨스에 달린 댓글들"
+  },
+  {
+    "objectID": "posts/02wk.html#b.-주산",
+    "href": "posts/02wk.html#b.-주산",
+    "title": "02wk: 생성형 인공지능의 발전 (1)",
+    "section": "",
+    "text": "Figure: 주판 (이미지출처: 구글 제미나이)\n\n\n\n전설의 암산왕: https://www.youtube.com/watch?v=RQnn_vOwmNU\n1950년 6·25 전쟁 이후 국가 정책 차원에서 주산 교육이 상업교육 과정에 도입되었으며, 1960년대에는 초등학교로까지 확대 보급되었다. 이 시기에는 7급부터 1급까지의 주산 급수 제도가 운영되었고, 교육부와 대한상공회의소가 주관하는 주산능력검정시험이 시행되면서 주산의 위상은 더욱 강화되었다. 그러나 1980년대 후반 전자계산기가 빠르게 보급되면서 주산 교육은 급속히 쇠퇴하였다. 결국 1991년에는 주산능력검정시험마저 폐지되었고, 이후 7차 교육과정부터는 수학 교과서에서 주산 교육이 완전히 사라지게 되었다. [2]"
+  },
+  {
+    "objectID": "posts/02wk.html#c.-기술은-인재의-기준을-바꾼다",
+    "href": "posts/02wk.html#c.-기술은-인재의-기준을-바꾼다",
+    "title": "02wk: 생성형 인공지능의 발전 (1)",
+    "section": "",
+    "text": "구분\n기술 등장 전 인재 정의\n기술 등장 후 인재 정의\n\n\n\n\n수학\n계산을 정확하고 빠르게 하는 사람\n계산도구(=컴퓨터)를 활용한 문제해결과 응용에 강한 사람\n\n\n프로그래밍\n코드를 직접 작성하고 디버깅할 수 있는 사람\nAI를 활용해 아이디어를 빠르게 구현·검증하고 창의적 문제 해결에 집중하는 사람1\n\n\n\n\n새로운 기술은 인재의 기준을 바꾼다. 계산기의 등장은 암산 능력을 최고라 여기던 시대를 끝냈다.\nGPT의 등장은 코더에게 어떤 의미일까?"
+  },
+  {
+    "objectID": "posts/02wk.html#d.-코딩공부를-꼭-해야할까",
+    "href": "posts/02wk.html#d.-코딩공부를-꼭-해야할까",
+    "title": "02wk: 생성형 인공지능의 발전 (1)",
+    "section": "",
+    "text": "Figure: 우리는 왼쪽으로 가야하는가? 아니면 오른쪽으로 가야하는가? (이미지출처: 구글 제미나이)"
+  },
+  {
+    "objectID": "posts/02wk.html#a.-타임라인",
+    "href": "posts/02wk.html#a.-타임라인",
+    "title": "02wk: 생성형 인공지능의 발전 (1)",
+    "section": "A. 타임라인",
+    "text": "A. 타임라인\n2022년: 혁명의 시작\n\n2022년 11월\n\nChatGPT 출시\n\n2022년 12월\n\nPerplexity 출시: 인용 정보를 제공 [3]\n\n\n\n2023년: 경쟁과 다양화\n\n2023년 2월\n\nGoogle Bard 발표 [4]\n\nChatGPT 대항마로 발표\n시연 오류로 주가 급락 [5], [6]\n\n\n2023년 3월\n\nGPT-4 출시 [7]\n\n멀티모달 능력 (텍스트+이미지) 첫 도입\n\nClaude 1.0 출시 [8]\nCursor AI 출시 [9]\n\nVS Code 기반 AI 코딩 어시스턴트 // 살펴보기\n\n\n2023년 7월\n\nDeepSeek 설립 [10]\n\n중국 항저우, High-Flyer 헤지펀드가 창립\n\nClaude 2 출시 [8]\n\n2023년 12월\n\nGoogle Gemini 1.0 발표 [11]\n\n\n\n2024년: 멀티모달과 도구의 폭발\n\n2024년 2월\n\nOpenAI Sora 데모 공개 [12]\n\n2024년 3월\n\nGoogle Gemini 1.5 Pro 발표 [13]\nClaude 3 (Opus, Sonnet, Haiku) 출시 [8]\n\n2024년 5월\n\nGPT-4o 출시 [14]\n\n텍스트 + 이미지 + 비디오 지원\n\n\n2024년 6월\n\nClaude 3.5 Sonnet + Artifacts 출시 [8] // 살펴보기1, 살펴보기2\n\n2024년 7월\n\nSearchGPT (ChatGPT Search) [15]\n\n이제 ChatGPT 역시 RAG 도입!\n\n\n2024년 9월\n\nOpenAI o1 추론 모델 출시 [16]\n\n“생각하는 AI”, 수학에서 PhD 수준\n\n\n2024년 11월\n\nWindsurf 출시 (Cursor AI와 경쟁) [17]\nMCP 출시 (Anthropic이 오픈소스로 공개) [18]\n\nAI 시스템과 외부 데이터 소스 연결의 표준 프로토콜 // 살펴보기\n“AI의 USB-C” - 통합 인터페이스로 N×M 통합 문제 해결\nClaude Desktop에서 첫 지원, Google Drive, Slack, GitHub 등 서버 제공\n\n\n\n\n2025년: 에이전트 시대와 글로벌 경쟁\n\n2025년 1월\n\nDeepSeek-R1 출시 - “AI의 스푸트니크 순간” [19], [20], [21]\n\n600만 달러로 OpenAI o1과 동등 성능 달성\n앱이 며칠 만에 ChatGPT 제치고 미국 App Store 1위\nMIT 라이선스 완전 오픈소스, API 96% 저렴\nNvidia 주가 18% 급락, 미국 빅테크 동반 하락 [22]\n\n\n2025년 2월\n\nNotebookLM 출시 [23], [24]\n\n문서를 팟캐스트로 변환, 대학생들에게 인기\n\nClaude 3.7 Sonnet + Claude Code 연구 프리뷰 [25]\n바이브코딩(Vibe Coding) 용어 등장 [26]\n\nAI와의 직관적이고 대화형 협업 방식을 지칭하는 개념 최초 제시\n전통적 코딩에서 자연어 기반 창작으로의 패러다임 전환 정의\n세간에서 꽤나 화제를 모으며 개발자 커뮤니티 전반에 확산\n\n\n2025년 5월\n\nClaude Code 정식 출시 [27]\n\n터미널 기반 AI 에이전트 프로그래밍\n에이전트형 코딩의 시대 본격화\n\n\n2025년 7월\n\nGoogle Gemini CLI 출시 [28]\n\n에이전트형 코딩 진영 강화: 자율적 다단계 작업 수행\nGoogle의 Claude Code 대항마\n\nPerplexity Comet 브라우저 출시 [29] // 살펴보기\n\n2025년 8월\n\n나노바나나(Nano Banana) 등장 [30]\n\n2025년 10월\n\nOpenAI Codex 정식 출시(GA) [31]\n\n2025년 11월\n\n구글 Antigravity(안티그래비티) 출시 [32]\nClawdbot(클로드봇) 최초 출시 // 살펴보기\n\n\n\n2026년: 현재 진행형\n\n2026년 1월\n\nClawdbot: Anthropic의 상표권 압박, ‘Clawd’ 명칭 사용 중단 요구 [33]\nClawdbot: ’Moltbot’을 거쳐 최종적으로 ’OpenClaw’로 개명, 오픈소스 정신 강조\n\n2026년 2월\n\nOpenAI, OpenClaw 개발자 전격 영입 [34]\nClaude Code Agent Teams(멀티에이전트시대) [35]"
+  },
+  {
+    "objectID": "posts/02wk.html#b.-주요-경쟁-구도",
+    "href": "posts/02wk.html#b.-주요-경쟁-구도",
+    "title": "02wk: 생성형 인공지능의 발전 (1)",
+    "section": "B. 주요 경쟁 구도",
+    "text": "B. 주요 경쟁 구도\n\n모델: ChatGPT vs Claude vs Gemini\n에이전틱 AI: Codex vs Claude Code vs Gemini CLI\n통합개발환경: Cursor vs Antigravity (VSCode도 여전히 건재)\n이미지/영상 생성: 나노바나나, DALL-E, Midjourney, Sora\n브라우저 제어 에이전트: Perplexity Comet, Atlas, Claude for Chrome\n기타: NotebookLM (문서→팟캐스트), Gemini for Workspace"
+  },
+  {
+    "objectID": "posts/02wk.html#c.-저의-구독-정보",
+    "href": "posts/02wk.html#c.-저의-구독-정보",
+    "title": "02wk: 생성형 인공지능의 발전 (1)",
+    "section": "C. 저의 구독 정보",
+    "text": "C. 저의 구독 정보\n\n\n\n서비스\n요금제\n월 요금\n\n\n\n\nChatGPT\nPlus \\(\\to\\) Pro \\(\\to\\) Plus\n$20 \\(\\to\\) $200 \\(\\to\\) $20\n\n\nPerplexity\nPro\n$20\n\n\nCursor AI\nPro \\(\\to\\) 해지\n$20 \\(\\to\\) $0\n\n\nClaude\nPro \\(\\to\\) Max 20x\n$20 \\(\\to\\) $200\n\n\nGemini + NotebookLM\nAI Pro\n$20"
+  },
+  {
+    "objectID": "posts/02wk.html#footnotes",
+    "href": "posts/02wk.html#footnotes",
+    "title": "02wk: 생성형 인공지능의 발전 (1)",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n이라고 하는데 사실 저도 잘 모르겠습니다↩︎"
+  },
+  {
+    "objectID": "posts/Quiz2.html",
+    "href": "posts/Quiz2.html",
+    "title": "Quiz2 (2026.03.25)",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n\n문제 1. 미분 – 40점\n함수 \\(f(x)=\\sin(0.5x)\\) 를 입력하면 도함수를 리턴하는 함수를 파이썬으로 구현하라. 이러한 함수를 이용하여 \\(f(x)\\), \\(f'(x)\\), \\(f''(x)\\), \\(f^{(3)}(x)\\), \\(f^{(4)}(x)\\)의 그래프를 한 Figure에 모두 그려라. (범례는 표현하지 않아도 감점없음)\n\n\\(x\\)의 범위는 \\((-6,6)\\) 로 할 것.\ntip: 욕심부려서 \\(h\\)의 값을 너무 작게 설정하면 그림이 예쁘게 안나옵니다.\n\n\n\n문제 2. 적분 – 50점\n몬테카를로 시뮬레이션을 이용하여 다음을 계산하라.\n(1) 다음 적분값을 근사계산하라.\n\\[\\int_{-1.96}^{1.96} \\frac{1}{\\sqrt{2\\pi}}e^{-x^2/2} \\, dx\\]\n(2) 시뮬레이션을 이용하여 원주율 \\(\\pi\\)를 추정하라.\n\n\n문제 3. AI도구이해 – 10점\n다음 상황에 적절한 AI 도구를 하나이상 나열하시오.\n(1) 인용 출처를 함께 제시하면서 최신 정보를 빠르게 조사하고 싶다.\n(2) PDF, 강의자료, 논문 묶음을 넣고 요약 및 질의응답을 하고 싶다. 이때 업로드한 자료에 들어 있는 내용만을 근거로 답변을 받고 싶다.\n(3) 터미널에서 여러 단계의 코딩 작업을 자율적으로 시키고 싶다.\n(4) 웹을 돌아다니며 사용자를 대신해 탐색하고 브라우저 작업을 수행하는 도구가 필요하다.\n(5) AI를 이용하여 이미지 합성 결과물을 만들고 싶다."
   }
 ]
