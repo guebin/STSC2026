@@ -181,8 +181,8 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#문제-1.-미분-10점" id="toc-문제-1.-미분-10점" class="nav-link active" data-scroll-target="#문제-1.-미분-10점">문제 1. 미분 – 10점</a></li>
   <li><a href="#문제-2.-적분-10점" id="toc-문제-2.-적분-10점" class="nav-link" data-scroll-target="#문제-2.-적분-10점">문제 2. 적분 – 10점</a></li>
-  <li><a href="#문제-3.-리스트-컴프리헨션-30점" id="toc-문제-3.-리스트-컴프리헨션-30점" class="nav-link" data-scroll-target="#문제-3.-리스트-컴프리헨션-30점">문제 3. 리스트 컴프리헨션 – 30점</a></li>
-  <li><a href="#문제-4.-lambda와-map-40점" id="toc-문제-4.-lambda와-map-40점" class="nav-link" data-scroll-target="#문제-4.-lambda와-map-40점">문제 4. lambda와 map – 40점</a></li>
+  <li><a href="#문제-3.-리스트-컴프리헨션-50점" id="toc-문제-3.-리스트-컴프리헨션-50점" class="nav-link" data-scroll-target="#문제-3.-리스트-컴프리헨션-50점">문제 3. 리스트 컴프리헨션 – 50점</a></li>
+  <li><a href="#문제-4.-lambda와-map-20점" id="toc-문제-4.-lambda와-map-20점" class="nav-link" data-scroll-target="#문제-4.-lambda와-map-20점">문제 4. lambda와 map – 20점</a></li>
   <li><a href="#문제-5.-순열과-중복제거-10점" id="toc-문제-5.-순열과-중복제거-10점" class="nav-link" data-scroll-target="#문제-5.-순열과-중복제거-10점">문제 5. 순열과 중복제거 – 10점</a></li>
   <li><a href="#문제-6.-30점" id="toc-문제-6.-30점" class="nav-link" data-scroll-target="#문제-6.-30점">문제 6. – 30점</a></li>
   </ul>
@@ -247,11 +247,11 @@ window.Quarto = {
 <p><span class="math display">\[\int_{0}^{\pi} e^{\sin(x)} \, dx\]</span></p>
 <p>(풀이)</p>
 <p><code>(2)</code> 다음 적분값을 근사계산하라. – 5점</p>
-<p><span class="math display">\[\int_{0}^{1} \frac{\ln(1+x)}{1+x^2} \, dx\]</span></p>
+<p><span class="math display">\[\int_{0}^{1} \frac{\log(1+x)}{1+x^2} \, dx\]</span></p>
 <p>(풀이)</p>
 </section>
-<section id="문제-3.-리스트-컴프리헨션-30점" class="level1">
-<h1>문제 3. 리스트 컴프리헨션 – 30점</h1>
+<section id="문제-3.-리스트-컴프리헨션-50점" class="level1">
+<h1>문제 3. 리스트 컴프리헨션 – 50점</h1>
 <blockquote class="blockquote">
 <p>각 소문항 3점씩</p>
 </blockquote>
@@ -298,8 +298,8 @@ window.Quarto = {
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>[<span class="fl">0.5</span>, <span class="fl">0.25</span>, <span class="fl">0.125</span>, <span class="fl">0.0625</span>, <span class="fl">0.03125</span>, <span class="fl">0.015625</span>, <span class="fl">0.0078125</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>(풀이)</p>
 </section>
-<section id="문제-4.-lambda와-map-40점" class="level1">
-<h1>문제 4. lambda와 map – 40점</h1>
+<section id="문제-4.-lambda와-map-20점" class="level1">
+<h1>문제 4. lambda와 map – 20점</h1>
 <blockquote class="blockquote">
 <p>각 소문항 4점씩</p>
 </blockquote>
@@ -307,41 +307,21 @@ window.Quarto = {
 <div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>(풀이)</p>
-<p><code>(2)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</code>에서 짝수만 필터링하라. (단, <code>filter()</code> 함수는 사용하지 말고 <code>map()</code>과 조건문을 활용할 것)</p>
+<p><code>(2)</code> 두 개의 리스트 <code>x = [1, 2, 3, 4, 5]</code>와 <code>y = [10, 20, 30, 40, 50]</code>가 주어졌을 때, <code>map()</code>과 <code>lambda</code>를 이용하여 각 원소의 합을 구하라.</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">11</span>, <span class="dv">22</span>, <span class="dv">33</span>, <span class="dv">44</span>, <span class="dv">55</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>(풀이)</p>
-<p><code>(3)</code> 두 개의 리스트 <code>x = [1, 2, 3, 4, 5]</code>와 <code>y = [10, 20, 30, 40, 50]</code>가 주어졌을 때, <code>map()</code>과 <code>lambda</code>를 이용하여 각 원소의 합을 구하라.</p>
+<p><code>(3)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>[1, 2, 3, 4, 5]</code>의 각 원소에 대해 <span class="math inline">\(a_n = 2n + 3\)</span>의 값을 계산하라.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">11</span>, <span class="dv">22</span>, <span class="dv">33</span>, <span class="dv">44</span>, <span class="dv">55</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">13</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>(풀이)</p>
-<p><code>(4)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>['hello', 'world', 'python', 'programming']</code>의 각 문자열의 길이를 구하라.</p>
+<p><code>(4)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>[1, 2, 3, 4, 5, 6]</code>의 각 원소에 대해 <span class="math inline">\(a_n = n^3 - n\)</span>의 값을 계산하라.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">11</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">6</span>, <span class="dv">24</span>, <span class="dv">60</span>, <span class="dv">120</span>, <span class="dv">210</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>(풀이)</p>
-<p><code>(5)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>[1, 2, 3, 4, 5]</code>의 각 원소에 대해 <span class="math inline">\(a_n = 2n + 3\)</span>의 값을 계산하라.</p>
+<p><code>(5)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>['Python', 'Java', 'C++', 'JavaScript']</code>의 각 문자열을 대문자로 변환하라.</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">13</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(6)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>[1, 2, 3, 4, 5, 6]</code>의 각 원소에 대해 <span class="math inline">\(a_n = n^3 - n\)</span>의 값을 계산하라.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">6</span>, <span class="dv">24</span>, <span class="dv">60</span>, <span class="dv">120</span>, <span class="dv">210</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(7)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>['Python', 'Java', 'C++', 'JavaScript']</code>의 각 문자열을 대문자로 변환하라.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>[<span class="st">'PYTHON'</span>, <span class="st">'JAVA'</span>, <span class="st">'C++'</span>, <span class="st">'JAVASCRIPT'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(8)</code> 리스트 <code>[1, 2, 3, 4, 5]</code>의 각 원소에 대해 <span class="math inline">\(f(n) = \frac{1}{n}\)</span>의 값을 <code>map()</code>과 <code>lambda</code>를 이용하여 계산하라.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>[<span class="fl">1.0</span>, <span class="fl">0.5</span>, <span class="fl">0.3333333333333333</span>, <span class="fl">0.25</span>, <span class="fl">0.2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(9)</code> 두 개의 리스트 <code>x = [1, 2, 3, 4]</code>와 <code>y = [4, 3, 2, 1]</code>가 주어졌을 때, <code>map()</code>과 <code>lambda</code>를 이용하여 각 원소의 곱을 구하라.</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">6</span>, <span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(10)</code> 리스트 <code>[0, 1, 2, 3, 4]</code>의 각 원소에 대해 <span class="math inline">\(a_n = (-1)^n \cdot 2^n\)</span>의 값을 <code>map()</code>과 <code>lambda</code>를 이용하여 계산하라.</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">4</span>, <span class="op">-</span><span class="dv">8</span>, <span class="dv">16</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>[<span class="st">'PYTHON'</span>, <span class="st">'JAVA'</span>, <span class="st">'C++'</span>, <span class="st">'JAVASCRIPT'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>(풀이)</p>
 </section>
 <section id="문제-5.-순열과-중복제거-10점" class="level1">
@@ -355,19 +335,12 @@ window.Quarto = {
 </section>
 <section id="문제-6.-30점" class="level1">
 <h1>문제 6. – 30점</h1>
-<blockquote class="blockquote">
-<p>if문이 포함된 리스트 컴프리헨션을 이용할 것.</p>
-</blockquote>
-<p><code>(1)</code> 함수 <span class="math inline">\(f(x) = \sin \frac{\pi}{4}x\)</span>라 할 때, <span class="math inline">\(0 &lt; x &lt; 16\)</span>에서 부등식 – 10점</p>
-<p><span class="math display">\[f(2+x)f(2-x) &lt; \frac{1}{4}\]</span></p>
-<p>을 만족시키는 모든 자연수 <span class="math inline">\(x\)</span>의 값의 합을 구하시오.</p>
-<p>(풀이)</p>
-<p><code>(2)</code> 함수 <span class="math inline">\(g(x) = \cos x\)</span>라 할 때, <span class="math inline">\(1 \leq x \leq 10\)</span>에서 부등식 – 10점</p>
+<p><code>(1)</code> 함수 <span class="math inline">\(g(x) = \cos x\)</span>라 할 때, <span class="math inline">\(1 \leq x \leq 10\)</span>에서 부등식 – 10점</p>
 <p><span class="math display">\[g(x) &gt; \frac{\sqrt{3}}{2}\]</span></p>
 <p>을 만족시키는 모든 자연수 <span class="math inline">\(x\)</span>의 개수를 구하시오.</p>
 <p>(풀이)</p>
-<p><code>(3)</code> 함수 <span class="math inline">\(h(x) = e^{-0.5x}\)</span>라 할 때, <span class="math inline">\(1 \leq x \leq 10\)</span>에서 부등식 – 10점</p>
-<p><span class="math display">\[h(x) \cdot h(x+1) &lt; 0.1\]</span></p>
+<p><code>(2)</code> 함수 <span class="math inline">\(h(x) = e^{-0.5x}\)</span>라 할 때, <span class="math inline">\(1 \leq x \leq 10\)</span>에서 부등식 – 10점</p>
+<p><span class="math display">\[h(x) \cdot h(x+1) &lt; 0.001\]</span></p>
 <p>을 만족시키는 모든 자연수 <span class="math inline">\(x\)</span>의 값의 곱을 구하시오.</p>
 <p>(풀이)</p>
 
