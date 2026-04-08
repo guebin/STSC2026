@@ -4,10 +4,6 @@ author: 최규빈
 date: 04/01/2026
 ---
 
-> 강의영상 요청하기
->
-> - <https://drive.google.com/drive/folders/1Nde8iX3TEEKb1RxlULlTWuwhRYUlDKnK?usp=sharing>
-
 # 1. 터미널의 이해
 
 `-` 윈도우 컴퓨터에서 아래의 명령어가 뭘 의미하는지 살펴보자. 

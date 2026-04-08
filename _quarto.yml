@@ -7,6 +7,9 @@ project:
     - "posts/**"
 execute:
   freeze: true
+
+jupyter: python3
+engine: jupyter
   
 website:
   title: "STSC2026"

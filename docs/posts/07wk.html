@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="최규빈">
-<meta name="dcterms.date" content="2026-04-01">
+<meta name="dcterms.date" content="2026-04-15">
 
-<title>Quiz3 (2026.04.01) – STSC2026</title>
+<title>07wk: 원격/클라우드 컴퓨터 ~ .sh – STSC2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -179,12 +179,20 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#문제-1.-미분-10점" id="toc-문제-1.-미분-10점" class="nav-link active" data-scroll-target="#문제-1.-미분-10점">문제 1. 미분 – 10점</a></li>
-  <li><a href="#문제-2.-적분-10점" id="toc-문제-2.-적분-10점" class="nav-link" data-scroll-target="#문제-2.-적분-10점">문제 2. 적분 – 10점</a></li>
-  <li><a href="#문제-3.-리스트-컴프리헨션-50점" id="toc-문제-3.-리스트-컴프리헨션-50점" class="nav-link" data-scroll-target="#문제-3.-리스트-컴프리헨션-50점">문제 3. 리스트 컴프리헨션 – 50점</a></li>
-  <li><a href="#문제-4.-lambda와-map-20점" id="toc-문제-4.-lambda와-map-20점" class="nav-link" data-scroll-target="#문제-4.-lambda와-map-20점">문제 4. lambda와 map – 20점</a></li>
-  <li><a href="#문제-5.-순열과-중복제거-10점" id="toc-문제-5.-순열과-중복제거-10점" class="nav-link" data-scroll-target="#문제-5.-순열과-중복제거-10점">문제 5. 순열과 중복제거 – 10점</a></li>
-  <li><a href="#문제-6.-30점" id="toc-문제-6.-30점" class="nav-link" data-scroll-target="#문제-6.-30점">문제 6. – 30점</a></li>
+  <li><a href="#원격클라우드-컴퓨터" id="toc-원격클라우드-컴퓨터" class="nav-link active" data-scroll-target="#원격클라우드-컴퓨터">1. 원격/클라우드 컴퓨터</a>
+  <ul class="collapse">
+  <li><a href="#모델1-원격컴퓨터-일대일" id="toc-모델1-원격컴퓨터-일대일" class="nav-link" data-scroll-target="#모델1-원격컴퓨터-일대일">모델1 – 원격컴퓨터 (일대일)</a></li>
+  <li><a href="#모델2-원격컴퓨터-일대다" id="toc-모델2-원격컴퓨터-일대다" class="nav-link" data-scroll-target="#모델2-원격컴퓨터-일대다">모델2 – 원격컴퓨터 (일대다)</a></li>
+  <li><a href="#모델3-클라우드-컴퓨터-google-colab" id="toc-모델3-클라우드-컴퓨터-google-colab" class="nav-link" data-scroll-target="#모델3-클라우드-컴퓨터-google-colab">모델3 – 클라우드 컴퓨터 (google colab)</a></li>
+  </ul></li>
+  <li><a href="#원격제어-맥북" id="toc-원격제어-맥북" class="nav-link" data-scroll-target="#원격제어-맥북">2. 원격제어 (맥북)</a></li>
+  <li><a href="#local-remote" id="toc-local-remote" class="nav-link" data-scroll-target="#local-remote">3. local / remote</a></li>
+  <li><a href="#코드스페이스-켜보기" id="toc-코드스페이스-켜보기" class="nav-link" data-scroll-target="#코드스페이스-켜보기">4. 코드스페이스 켜보기</a></li>
+  <li><a href="#코드스페이스-rightarrow-깃헙-rightarrow-코랩" id="toc-코드스페이스-rightarrow-깃헙-rightarrow-코랩" class="nav-link" data-scroll-target="#코드스페이스-rightarrow-깃헙-rightarrow-코랩">5. 코드스페이스 <span class="math inline">\(\rightarrow\)</span> 깃헙 <span class="math inline">\(\rightarrow\)</span> 코랩</a></li>
+  <li><a href="#블로그카피-fork" id="toc-블로그카피-fork" class="nav-link" data-scroll-target="#블로그카피-fork">6. 블로그카피 (Fork)</a></li>
+  <li><a href="#코드스페이스에-quarto-설치" id="toc-코드스페이스에-quarto-설치" class="nav-link" data-scroll-target="#코드스페이스에-quarto-설치">7. 코드스페이스에 quarto 설치</a></li>
+  <li><a href="#깃헙추가기능1-블로그-업로드" id="toc-깃헙추가기능1-블로그-업로드" class="nav-link" data-scroll-target="#깃헙추가기능1-블로그-업로드">8. 깃헙추가기능1: 블로그 업로드</a></li>
+  <li><a href="#sh" id="toc-sh" class="nav-link" data-scroll-target="#sh">9. <code>.sh</code></a></li>
   </ul>
 </nav>
     </div>
@@ -193,7 +201,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quiz3 (2026.04.01)</h1>
+<h1 class="title">07wk: 원격/클라우드 컴퓨터 ~ <code>.sh</code></h1>
 </div>
 
 
@@ -210,7 +218,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 1, 2026</p>
+      <p class="date">April 15, 2026</p>
     </div>
   </div>
   
@@ -222,127 +230,176 @@ window.Quarto = {
 </header>
 
 
-<p><a href="https://colab.research.google.com/github/guebin/STSC2026/blob/master/posts/Quiz3.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" style="text-align: left"></a></p>
-<div id="cell-2" class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># {{&lt;video https://youtu.be/placeholder&gt;}}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="cell-3" class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> itertools</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<section id="문제-1.-미분-10점" class="level1">
-<h1>문제 1. 미분 – 10점</h1>
-<p>함수 <span class="math inline">\(f(x)=\cos(x)e^{-0.1x}\)</span> 를 입력하면 도함수를 리턴하는 함수를 파이썬으로 구현하라. 이러한 함수를 이용하여 <span class="math inline">\(f(x)\)</span>, <span class="math inline">\(f'(x)\)</span>, <span class="math inline">\(f''(x)\)</span>의 그래프를 한 Figure에 모두 그려라. (범례는 표현하지 않아도 감점없음)</p>
+<section id="원격클라우드-컴퓨터" class="level1">
+<h1>1. 원격/클라우드 컴퓨터</h1>
+<p><code>-</code> 지금까지는 ipython이 실행되는 컴퓨터와 크롬이 실행되는 컴퓨터가 동일하다는 전제였음.</p>
+<p><code>-</code> 생각해보니까 어차피 ipython이 실행된 컴퓨터에서 내가 크롬에 입력한 명령 “전달”되기만 하면 되므로 꼭 같은 컴퓨터일 필요는 없다.</p>
+<section id="모델1-원격컴퓨터-일대일" class="level2">
+<h2 class="anchored" data-anchor-id="모델1-원격컴퓨터-일대일">모델1 – 원격컴퓨터 (일대일)</h2>
+<p><code>-</code> 준비상태</p>
 <ul>
-<li><span class="math inline">\(x\)</span>의 범위는 <span class="math inline">\((-2,15)\)</span> 로 할 것.</li>
-<li>tip: 욕심부려서 <span class="math inline">\(h\)</span>의 값을 너무 작게 설정하면 그림이 예쁘게 안나옵니다.</li>
+<li><p>학과서버: ipython을 실행 + 이 컴퓨터는 인터넷 연결이 되어있어야함</p></li>
+<li><p>규빈노트북: 크롬실행 + 이 컴퓨터도 인터넷이 연결되어 있어야함 <code>-</code> 명령입력</p></li>
+<li><p>규빈노트북의 크롬에서 1+1을 입력하고 쉬프트 엔터를 누름 <code>-</code> 규빈노트북 -&gt; 학과서버</p></li>
+<li><p>규빈노트북의 내부의 어떤프로그램은 1+1이라는 명령을 복사하여 카카오톡으로 학과서버에 전달</p></li>
+<li><p>학과서버 내부의 어떤프로그램은 1+1이라는 명령을 카톡으로 받아서 그것을 ipython에게 전달 <code>-</code> 학과서버 -&gt; 규빈노트북</p></li>
+<li><p>학과서버 내부의 ipython은 2라는 출력결과를 계산함</p></li>
+<li><p>학과서버 내부의 어떤프로그램은 계산결과를 카톡으로 규빈노트북에 알려줌</p></li>
+<li><p>규빈은 본인 노트북에서 편하게 계산결과를 받아볼 수 있다.</p></li>
 </ul>
-<p>(풀이)</p>
 </section>
-<section id="문제-2.-적분-10점" class="level1">
-<h1>문제 2. 적분 – 10점</h1>
-<p>몬테카를로 시뮬레이션을 이용하여 다음을 계산하라.</p>
-<p><code>(1)</code> 다음 적분값을 근사계산하라. – 5점</p>
-<p><span class="math display">\[\int_{0}^{\pi} e^{\sin(x)} \, dx\]</span></p>
-<p>(풀이)</p>
-<p><code>(2)</code> 다음 적분값을 근사계산하라. – 5점</p>
-<p><span class="math display">\[\int_{0}^{1} \frac{\log(1+x)}{1+x^2} \, dx\]</span></p>
-<p>(풀이)</p>
-</section>
-<section id="문제-3.-리스트-컴프리헨션-50점" class="level1">
-<h1>문제 3. 리스트 컴프리헨션 – 50점</h1>
-<blockquote class="blockquote">
-<p>각 소문항 3점씩</p>
-</blockquote>
-<p><code>(1)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = \frac{n}{n^2+1}\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_1, a_2, \dots, a_8\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>[<span class="fl">0.5</span>, <span class="fl">0.4</span>, <span class="fl">0.3</span>, <span class="fl">0.23529411764705882</span>, <span class="fl">0.19230769230769232</span>,</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="fl">0.16216216216216217</span>, <span class="fl">0.13846153846153847</span>, <span class="fl">0.12307692307692308</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(2)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = n^2 - 3n + 1\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_1, a_2, \dots, a_7\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>[<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">11</span>, <span class="dv">19</span>, <span class="dv">29</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(3)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = \frac{2n+1}{n+2}\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_1, a_2, \dots, a_6\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>[<span class="fl">1.0</span>, <span class="fl">1.25</span>, <span class="fl">1.4</span>, <span class="fl">1.5</span>, <span class="fl">1.5714285714285714</span>, <span class="fl">1.625</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(4)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = (-1)^n \cdot n\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_1, a_2, \dots, a_9\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>[<span class="op">-</span><span class="dv">1</span>, <span class="dv">2</span>, <span class="op">-</span><span class="dv">3</span>, <span class="dv">4</span>, <span class="op">-</span><span class="dv">5</span>, <span class="dv">6</span>, <span class="op">-</span><span class="dv">7</span>, <span class="dv">8</span>, <span class="op">-</span><span class="dv">9</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(5)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = \frac{1}{n} - \frac{1}{n+1}\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_1, a_2, \dots, a_5\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>[<span class="fl">0.5</span>, <span class="fl">0.16666666666666666</span>, <span class="fl">0.08333333333333333</span>, <span class="fl">0.05</span>, <span class="fl">0.03333333333333333</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(6)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = 3^n\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_0, a_1, \dots, a_8\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">27</span>, <span class="dv">81</span>, <span class="dv">243</span>, <span class="dv">729</span>, <span class="dv">2187</span>, <span class="dv">6561</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(7)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = \frac{n(n+1)}{2}\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_1, a_2, \dots, a_{10}\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>[<span class="fl">1.0</span>, <span class="fl">3.0</span>, <span class="fl">6.0</span>, <span class="fl">10.0</span>, <span class="fl">15.0</span>, <span class="fl">21.0</span>, <span class="fl">28.0</span>, <span class="fl">36.0</span>, <span class="fl">45.0</span>, <span class="fl">55.0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(8)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = \sqrt{n}\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_1, a_2, \dots, a_8\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>[<span class="fl">1.0</span>, <span class="fl">1.4142135623730951</span>, <span class="fl">1.7320508075688772</span>, <span class="fl">2.0</span>, <span class="fl">2.23606797749979</span>,</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a> <span class="fl">2.449489742783178</span>, <span class="fl">2.6457513110645906</span>, <span class="fl">2.8284271247461903</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(9)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = 2n^2 + n - 1\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_1, a_2, \dots, a_6\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">2</span>, <span class="dv">9</span>, <span class="dv">20</span>, <span class="dv">35</span>, <span class="dv">54</span>, <span class="dv">77</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(10)</code> 리스트 컴프리헨션을 이용하여 <span class="math inline">\(a_n = \frac{1}{2^n}\)</span>을 만족하는 수열을 선언하라. (<span class="math inline">\(a_1, a_2, \dots, a_7\)</span> 까지만 선언하면 정답으로 인정)</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>[<span class="fl">0.5</span>, <span class="fl">0.25</span>, <span class="fl">0.125</span>, <span class="fl">0.0625</span>, <span class="fl">0.03125</span>, <span class="fl">0.015625</span>, <span class="fl">0.0078125</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-</section>
-<section id="문제-4.-lambda와-map-20점" class="level1">
-<h1>문제 4. lambda와 map – 20점</h1>
-<blockquote class="blockquote">
-<p>각 소문항 4점씩</p>
-</blockquote>
-<p><code>(1)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>[1, 2, 3, 4, 5]</code>의 각 원소를 제곱한 리스트를 만들어라.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(2)</code> 두 개의 리스트 <code>x = [1, 2, 3, 4, 5]</code>와 <code>y = [10, 20, 30, 40, 50]</code>가 주어졌을 때, <code>map()</code>과 <code>lambda</code>를 이용하여 각 원소의 합을 구하라.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">11</span>, <span class="dv">22</span>, <span class="dv">33</span>, <span class="dv">44</span>, <span class="dv">55</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(3)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>[1, 2, 3, 4, 5]</code>의 각 원소에 대해 <span class="math inline">\(a_n = 2n + 3\)</span>의 값을 계산하라.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">13</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(4)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>[1, 2, 3, 4, 5, 6]</code>의 각 원소에 대해 <span class="math inline">\(a_n = n^3 - n\)</span>의 값을 계산하라.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">6</span>, <span class="dv">24</span>, <span class="dv">60</span>, <span class="dv">120</span>, <span class="dv">210</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-<p><code>(5)</code> <code>map()</code>과 <code>lambda</code>를 이용하여 리스트 <code>['Python', 'Java', 'C++', 'JavaScript']</code>의 각 문자열을 대문자로 변환하라.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 정답은 아래와 같음</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>[<span class="st">'PYTHON'</span>, <span class="st">'JAVA'</span>, <span class="st">'C++'</span>, <span class="st">'JAVASCRIPT'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(풀이)</p>
-</section>
-<section id="문제-5.-순열과-중복제거-10점" class="level1">
-<h1>문제 5. 순열과 중복제거 – 10점</h1>
-<p>6개의 문자 <span class="math inline">\(a, a, b, b, c, d\)</span>를 모두 일렬로 나열하는 경우의 수를 파이썬을 이용하여 구하여라.</p>
+<section id="모델2-원격컴퓨터-일대다" class="level2">
+<h2 class="anchored" data-anchor-id="모델2-원격컴퓨터-일대다">모델2 – 원격컴퓨터 (일대다)</h2>
+<p><code>-</code> 개념: 2개 이상의 ipython 커널을 각각 다른 메모장에 연결가능. <code>-</code> 확장개념:</p>
+<ol type="1">
+<li>2개 ipython 커널을 생성. 편의상 각각을 커널A,커널B라고 하자.</li>
+<li>커널A는 규빈노트북의 메모장에 커널B는 영미노트북의 메모장에 연결한다.</li>
+<li>영미와 규빈은 각각 독립적으로 작업가능 <code>-</code> 의문?</li>
+</ol>
 <ul>
-<li><code>itertools.permutations()</code>을 이용할 것.</li>
+<li>규빈은 python==3.10 을 쓰고 싶고 영미는 python==3.12 를 쓰고 싶다면??</li>
+<li>학과서버에 python==3.10 과 python==3.12 가 동시에 깔려야함.</li>
+<li>원래는 불가능하지만 “가상환경” 이라는 개념을 도입하면 가능하다. <span class="math inline">\(\to\)</span> 아나콘다의 등장</li>
 </ul>
-<p><strong>hint:</strong> 답은 <span class="math inline">\(\frac{6!}{2!2!}=180\)</span> 이다.</p>
-<p>(풀이)</p>
 </section>
-<section id="문제-6.-30점" class="level1">
-<h1>문제 6. – 30점</h1>
-<p><code>(1)</code> 함수 <span class="math inline">\(g(x) = \cos x\)</span>라 할 때, <span class="math inline">\(1 \leq x \leq 10\)</span>에서 부등식 – 10점</p>
-<p><span class="math display">\[g(x) &gt; \frac{\sqrt{3}}{2}\]</span></p>
-<p>을 만족시키는 모든 자연수 <span class="math inline">\(x\)</span>의 개수를 구하시오.</p>
-<p>(풀이)</p>
-<p><code>(2)</code> 함수 <span class="math inline">\(h(x) = e^{-0.5x}\)</span>라 할 때, <span class="math inline">\(1 \leq x \leq 10\)</span>에서 부등식 – 10점</p>
-<p><span class="math display">\[h(x) \cdot h(x+1) &lt; 0.001\]</span></p>
-<p>을 만족시키는 모든 자연수 <span class="math inline">\(x\)</span>의 값의 곱을 구하시오.</p>
-<p>(풀이)</p>
+<section id="모델3-클라우드-컴퓨터-google-colab" class="level2">
+<h2 class="anchored" data-anchor-id="모델3-클라우드-컴퓨터-google-colab">모델3 – 클라우드 컴퓨터 (google colab)</h2>
+<p><code>-</code> 구글코랩</p>
+<ul>
+<li>구글에 여러가지 성능을 가진 컴퓨터가 <span class="math inline">\(n\)</span>대 있음. 이 컴퓨터들을 연결하여 하나의 거대한 컴퓨터처럼 동작하게 만듦.</li>
+<li>이 컴퓨터는 학과서버처럼 동작함. 즉 여러명에게 컴퓨팅 자원을 분배함. <code>-</code> 구글코랩과 비슷한 방식으로 코드스페이스가 있음.</li>
+</ul>
+</section>
+</section>
+<section id="원격제어-맥북" class="level1">
+<h1>2. 원격제어 (맥북)</h1>
+<p><code>-</code> <code>ssh</code>를 이용한 접속</p>
+<p><code>-</code> 질문: 여기서 파이썬을 키면? 어떤 컴퓨터 spec으로 계산될까?</p>
+<p><code>-</code> 한계점: <code>ssh</code>는 동일네트워크내에서만 동작한다. (진짜?)</p>
+</section>
+<section id="local-remote" class="level1">
+<h1>3. local / remote</h1>
+<p><code>-</code> local: 물리적으로 가까이 있음 + 네트워크 없이 접근</p>
+<ol type="1">
+<li>강의실에 있는 윈도우 컴퓨터</li>
+<li>여러분이 가지고 있는 노트북</li>
+</ol>
+<p><code>-</code> remote: 물리적으로 멀리 있음 + 네트워크를 통해 접근</p>
+<ol type="1">
+<li>제서버1 (210.???.???.???)</li>
+<li>제서버2 (210.???.???.???)</li>
+<li>학과서버 (210.???.???.???)</li>
+<li>구글코랩</li>
+<li>codespace</li>
+<li>github, google drive <code>-</code> 구분이 딱 떨어지는건 아님.. 그냥 아래의 정도로 이해하면 좋음</li>
+</ol>
+<ul>
+<li>local = 가까이</li>
+<li>remote = 멀리</li>
+</ul>
+</section>
+<section id="코드스페이스-켜보기" class="level1">
+<h1>4. 코드스페이스 켜보기</h1>
+<blockquote class="blockquote">
+<p>우리의 두 번째 리눅스 서버 얻기 (첫 서버는 코랩아닐까요?) <code>-</code> 단계1: 실습실컴퓨터로 깃헙에 로그인</p>
+</blockquote>
+<ul>
+<li><p>깃헙이란? 그냥 구글드라이브 같이 파일을 저장하는 기능을 한다고 이해하자.. (틀린 설명입니다!) <code>-</code> 단계2: New repository 를 이용하여 새로운 저장소를 만들자. 저장소 이름은 아무거나..</p></li>
+<li><p>저장소란?? 말그대로 파일,폴더들을 저장할 수 있는 것</p></li>
+<li><p>쉽게 생각하면 그냥 “큰” 폴더임.</p></li>
+<li><p>윈도우로 치면 <code>download</code>, <code>desktop</code>, 이런폴더들..</p></li>
+</ul>
+<p><img src="https://guebin.github.io/DSTBX2025/posts/day1_files/figure-html/8c003d32-34d3-47a4-b5c6-449cf409d0a8-1-2e69c764-1149-4dfe-a8e9-7b8e5083c12b.png" class="img-fluid"> <code>-</code> 단계3: 만들어진 저장소를 기반으로 codespace 생성 - local = 실습실컴퓨터 - remote = codespace <code>-</code> 단계4: codespace에서 아래의 명렁어들을 순서대로 실행하고 무엇을 의미하는지 공부하자.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-a</span> </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> .</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> .. </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> sample</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> asdf </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> titanic.csv ./asdf </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> ./asdf </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> titanic.csv </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> asdf </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>명령어들을 <code>linux_commands.txt</code>에 저장하자. <code>-</code> 단계5: 개인노트북으로 깃헙로그인 - local = 개인노트북 - remote = codespace <code>-</code> 단계6: 다시 코드스페이스에 접근하여 <code>study_list.ipynb</code> 주피터노트북을 만들자. 리스트만드는 방법을 공부하자.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>lst <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 단계7: <code>study_dict.py</code>파일을 만들자. dict만드는 방법을 공부하자.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 방법1</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dct1 <span class="op">=</span> {<span class="st">'a'</span>:<span class="dv">1</span>, <span class="st">'b'</span>:<span class="dv">2</span>, <span class="st">'c'</span>:<span class="dv">3</span>}</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 방법2</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>dct2 <span class="op">=</span> <span class="bu">dict</span>(a<span class="op">=</span><span class="dv">1</span>,b<span class="op">=</span><span class="dv">2</span>,c<span class="op">=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code># 퀴즈1</code>: 다시 코드스페이스에 접근하여 <code>test.ipynb</code> 주피터노트북을 만들고 아래 경로에 존재하는 파일을 다운로드하라.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>현재폴더에서 <code>asdf</code>폴더를 만들고 다운로드한 파일을 <code>asdf</code> 폴더로 옮겨라.</p>
+<p><code>(풀이1)</code></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">!wget</span> ~ </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">!mkdir</span> ~</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">!cp</span> ~</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ex">!rm</span> ~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>(풀이2)</code></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">!wget</span> ~ </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">!mkdir</span> ~</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">!mv</span> ~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>(풀이3)</code> – 사실 이거는 “asdf 폴더를 만들고 그안에 다운로드하는 방식”이라 문제에서 요구하는 동작이랑 좀 다르긴해요 (결과는 똑같지만)</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">!mkdir</span> ~</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">!wget</span> ~ </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>#</code></p>
+</section>
+<section id="코드스페이스-rightarrow-깃헙-rightarrow-코랩" class="level1">
+<h1>5. 코드스페이스 <span class="math inline">\(\rightarrow\)</span> 깃헙 <span class="math inline">\(\rightarrow\)</span> 코랩</h1>
+<p><code>-</code> 코드스페이스에서 공부한 내용을 코랩에서 이어서 하고싶다. <code>-</code> 단계1: 코드스페이스에 접근 - local = 개인노트북 - remote = codespace <code>-</code> 단계2: 코드스페이스 <span class="math inline">\(\to\)</span> 깃헙 레포지토리 - local = codespace - remote = github <code>-</code> 단계3: 코랩 <span class="math inline">\(\leftarrow\)</span> 깃헙 레포지토리 - local = colab - remote = github</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">!wget</span> ~~~~~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p>코랩에서 공부한 내용을 나중에 codespace에서 이어하려면 “코랩 <span class="math inline">\(\to\)</span> 깃헙” 의 과정이 가능해야함. 이건 다루지 않음.</p>
+</blockquote>
+</section>
+<section id="블로그카피-fork" class="level1">
+<h1>6. 블로그카피 (Fork)</h1>
+<p><code>-</code> 깃헙과 구글드라이브의 첫번째 차이: 깃헙은 기본적으로 “공개” 되어 있음. <code>-</code> <code>!!!</code> 생각해보니까 이 강의노트도 깃헙으로 만들지 않았을까??</p>
+<ul>
+<li><p>강의노트의 내용들은 깃헙 (=공개된 구글드라이브) 어딘가에 저장되어있을거야</p></li>
+<li><p>그걸 찾아내면? 강의노트를 힘들게 따라칠 필요가 없었잖아? <code>-</code> 여기있어요: <a href="https://github.com/guebin/STSC2026" class="uri">https://github.com/guebin/STSC2026</a></p></li>
+<li><p>이 저장소를 포크로 콕 찍어서 내 저장소로 가져올 수 있을까? (마치 좋아하는 음식을 가져오는 것처럼)</p></li>
+</ul>
+</section>
+<section id="코드스페이스에-quarto-설치" class="level1">
+<h1>7. 코드스페이스에 quarto 설치</h1>
+<p><code>-</code> 포크한 저장소를 기반으로 새로운 코드스페이스 생성 <code>-</code> quarto 다운로드: <a href="https://quarto.org/docs/download/" class="uri">https://quarto.org/docs/download/</a> <code>-</code> 아래를 실행 (하면 안될걸?)</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg</span> <span class="at">-i</span> quarto-1.6.39-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p>왜? <a href="https://imgs.xkcd.com/comics/sandwich.png" class="uri">https://imgs.xkcd.com/comics/sandwich.png</a> <code>-</code> <code>quarto-1.6.39-linux-amd64.deb</code> 삭제</p>
+</blockquote>
+</section>
+<section id="깃헙추가기능1-블로그-업로드" class="level1">
+<h1>8. 깃헙추가기능1: 블로그 업로드</h1>
+<p><code>-</code> 깃헙과 구글드라이브의 두번째 차이: 깃헙은 단순한 저장소를 넘어 추가기능이 있음. 구체적으로 GitHub 레포지토리는 블로그 게시물을 자동으로 발행(publish)할 수 있는 기능을 지원함. <code>-</code> <code>코드스페이스에 quarto 설치</code> 에서 명령어 수정하고, 그림삽입하여 업로드하자.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 깃헙에서 아래를 설정 – /docs 옆에 Save를 눌러야함</p>
+<p><img src="https://guebin.github.io/DSTBX2025/posts/day1_files/figure-html/4fca8804-8691-414b-9aea-612dd8ba33c6-1-8f856221-7dd2-4557-89fb-739e4431c9cf.png" class="img-fluid"> <code>-</code> 꾸미기: 아래를 수정하자..</p>
+<ul>
+<li><code>_quarto.yml</code> 수정</li>
+<li><code>author: "최규빈"</code> 수정</li>
+<li><code>index.qmd</code> 수정</li>
+</ul>
+</section>
+<section id="sh" class="level1">
+<h1>9. <code>.sh</code></h1>
+<p><code>-</code> 블로그에 업로드할때마다..</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>하는것 귀찮죠? <code>-</code> 자동화하는 방법.</p>
+<ol type="1">
+<li><code>publish.sh</code> 파일을 만든다.</li>
+<li><code>quarto render</code>, <code>git add .</code>, <code>git commit -m .</code>, <code>git push</code>를 순서대로 친다.</li>
+<li>저장한다.</li>
+<li>터미널에서 <code>bash publish.sh</code> 실행</li>
+</ol>
 
 
 </section>
