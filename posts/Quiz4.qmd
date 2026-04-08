@@ -2,7 +2,7 @@
 title: "Quiz4 (2026.04.08)"
 author: "최규빈"
 date: "04/08/2026"
-draft: false
+draft: true
 ---
 
 <a href="https://colab.research.google.com/github/guebin/STSC2026/blob/master/posts/Quiz4.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" style="text-align: left"></a>
