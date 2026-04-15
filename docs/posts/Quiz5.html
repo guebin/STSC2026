@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="최규빈">
-<meta name="dcterms.date" content="2026-03-25">
+<meta name="dcterms.date" content="2026-04-15">
 
-<title>STSC2026 - Quiz2 (2026.03.25)</title>
+<title>STSC2026 - Quiz5 (2026.04.15)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,35 +103,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -179,9 +150,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#문제-1.-미분-40점" id="toc-문제-1.-미분-40점" class="nav-link active" data-scroll-target="#문제-1.-미분-40점">문제 1. 미분 – 40점</a></li>
-  <li><a href="#문제-2.-적분-50점" id="toc-문제-2.-적분-50점" class="nav-link" data-scroll-target="#문제-2.-적분-50점">문제 2. 적분 – 50점</a></li>
-  <li><a href="#문제-3.-ai도구이해-10점" id="toc-문제-3.-ai도구이해-10점" class="nav-link" data-scroll-target="#문제-3.-ai도구이해-10점">문제 3. AI도구이해 – 10점</a></li>
+  <li><a href="#파이썬문법-80점" id="toc-파이썬문법-80점" class="nav-link active" data-scroll-target="#파이썬문법-80점">1. 파이썬문법 – 80점</a></li>
+  <li><a href="#대면수업내용-20점" id="toc-대면수업내용-20점" class="nav-link" data-scroll-target="#대면수업내용-20점">2. 대면수업내용 – 20점</a></li>
   </ul>
 </nav>
     </div>
@@ -190,7 +160,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quiz2 (2026.03.25)</h1>
+<h1 class="title">Quiz5 (2026.04.15)</h1>
 </div>
 
 
@@ -207,7 +177,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 25, 2026</p>
+      <p class="date">April 15, 2026</p>
     </div>
   </div>
   
@@ -219,35 +189,82 @@ window.Quarto = {
 </header>
 
 
-<p><a href="https://colab.research.google.com/github/guebin/STSC2026/blob/master/posts/Quiz2.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" style="text-align: left"></a></p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/W2HgaaARieU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div id="cell-3" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>주의: 어떠한 패키지도 import 하지 말 것</strong></p>
+<p><a href="https://colab.research.google.com/github/guebin/STSC2026/blob/master/posts/Quiz5.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" style="text-align: left"></a></p>
+<section id="파이썬문법-80점" class="level1">
+<h1>1. 파이썬문법 – 80점</h1>
+<div id="cell-4" class="cell" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>과일리스트 <span class="op">=</span> [</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'사과'</span>, <span class="dv">3000</span>], [<span class="st">'바나나'</span>, <span class="dv">2500</span>], [<span class="st">'포도'</span>, <span class="dv">4000</span>], [<span class="st">'오렌지'</span>, <span class="dv">3500</span>], [<span class="st">'멜론'</span>, <span class="dv">5000</span>],</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'망고'</span>, <span class="dv">4500</span>], [<span class="st">'파인애플'</span>, <span class="dv">4200</span>], [<span class="st">'배'</span>, <span class="dv">2800</span>], [<span class="st">'딸기'</span>, <span class="dv">3800</span>], [<span class="st">'블루베리'</span>, <span class="dv">5500</span>],</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'사과'</span>, <span class="dv">3200</span>], [<span class="st">'포도'</span>, <span class="dv">4100</span>], [<span class="st">'오렌지'</span>, <span class="dv">3600</span>], [<span class="st">'수박'</span>, <span class="dv">7000</span>], [<span class="st">'복숭아'</span>, <span class="dv">3200</span>],</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'자두'</span>, <span class="dv">3100</span>], [<span class="st">'체리'</span>, <span class="dv">4800</span>], [<span class="st">'레몬'</span>, <span class="dv">2700</span>], [<span class="st">'키위'</span>, <span class="dv">3300</span>], [<span class="st">'감'</span>, <span class="dv">2900</span>],</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'귤'</span>, <span class="dv">2600</span>], [<span class="st">'석류'</span>, <span class="dv">5200</span>], [<span class="st">'사과'</span>, <span class="dv">3100</span>], [<span class="st">'바나나'</span>, <span class="dv">2400</span>], [<span class="st">'포도'</span>, <span class="dv">4300</span>],</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'오렌지'</span>, <span class="dv">3400</span>], [<span class="st">'멜론'</span>, <span class="dv">5100</span>], [<span class="st">'망고'</span>, <span class="dv">4700</span>], [<span class="st">'배'</span>, <span class="dv">2900</span>], [<span class="st">'딸기'</span>, <span class="dv">3900</span>],</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'사과'</span>, <span class="dv">3300</span>], [<span class="st">'포도'</span>, <span class="dv">4200</span>], [<span class="st">'수박'</span>, <span class="dv">7100</span>], [<span class="st">'복숭아'</span>, <span class="dv">3400</span>], [<span class="st">'체리'</span>, <span class="dv">5000</span>],</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'레몬'</span>, <span class="dv">2800</span>], [<span class="st">'감'</span>, <span class="dv">3000</span>], [<span class="st">'귤'</span>, <span class="dv">2700</span>], [<span class="st">'사과'</span>, <span class="dv">3400</span>], [<span class="st">'바나나'</span>, <span class="dv">2600</span>],</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'포도'</span>, <span class="dv">4400</span>], [<span class="st">'오렌지'</span>, <span class="dv">3700</span>], [<span class="st">'멜론'</span>, <span class="dv">5300</span>], [<span class="st">'배'</span>, <span class="dv">3000</span>], [<span class="st">'딸기'</span>, <span class="dv">4100</span>],</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'블루베리'</span>, <span class="dv">5600</span>], [<span class="st">'라즈베리'</span>, <span class="dv">6100</span>], [<span class="st">'수박'</span>, <span class="dv">7300</span>], [<span class="st">'복숭아'</span>, <span class="dv">3500</span>], [<span class="st">'자두'</span>, <span class="dv">3300</span>],</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'체리'</span>, <span class="dv">5100</span>], [<span class="st">'레몬'</span>, <span class="dv">2900</span>], [<span class="st">'키위'</span>, <span class="dv">3500</span>], [<span class="st">'감'</span>, <span class="dv">3100</span>], [<span class="st">'귤'</span>, <span class="dv">2800</span>],</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'사과'</span>, <span class="dv">3500</span>], [<span class="st">'포도'</span>, <span class="dv">4500</span>], [<span class="st">'오렌지'</span>, <span class="dv">3800</span>], [<span class="st">'멜론'</span>, <span class="dv">5200</span>], [<span class="st">'망고'</span>, <span class="dv">4800</span>],</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'파인애플'</span>, <span class="dv">4400</span>], [<span class="st">'배'</span>, <span class="dv">3100</span>], [<span class="st">'딸기'</span>, <span class="dv">4200</span>], [<span class="st">'수박'</span>, <span class="dv">7200</span>], [<span class="st">'복숭아'</span>, <span class="dv">3600</span>],</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'레몬'</span>, <span class="dv">3000</span>], [<span class="st">'키위'</span>, <span class="dv">3600</span>], [<span class="st">'감'</span>, <span class="dv">3200</span>], [<span class="st">'귤'</span>, <span class="dv">2900</span>], [<span class="st">'석류'</span>, <span class="dv">5400</span>],</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'사과'</span>, <span class="dv">3600</span>], [<span class="st">'바나나'</span>, <span class="dv">2700</span>], [<span class="st">'포도'</span>, <span class="dv">4600</span>], [<span class="st">'오렌지'</span>, <span class="dv">3900</span>], [<span class="st">'멜론'</span>, <span class="dv">5400</span>],</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'망고'</span>, <span class="dv">4900</span>], [<span class="st">'배'</span>, <span class="dv">3200</span>], [<span class="st">'딸기'</span>, <span class="dv">4300</span>], [<span class="st">'블루베리'</span>, <span class="dv">5800</span>], [<span class="st">'수박'</span>, <span class="dv">7400</span>],</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'복숭아'</span>, <span class="dv">3700</span>], [<span class="st">'자두'</span>, <span class="dv">3400</span>], [<span class="st">'체리'</span>, <span class="dv">5200</span>], [<span class="st">'레몬'</span>, <span class="dv">3100</span>], [<span class="st">'감'</span>, <span class="dv">3300</span>],</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'귤'</span>, <span class="dv">3000</span>], [<span class="st">'사과'</span>, <span class="dv">3700</span>], [<span class="st">'포도'</span>, <span class="dv">4700</span>], [<span class="st">'오렌지'</span>, <span class="dv">4000</span>], [<span class="st">'멜론'</span>, <span class="dv">5500</span>],</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'배'</span>, <span class="dv">3300</span>], [<span class="st">'딸기'</span>, <span class="dv">4400</span>], [<span class="st">'수박'</span>, <span class="dv">7500</span>], [<span class="st">'복숭아'</span>, <span class="dv">3800</span>], [<span class="st">'체리'</span>, <span class="dv">5300</span>],</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'레몬'</span>, <span class="dv">3200</span>], [<span class="st">'키위'</span>, <span class="dv">3700</span>], [<span class="st">'사과'</span>, <span class="dv">3800</span>], [<span class="st">'포도'</span>, <span class="dv">4800</span>], [<span class="st">'귤'</span>, <span class="dv">3100</span>]</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="문제-1.-미분-40점" class="level1">
-<h1>문제 1. 미분 – 40점</h1>
-<p>함수 <span class="math inline">\(f(x)=\sin(0.5x)\)</span> 를 입력하면 도함수를 리턴하는 함수를 파이썬으로 구현하라. 이러한 함수를 이용하여 <span class="math inline">\(f(x)\)</span>, <span class="math inline">\(f'(x)\)</span>, <span class="math inline">\(f''(x)\)</span>, <span class="math inline">\(f^{(3)}(x)\)</span>, <span class="math inline">\(f^{(4)}(x)\)</span>의 그래프를 한 Figure에 모두 그려라. (범례는 표현하지 않아도 감점없음)</p>
-<ul>
-<li><span class="math inline">\(x\)</span>의 범위는 <span class="math inline">\((-6,6)\)</span> 로 할 것.</li>
-<li>tip: 욕심부려서 <span class="math inline">\(h\)</span>의 값을 너무 작게 설정하면 그림이 예쁘게 안나옵니다.</li>
-</ul>
+<div id="cell-5" class="cell" data-execution_count="47">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>과일분류사전 <span class="op">=</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'열대과일'</span>: [<span class="st">'바나나'</span>, <span class="st">'멜론'</span>, <span class="st">'망고'</span>, <span class="st">'파인애플'</span>, <span class="st">'키위'</span>],</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'일반과일'</span>: [<span class="st">'사과'</span>, <span class="st">'포도'</span>, <span class="st">'오렌지'</span>, <span class="st">'배'</span>, <span class="st">'수박'</span>, <span class="st">'복숭아'</span>, <span class="st">'자두'</span>, <span class="st">'레몬'</span>, <span class="st">'감'</span>, <span class="st">'귤'</span>, <span class="st">'석류'</span>],</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'딸기류'</span>: [<span class="st">'딸기'</span>, <span class="st">'블루베리'</span>, <span class="st">'라즈베리'</span>, <span class="st">'체리'</span>]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>(1)</code> 자료에서 가장 많이 등장하는 과일은 무엇인가? – 10점</p>
+<p><code>(2)</code> 자료에 포함된 과일들을 일반과일, 딸기류, 열대과일로 나눌 때, 가장 많이 나타나는 분류는 무엇인가? – 10점</p>
+<p><code>(3)</code> 포도의 평균가격을 계산하라. – 10점</p>
+<p><code>(4)</code> 자료를 이용하여, 각 과일별 가격들을 값으로 가지는 아래 형태의 딕셔너리를 만들어라. – 30점</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>{<span class="st">'파인애플'</span>: [<span class="dv">4200</span>, <span class="dv">4400</span>],</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="st">'멜론'</span>: [<span class="dv">5000</span>, <span class="dv">5100</span>, <span class="dv">5300</span>, <span class="dv">5200</span>, <span class="dv">5400</span>, <span class="dv">5500</span>],</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="st">'복숭아'</span>: [<span class="dv">3200</span>, <span class="dv">3400</span>, <span class="dv">3500</span>, <span class="dv">3600</span>, <span class="dv">3700</span>, <span class="dv">3800</span>],</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> <span class="st">'블루베리'</span>: [<span class="dv">5500</span>, <span class="dv">5600</span>, <span class="dv">5800</span>],</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a> <span class="st">'라즈베리'</span>: [<span class="dv">6100</span>],</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a> <span class="st">'레몬'</span>: [<span class="dv">2700</span>, <span class="dv">2800</span>, <span class="dv">2900</span>, <span class="dv">3000</span>, <span class="dv">3100</span>, <span class="dv">3200</span>],</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a> <span class="st">'바나나'</span>: [<span class="dv">2500</span>, <span class="dv">2400</span>, <span class="dv">2600</span>, <span class="dv">2700</span>],</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a> <span class="st">'배'</span>: [<span class="dv">2800</span>, <span class="dv">2900</span>, <span class="dv">3000</span>, <span class="dv">3100</span>, <span class="dv">3200</span>, <span class="dv">3300</span>],</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a> <span class="st">'감'</span>: [<span class="dv">2900</span>, <span class="dv">3000</span>, <span class="dv">3100</span>, <span class="dv">3200</span>, <span class="dv">3300</span>],</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a> <span class="st">'망고'</span>: [<span class="dv">4500</span>, <span class="dv">4700</span>, <span class="dv">4800</span>, <span class="dv">4900</span>],</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a> <span class="st">'포도'</span>: [<span class="dv">4000</span>, <span class="dv">4100</span>, <span class="dv">4300</span>, <span class="dv">4200</span>, <span class="dv">4400</span>, <span class="dv">4500</span>, <span class="dv">4600</span>, <span class="dv">4700</span>, <span class="dv">4800</span>],</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a> <span class="st">'사과'</span>: [<span class="dv">3000</span>, <span class="dv">3200</span>, <span class="dv">3100</span>, <span class="dv">3300</span>, <span class="dv">3400</span>, <span class="dv">3500</span>, <span class="dv">3600</span>, <span class="dv">3700</span>, <span class="dv">3800</span>],</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a> <span class="st">'자두'</span>: [<span class="dv">3100</span>, <span class="dv">3300</span>, <span class="dv">3400</span>],</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a> <span class="st">'오렌지'</span>: [<span class="dv">3500</span>, <span class="dv">3600</span>, <span class="dv">3400</span>, <span class="dv">3700</span>, <span class="dv">3800</span>, <span class="dv">3900</span>, <span class="dv">4000</span>],</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a> <span class="st">'체리'</span>: [<span class="dv">4800</span>, <span class="dv">5000</span>, <span class="dv">5100</span>, <span class="dv">5200</span>, <span class="dv">5300</span>],</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a> <span class="st">'귤'</span>: [<span class="dv">2600</span>, <span class="dv">2700</span>, <span class="dv">2800</span>, <span class="dv">2900</span>, <span class="dv">3000</span>, <span class="dv">3100</span>],</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a> <span class="st">'수박'</span>: [<span class="dv">7000</span>, <span class="dv">7100</span>, <span class="dv">7300</span>, <span class="dv">7200</span>, <span class="dv">7400</span>, <span class="dv">7500</span>],</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a> <span class="st">'딸기'</span>: [<span class="dv">3800</span>, <span class="dv">3900</span>, <span class="dv">4100</span>, <span class="dv">4200</span>, <span class="dv">4300</span>, <span class="dv">4400</span>],</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a> <span class="st">'석류'</span>: [<span class="dv">5200</span>, <span class="dv">5400</span>],</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a> <span class="st">'키위'</span>: [<span class="dv">3300</span>, <span class="dv">3500</span>, <span class="dv">3600</span>, <span class="dv">3700</span>]}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>(5)</code> 평균가격이 가장 높은 과일은 무엇인가? – 20점</p>
+<blockquote class="blockquote">
+<p>주의사항: 눈으로 평균가격이 가장 높은 과일을 찾지말고 알고리즘을 제시해야함.</p>
+</blockquote>
 </section>
-<section id="문제-2.-적분-50점" class="level1">
-<h1>문제 2. 적분 – 50점</h1>
-<p>몬테카를로 시뮬레이션을 이용하여 다음을 계산하라.</p>
-<p><code>(1)</code> 다음 적분값을 근사계산하라.</p>
-<p><span class="math display">\[\int_{-1.96}^{1.96} \frac{1}{\sqrt{2\pi}}e^{-x^2/2} \, dx\]</span></p>
-<p><code>(2)</code> 시뮬레이션을 이용하여 원주율 <span class="math inline">\(\pi\)</span>를 추정하라.</p>
-</section>
-<section id="문제-3.-ai도구이해-10점" class="level1">
-<h1>문제 3. AI도구이해 – 10점</h1>
-<p>다음 상황에 적절한 AI 도구를 하나이상 나열하시오.</p>
-<p><code>(1)</code> 인용 출처를 함께 제시하면서 최신 정보를 빠르게 조사하고 싶다.</p>
-<p><code>(2)</code> PDF, 강의자료, 논문 묶음을 넣고 요약 및 질의응답을 하고 싶다. 이때 업로드한 자료에 들어 있는 내용만을 근거로 답변을 받고 싶다.</p>
-<p><code>(3)</code> 터미널에서 여러 단계의 코딩 작업을 자율적으로 시키고 싶다.</p>
-<p><code>(4)</code> 웹을 돌아다니며 사용자를 대신해 탐색하고 브라우저 작업을 수행하는 도구가 필요하다.</p>
-<p><code>(5)</code> AI를 이용하여 이미지 합성 결과물을 만들고 싶다.</p>
+<section id="대면수업내용-20점" class="level1">
+<h1>2. 대면수업내용 – 20점</h1>
+<p>아래문항의 참거짓을 판단하라.</p>
+<p><strong>1.</strong> 윈도우 터미널 명령어 mkdir은 디렉터리(폴더)를 삭제할 때 사용한다.<br>
+<strong>2.</strong> 아나콘다(Anaconda)를 설치하면 파이썬이 자동으로 함께 설치된다.<br>
+<strong>3.</strong> 두 개의 파이썬 프롬프트를 실행했을 때, 한쪽에서 선언한 변수는 다른 쪽 프롬프트와 공유된다.<br>
+<strong>4.</strong> IPython에서 명령어 앞에 !를 붙이면 터미널 명령어를 훔쳐서 사용할 수 있다.<br>
+<strong>5.</strong> 주피터랩(Jupyterlab)은 파이썬뿐만 아니라 R과 같은 다른 언어와도 연결하여 사용할 수 있다.</p>
 
 
 </section>
