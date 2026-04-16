@@ -9,7 +9,7 @@
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2026-04-15">
 
-<title>STSC2026 - 07wk: 원격/클라우드 컴퓨터 ~ .sh</title>
+<title>STSC2026 - 07wk: 원격/클라우드 컴퓨터 ~ 코드스페이스</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -186,12 +152,7 @@ window.Quarto = {
   <li><a href="#모델3-클라우드-컴퓨터-google-colab" id="toc-모델3-클라우드-컴퓨터-google-colab" class="nav-link" data-scroll-target="#모델3-클라우드-컴퓨터-google-colab">모델3 – 클라우드 컴퓨터 (google colab)</a></li>
   </ul></li>
   <li><a href="#local-remote" id="toc-local-remote" class="nav-link" data-scroll-target="#local-remote">2. local / remote</a></li>
-  <li><a href="#코드스페이스-켜보기" id="toc-코드스페이스-켜보기" class="nav-link" data-scroll-target="#코드스페이스-켜보기">4. 코드스페이스 켜보기</a></li>
-  <li><a href="#코드스페이스-rightarrow-깃헙-rightarrow-코랩" id="toc-코드스페이스-rightarrow-깃헙-rightarrow-코랩" class="nav-link" data-scroll-target="#코드스페이스-rightarrow-깃헙-rightarrow-코랩">5. 코드스페이스 <span class="math inline">\(\rightarrow\)</span> 깃헙 <span class="math inline">\(\rightarrow\)</span> 코랩</a></li>
-  <li><a href="#블로그카피-fork" id="toc-블로그카피-fork" class="nav-link" data-scroll-target="#블로그카피-fork">6. 블로그카피 (Fork)</a></li>
-  <li><a href="#코드스페이스에-quarto-설치" id="toc-코드스페이스에-quarto-설치" class="nav-link" data-scroll-target="#코드스페이스에-quarto-설치">7. 코드스페이스에 quarto 설치</a></li>
-  <li><a href="#깃헙추가기능1-블로그-업로드" id="toc-깃헙추가기능1-블로그-업로드" class="nav-link" data-scroll-target="#깃헙추가기능1-블로그-업로드">8. 깃헙추가기능1: 블로그 업로드</a></li>
-  <li><a href="#sh" id="toc-sh" class="nav-link" data-scroll-target="#sh">9. <code>.sh</code></a></li>
+  <li><a href="#코드스페이스-켜보기" id="toc-코드스페이스-켜보기" class="nav-link" data-scroll-target="#코드스페이스-켜보기">3. 코드스페이스 켜보기</a></li>
   </ul>
 </nav>
     </div>
@@ -200,7 +161,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">07wk: 원격/클라우드 컴퓨터 ~ <code>.sh</code></h1>
+<h1 class="title">07wk: 원격/클라우드 컴퓨터 ~ 코드스페이스</h1>
 </div>
 
 
@@ -304,7 +265,7 @@ window.Quarto = {
 </ul>
 </section>
 <section id="코드스페이스-켜보기" class="level1">
-<h1>4. 코드스페이스 켜보기</h1>
+<h1>3. 코드스페이스 켜보기</h1>
 <blockquote class="blockquote">
 <p>우리의 두 번째 리눅스 서버 얻기 (첫 서버는 코랩아닐까요?)</p>
 </blockquote>
@@ -324,126 +285,11 @@ window.Quarto = {
 <li>local = 실습실컴퓨터</li>
 <li>remote = codespace</li>
 </ul>
-<p><code>-</code> 단계4: codespace에서 아래의 명렁어들을 순서대로 실행하고 무엇을 의미하는지 공부하자.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-a</span> </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> .</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> .. </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> sample</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> asdf </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> titanic.csv ./asdf </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> ./asdf </span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> titanic.csv </span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> asdf </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>명령어들을 <code>linux_commands.txt</code>에 저장하자.</p>
-<p><code>-</code> 단계5: 개인노트북으로 깃헙로그인</p>
+<p><code>-</code> 단계4: 코드스페이스와 깃헙 연결</p>
 <ul>
-<li>local = 개인노트북</li>
-<li>remote = codespace</li>
+<li>코드스페이스 <span class="math inline">\(\to\)</span> 깃헙 = <code>git add . &amp;&amp; git commit -m . &amp;&amp; git push</code></li>
+<li>깃헙 <span class="math inline">\(\to\)</span> 코드스페이스 = <code>git pull</code></li>
 </ul>
-<p><code>-</code> 단계6: 다시 코드스페이스에 접근하여 <code>study_list.ipynb</code> 주피터노트북을 만들자. 리스트만드는 방법을 공부하자.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>lst <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> 단계7: <code>study_dict.py</code>파일을 만들자. dict만드는 방법을 공부하자.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 방법1</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dct1 <span class="op">=</span> {<span class="st">'a'</span>:<span class="dv">1</span>, <span class="st">'b'</span>:<span class="dv">2</span>, <span class="st">'c'</span>:<span class="dv">3</span>}</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 방법2</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>dct2 <span class="op">=</span> <span class="bu">dict</span>(a<span class="op">=</span><span class="dv">1</span>,b<span class="op">=</span><span class="dv">2</span>,c<span class="op">=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code># 퀴즈1</code>: 다시 코드스페이스에 접근하여 <code>test.ipynb</code> 주피터노트북을 만들고 아래 경로에 존재하는 파일을 다운로드하라.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>현재폴더에서 <code>asdf</code>폴더를 만들고 다운로드한 파일을 <code>asdf</code> 폴더로 옮겨라.</p>
-<p><code>(풀이1)</code></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">!wget</span> ~ </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">!mkdir</span> ~</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">!cp</span> ~</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ex">!rm</span> ~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>(풀이2)</code></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">!wget</span> ~ </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">!mkdir</span> ~</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">!mv</span> ~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>(풀이3)</code> – 사실 이거는 “asdf 폴더를 만들고 그안에 다운로드하는 방식”이라 문제에서 요구하는 동작이랑 좀 다르긴해요 (결과는 똑같지만)</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">!mkdir</span> ~</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">!wget</span> ~ </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>#</code></p>
-</section>
-<section id="코드스페이스-rightarrow-깃헙-rightarrow-코랩" class="level1">
-<h1>5. 코드스페이스 <span class="math inline">\(\rightarrow\)</span> 깃헙 <span class="math inline">\(\rightarrow\)</span> 코랩</h1>
-<p><code>-</code> 코드스페이스에서 공부한 내용을 코랩에서 이어서 하고싶다.</p>
-<p><code>-</code> 단계1: 코드스페이스에 접근</p>
-<ul>
-<li>local = 개인노트북</li>
-<li>remote = codespace</li>
-</ul>
-<p><code>-</code> 단계2: 코드스페이스 <span class="math inline">\(\to\)</span> 깃헙 레포지토리</p>
-<ul>
-<li>local = codespace</li>
-<li>remote = github</li>
-</ul>
-<p><code>-</code> 단계3: 코랩 <span class="math inline">\(\leftarrow\)</span> 깃헙 레포지토리</p>
-<ul>
-<li>local = colab</li>
-<li>remote = github</li>
-</ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">!wget</span> ~~~~~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<blockquote class="blockquote">
-<p>코랩에서 공부한 내용을 나중에 codespace에서 이어하려면 “코랩 <span class="math inline">\(\to\)</span> 깃헙” 의 과정이 가능해야함. 이건 다루지 않음.</p>
-</blockquote>
-</section>
-<section id="블로그카피-fork" class="level1">
-<h1>6. 블로그카피 (Fork)</h1>
-<p><code>-</code> 깃헙과 구글드라이브의 첫번째 차이: 깃헙은 기본적으로 “공개” 되어 있음.</p>
-<p><code>-</code> <code>!!!</code> 생각해보니까 이 강의노트도 깃헙으로 만들지 않았을까??</p>
-<ul>
-<li>강의노트의 내용들은 깃헙 (=공개된 구글드라이브) 어딘가에 저장되어있을거야</li>
-<li>그걸 찾아내면? 강의노트를 힘들게 따라칠 필요가 없었잖아?</li>
-</ul>
-<p><code>-</code> 여기있어요: <a href="https://github.com/guebin/STSC2026" class="uri">https://github.com/guebin/STSC2026</a></p>
-<ul>
-<li>이 저장소를 포크로 콕 찍어서 내 저장소로 가져올 수 있을까? (마치 좋아하는 음식을 가져오는 것처럼)</li>
-</ul>
-</section>
-<section id="코드스페이스에-quarto-설치" class="level1">
-<h1>7. 코드스페이스에 quarto 설치</h1>
-<p><code>-</code> 포크한 저장소를 기반으로 새로운 코드스페이스 생성</p>
-<p><code>-</code> quarto 다운로드: <a href="https://quarto.org/docs/download/" class="uri">https://quarto.org/docs/download/</a></p>
-<p><code>-</code> 아래를 실행 (하면 안될걸?)</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">dpkg</span> <span class="at">-i</span> quarto-1.6.39-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<blockquote class="blockquote">
-<p>왜? <a href="https://imgs.xkcd.com/comics/sandwich.png" class="uri">https://imgs.xkcd.com/comics/sandwich.png</a> <code>-</code> <code>quarto-1.6.39-linux-amd64.deb</code> 삭제</p>
-</blockquote>
-</section>
-<section id="깃헙추가기능1-블로그-업로드" class="level1">
-<h1>8. 깃헙추가기능1: 블로그 업로드</h1>
-<p><code>-</code> 깃헙과 구글드라이브의 두번째 차이: 깃헙은 단순한 저장소를 넘어 추가기능이 있음. 구체적으로 GitHub 레포지토리는 블로그 게시물을 자동으로 발행(publish)할 수 있는 기능을 지원함.</p>
-<p><code>-</code> <code>코드스페이스에 quarto 설치</code> 에서 명령어 수정하고, 그림삽입하여 업로드하자.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> 깃헙에서 아래를 설정 – /docs 옆에 Save를 눌러야함</p>
-<p><img src="https://guebin.github.io/DSTBX2025/posts/day1_files/figure-html/4fca8804-8691-414b-9aea-612dd8ba33c6-1-8f856221-7dd2-4557-89fb-739e4431c9cf.png" class="img-fluid"> <code>-</code> 꾸미기: 아래를 수정하자..</p>
-<ul>
-<li><code>_quarto.yml</code> 수정</li>
-<li><code>author: "최규빈"</code> 수정</li>
-<li><code>index.qmd</code> 수정</li>
-</ul>
-</section>
-<section id="sh" class="level1">
-<h1>9. <code>.sh</code></h1>
-<p><code>-</code> 블로그에 업로드할때마다..</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>하는것 귀찮죠?</p>
-<p><code>-</code> 자동화하는 방법.</p>
-<ol type="1">
-<li><code>publish.sh</code> 파일을 만든다.</li>
-<li><code>quarto render</code>, <code>git add .</code>, <code>git commit -m .</code>, <code>git push</code>를 순서대로 친다.</li>
-<li>저장한다.</li>
-<li>터미널에서 <code>bash publish.sh</code> 실행</li>
-</ol>
 
 
 </section>
