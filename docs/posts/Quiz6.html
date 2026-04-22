@@ -247,12 +247,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p><strong>hint:</strong> 결과는 <code>array([15, 13, 14, 13, 15])</code> 이다.</p>
 </blockquote>
-<p><code>(8)</code> 학생 0번과 점수가 가장 유사한 학생의 번호를 구하라. 단, 두 학생의 점수 유사도는 <strong>“5과목 점수 차이의 제곱의 평균”</strong> (작을수록 유사) 으로 측정한다.</p>
+<p><code>(8)</code> 학생 0번과 <strong>점수 패턴</strong>이 가장 다른 학생의 번호를 구하라. 단, 두 학생의 점수 패턴 차이는 <strong>“5과목 점수 차이의 제곱의 평균”</strong> (클수록 패턴이 다름) 으로 측정한다.</p>
 <blockquote class="blockquote">
-<p>예시: 학생 0번의 점수가 <code>[43, 52, 83, 49, 75]</code> 이고 학생 1번의 점수가 <code>[41, 46, 61, 59, 86]</code> 이라고 하자. 두 학생의 과목별 점수차는 <code>[2, 6, 22, -10, -11]</code> 이므로, 제곱의 평균은 <code>(4 + 36 + 484 + 100 + 121) / 5 = 149.0</code> 이다.</p>
+<p>예시: 학생 0번의 점수가 <code>[43, 52, 83, 49, 75]</code> 이고 학생 1번의 점수가 <code>[41, 46, 61, 59, 86]</code> 이라고 하자. 두 학생의 과목별 점수차는 <code>[2, 6, 22, -10, -11]</code> 이므로, 제곱의 평균은 <code>(4 + 36 + 484 + 100 + 121) / 5 = 149.0</code> 이다. 학생 0번과 나머지 29명 각각에 대해 이 값을 계산하고, 가장 <strong>큰</strong> 값을 가지는 학생의 번호를 구하면 된다.</p>
 </blockquote>
 <blockquote class="blockquote">
-<p><strong>hint:</strong> 정답은 <strong>11번</strong> 이다.</p>
+<p><strong>hint:</strong> 정답은 학생 <strong>8번</strong> 이다. (이때 <code>d = 1161.8</code>)</p>
 </blockquote>
 </section>
 <section id="대면수업내용" class="level1">
@@ -263,9 +263,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <strong>3.</strong> 학과서버 한 대에 <code>python==3.10</code>과 <code>python==3.12</code>를 동시에 사용하고 싶다면 “가상환경” 개념을 활용하면 된다.<br>
 <strong>4.</strong> 코드스페이스(Codespace)는 실습실 컴퓨터(로컬)에서 직접 실행되는 프로그램이므로 네트워크 연결 없이도 사용할 수 있다.<br>
 <strong>5.</strong> 코드스페이스에서 작업한 내용을 깃헙(GitHub) 저장소로 보내고 싶을 때는 <code>git add .</code>, <code>git commit -m .</code>, <code>git push</code> 세 명령어를 순서대로 실행하면 된다.</p>
-<blockquote class="blockquote">
-<p><strong>hint:</strong> 정답은 순서대로 <code>F, T, T, F, T</code> 이다.</p>
-</blockquote>
 
 
 </section>
