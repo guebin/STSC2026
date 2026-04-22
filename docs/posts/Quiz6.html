@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="최규빈">
-<meta name="dcterms.date" content="2026-03-25">
+<meta name="dcterms.date" content="2026-04-22">
 
-<title>Quiz2 (2026.03.25) – STSC2026</title>
+<title>Quiz6 (2026.04.22) – STSC2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,35 +106,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -182,9 +153,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#문제-1.-미분-40점" id="toc-문제-1.-미분-40점" class="nav-link active" data-scroll-target="#문제-1.-미분-40점">문제 1. 미분 – 40점</a></li>
-  <li><a href="#문제-2.-적분-50점" id="toc-문제-2.-적분-50점" class="nav-link" data-scroll-target="#문제-2.-적분-50점">문제 2. 적분 – 50점</a></li>
-  <li><a href="#문제-3.-ai도구이해-10점" id="toc-문제-3.-ai도구이해-10점" class="nav-link" data-scroll-target="#문제-3.-ai도구이해-10점">문제 3. AI도구이해 – 10점</a></li>
+  <li><a href="#numpy" id="toc-numpy" class="nav-link active" data-scroll-target="#numpy">1. <code>numpy</code></a></li>
+  <li><a href="#대면수업내용" id="toc-대면수업내용" class="nav-link" data-scroll-target="#대면수업내용">2. 대면수업내용</a></li>
   </ul>
 </nav>
     </div>
@@ -193,7 +163,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quiz2 (2026.03.25)</h1>
+<h1 class="title">Quiz6 (2026.04.22)</h1>
 </div>
 
 
@@ -210,7 +180,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 25, 2026</p>
+      <p class="date">April 22, 2026</p>
     </div>
   </div>
   
@@ -222,35 +192,80 @@ window.Quarto = {
 </header>
 
 
-<p><a href="https://colab.research.google.com/github/guebin/STSC2026/blob/master/posts/Quiz2.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" style="text-align: left"></a></p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/W2HgaaARieU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div id="cell-3" class="cell" data-execution_count="3">
+<p><a href="https://colab.research.google.com/github/guebin/STSC2026/blob/master/posts/Quiz6.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" style="text-align: left"></a></p>
+<section id="numpy" class="level1">
+<h1>1. <code>numpy</code></h1>
+<p>아래와 같이 30명 학생의 5과목(국어, 영어, 수학, 과학, 사회) 점수가 기록된 자료를 고려하자.</p>
+<div id="cell-4" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">43052</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>scores <span class="op">=</span> np.random.randint(<span class="dv">40</span>, <span class="dv">101</span>, size<span class="op">=</span>(<span class="dv">30</span>, <span class="dv">5</span>))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>scores</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="문제-1.-미분-40점" class="level1">
-<h1>문제 1. 미분 – 40점</h1>
-<p>함수 <span class="math inline">\(f(x)=\sin(0.5x)\)</span> 를 입력하면 도함수를 리턴하는 함수를 파이썬으로 구현하라. 이러한 함수를 이용하여 <span class="math inline">\(f(x)\)</span>, <span class="math inline">\(f'(x)\)</span>, <span class="math inline">\(f''(x)\)</span>, <span class="math inline">\(f^{(3)}(x)\)</span>, <span class="math inline">\(f^{(4)}(x)\)</span>의 그래프를 한 Figure에 모두 그려라. (범례는 표현하지 않아도 감점없음)</p>
-<ul>
-<li><span class="math inline">\(x\)</span>의 범위는 <span class="math inline">\((-6,6)\)</span> 로 할 것.</li>
-<li>tip: 욕심부려서 <span class="math inline">\(h\)</span>의 값을 너무 작게 설정하면 그림이 예쁘게 안나옵니다.</li>
-</ul>
+<p><code>(1)</code> 학생별 평균점수를 길이 30인 1차원 <code>numpy array</code>로 계산하라.</p>
+<blockquote class="blockquote">
+<p><strong>hint:</strong> 결과는 아래와 같다.</p>
+<pre><code>array([60.4, 58.6, 65.6, 67.4, 62.2, 72. , 74.6, 71.6, 85. , 78.2, 69.2,
+       67.2, 76. , 73.6, 67.2, 67.4, 67. , 61.2, 70.6, 56.4, 58.6, 77. ,
+       71.2, 68.6, 71.6, 72. , 64.2, 65.2, 68.6, 66.8])</code></pre>
+</blockquote>
+<p><code>(2)</code> 각 과목별로 최고점을 받은 학생의 인덱스(0~29 사이 정수)를 길이 5인 1차원 <code>numpy array</code>로 구하라.</p>
+<blockquote class="blockquote">
+<p><strong>hint:</strong> 결과는 <code>array([17, 24, 21, 4, 23])</code> 이다.</p>
+</blockquote>
+<p><code>(3)</code> 평균점수가 70점 이상인 학생은 몇 명인가?</p>
+<blockquote class="blockquote">
+<p><strong>hint:</strong> 정답은 <code>12</code> 이다.</p>
+</blockquote>
+<p><code>(4)</code> <code>scores</code>에서 60점 미만인 점수는 모두 60점으로 대체한 새로운 <code>numpy array</code> <code>scores2</code>를 만들어라. <code>scores</code>는 변경되지 않아야 한다.</p>
+<blockquote class="blockquote">
+<p><strong>hint:</strong> <code>scores2</code>의 shape은 <code>(30, 5)</code> 이고 최솟값은 <code>60</code> 이다. <code>scores2</code>의 첫 3행은 아래와 같다.</p>
+<pre><code>array([[60, 60, 83, 60, 75],
+       [60, 60, 61, 60, 86],
+       [60, 83, 67, 60, 74]])</code></pre>
+</blockquote>
+<p><code>(5)</code> 30명 학생을 대상으로, 자신의 5과목 평균보다 높은 점수를 받은 과목의 개수를 길이 30인 <code>numpy array</code>로 구하라.</p>
+<blockquote class="blockquote">
+<p>예시: 어떤 학생의 점수가 <code>[80, 90, 70, 60, 50]</code> 이고 평균이 <code>70</code> 이라면 평균보다 높은 과목은 <code>80, 90</code> 이므로 <code>2</code>가 저장된다.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>hint:</strong> 결과는 아래와 같다.</p>
+<pre><code>array([2, 3, 3, 1, 2, 2, 3, 1, 3, 2, 3, 2, 3, 3, 3, 3, 2, 1, 3, 2, 3, 3,
+       3, 2, 2, 2, 2, 2, 2, 2])</code></pre>
+</blockquote>
+<p><code>(6)</code> 각 과목에 대하여 <code>수강생평균점수</code>를 계산하라. 이후 모든 학생의 모든 과목 점수에서 해당 과목의 <code>수강생평균점수</code>를 뺀 결과를 <code>(30, 5)</code> 형태의 <code>numpy array</code> <code>centered</code>로 저장하라.</p>
+<blockquote class="blockquote">
+<p><strong>hint:</strong> <code>수강생평균점수</code>는 <code>array([67.83, 64.73, 70.1, 70.27, 69.6])</code> 이다. <code>centered</code>의 첫 3행은 아래와 같다.</p>
+<pre><code>array([[-24.83, -12.73,  12.9 , -21.27,   5.4 ],
+       [-26.83, -18.73,  -9.1 , -11.27,  16.4 ],
+       [-15.83,  18.27,  -3.1 , -18.27,   4.4 ]])</code></pre>
+</blockquote>
+<p><code>(7)</code> 각 과목별로, <code>수강생평균점수</code> 이상을 받은 학생 수를 길이 5인 <code>numpy array</code>로 구하라.</p>
+<blockquote class="blockquote">
+<p>예시: 예를 들어 국어의 <code>수강생평균점수</code> 가 <code>67.83</code> 이고, 30명 학생 중 국어 점수가 <code>67.83</code> 이상인 학생이 <code>15</code>명이라면, 결과 배열의 첫 번째 원소는 <code>15</code>가 된다. 이 계산을 5개 과목 모두에 대해 수행하여 길이 5인 배열로 반환하라.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>hint:</strong> 결과는 <code>array([15, 13, 14, 13, 15])</code> 이다.</p>
+</blockquote>
+<p><code>(8)</code> 학생 0번과 점수가 가장 유사한 학생의 번호를 구하라. 단, 두 학생의 점수 유사도는 <strong>“5과목 점수 차이의 제곱의 평균”</strong> (작을수록 유사) 으로 측정한다.</p>
+<blockquote class="blockquote">
+<p>예시: 학생 0번의 점수가 <code>[43, 52, 83, 49, 75]</code> 이고 학생 1번의 점수가 <code>[41, 46, 61, 59, 86]</code> 이라고 하자. 두 학생의 과목별 점수차는 <code>[2, 6, 22, -10, -11]</code> 이므로, 제곱의 평균은 <code>(4 + 36 + 484 + 100 + 121) / 5 = 149.0</code> 이다.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>hint:</strong> 정답은 <strong>11번</strong> 이다.</p>
+</blockquote>
 </section>
-<section id="문제-2.-적분-50점" class="level1">
-<h1>문제 2. 적분 – 50점</h1>
-<p>몬테카를로 시뮬레이션을 이용하여 다음을 계산하라.</p>
-<p><code>(1)</code> 다음 적분값을 근사계산하라.</p>
-<p><span class="math display">\[\int_{-1.96}^{1.96} \frac{1}{\sqrt{2\pi}}e^{-x^2/2} \, dx\]</span></p>
-<p><code>(2)</code> 시뮬레이션을 이용하여 원주율 <span class="math inline">\(\pi\)</span>를 추정하라.</p>
-</section>
-<section id="문제-3.-ai도구이해-10점" class="level1">
-<h1>문제 3. AI도구이해 – 10점</h1>
-<p>다음 상황에 적절한 AI 도구를 하나이상 나열하시오.</p>
-<p><code>(1)</code> 인용 출처를 함께 제시하면서 최신 정보를 빠르게 조사하고 싶다.</p>
-<p><code>(2)</code> PDF, 강의자료, 논문 묶음을 넣고 요약 및 질의응답을 하고 싶다. 이때 업로드한 자료에 들어 있는 내용만을 근거로 답변을 받고 싶다.</p>
-<p><code>(3)</code> 터미널에서 여러 단계의 코딩 작업을 자율적으로 시키고 싶다.</p>
-<p><code>(4)</code> 웹을 돌아다니며 사용자를 대신해 탐색하고 브라우저 작업을 수행하는 도구가 필요하다.</p>
-<p><code>(5)</code> AI를 이용하여 이미지 합성 결과물을 만들고 싶다.</p>
+<section id="대면수업내용" class="level1">
+<h1>2. 대면수업내용</h1>
+<p>아래 문항의 참/거짓을 판단하라.</p>
+<p><strong>1.</strong> 원격 컴퓨터 모델에서는 <code>ipython</code>이 실행되는 컴퓨터와 크롬(브라우저)이 실행되는 컴퓨터가 반드시 같아야 한다.<br>
+<strong>2.</strong> 깃헙(GitHub) 저장소의 최신 내용을 코드스페이스(Codespace)로 가져와 반영하고 싶을 때는 <code>git pull</code> 명령을 사용한다.<br>
+<strong>3.</strong> 학과서버 한 대에 <code>python==3.10</code>과 <code>python==3.12</code>를 동시에 사용하고 싶다면 “가상환경” 개념을 활용하면 된다.<br>
+<strong>4.</strong> 코드스페이스(Codespace)는 실습실 컴퓨터(로컬)에서 직접 실행되는 프로그램이므로 네트워크 연결 없이도 사용할 수 있다.<br>
+<strong>5.</strong> 코드스페이스에서 작업한 내용을 깃헙(GitHub) 저장소로 보내고 싶을 때는 <code>git add .</code>, <code>git commit -m .</code>, <code>git push</code> 세 명령어를 순서대로 실행하면 된다.</p>
+<blockquote class="blockquote">
+<p><strong>hint:</strong> 정답은 순서대로 <code>F, T, T, F, T</code> 이다.</p>
+</blockquote>
 
 
 </section>
