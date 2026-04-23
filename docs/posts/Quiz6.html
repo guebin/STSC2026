@@ -192,11 +192,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/vZQsrrmvmFI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p><a href="https://colab.research.google.com/github/guebin/STSC2026/blob/master/posts/Quiz6.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" style="text-align: left"></a></p>
 <section id="numpy" class="level1">
 <h1>1. <code>numpy</code></h1>
 <p>아래와 같이 30명 학생의 5과목(국어, 영어, 수학, 과학, 사회) 점수가 기록된 자료를 고려하자.</p>
-<div id="cell-4" class="cell">
+<div id="cell-5" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">43052</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>scores <span class="op">=</span> np.random.randint(<span class="dv">40</span>, <span class="dv">101</span>, size<span class="op">=</span>(<span class="dv">30</span>, <span class="dv">5</span>))</span>
