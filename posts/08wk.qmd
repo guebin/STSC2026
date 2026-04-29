@@ -1,7 +1,51 @@
 ---
-title: '08wk: ??'
+title: '09wk: `git`: add, commit, reset, revert, branch, checkout, merge'
 author: 최규빈
-date: 04/16/2026
-draft: true
+date: 04/29/2026
+draft: false
 ---
 
+# 1. 준비 
+
+`-` repo를 만들자. (Add README 를 TRUE로 설정)
+
+`-` 아래에 접속해서 codespace를 만들자. 
+
+- <https://github.com/codespaces>
+
+# 2. add/commit/push
+
+`-` `a.txt`와 `b.txt`를 만듦
+
+`-` 아래를 실행 
+
+```bash
+git add a.txt
+git commit -m "add a.txt"
+git push
+```
+
+# 3. 시간이동
+
+`-` `add.py` 생성후 아래를 한줄씩 쓰면서 commit & push 
+
+```Python
+1+1
+2+2
+3+3
+4+4
+5+5
+```
+
+`-` 3라인시점으로 git reset --hard
+
+`-` 5라인시점으로 git reset --hard
+
+`-` `a.txt`에 라인을 추가해보고 revert
+
+
+# 4. 다른평행세계
+
+`-` main, 성민, 효은 -- 3개의 브랜치를 관리 
+
+`-` 각각 독립적으로 작업하고 merge해보기 
