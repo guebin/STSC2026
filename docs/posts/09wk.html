@@ -154,9 +154,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul class="collapse">
   <li><a href="#준비" id="toc-준비" class="nav-link active" data-scroll-target="#준비">1. 준비</a></li>
-  <li><a href="#addcommitpush" id="toc-addcommitpush" class="nav-link" data-scroll-target="#addcommitpush">2. add/commit/push</a></li>
-  <li><a href="#시간이동" id="toc-시간이동" class="nav-link" data-scroll-target="#시간이동">3. 시간이동</a></li>
-  <li><a href="#다른평행세계" id="toc-다른평행세계" class="nav-link" data-scroll-target="#다른평행세계">4. 다른평행세계</a></li>
+  <li><a href="#addcommitpush" id="toc-addcommitpush" class="nav-link" data-scroll-target="#addcommitpush">2. add/commit/push</a>
+  <ul class="collapse">
+  <li><a href="#a.-a.txt-만-push-선택적으로-stage-가능" id="toc-a.-a.txt-만-push-선택적으로-stage-가능" class="nav-link" data-scroll-target="#a.-a.txt-만-push-선택적으로-stage-가능">A. <code>a.txt</code> 만 push (선택적으로 stage 가능)</a></li>
+  <li><a href="#b.-b.txt-도-올리고-싶다면-다시-add-commit-push" id="toc-b.-b.txt-도-올리고-싶다면-다시-add-commit-push" class="nav-link" data-scroll-target="#b.-b.txt-도-올리고-싶다면-다시-add-commit-push">B. <code>b.txt</code> 도 올리고 싶다면 – 다시 add → commit → push</a></li>
+  <li><a href="#c.-변경된-파일이-여러개일-때-한번에-올리기-readme.md-a.txt-b.txt-모두-수정-후" id="toc-c.-변경된-파일이-여러개일-때-한번에-올리기-readme.md-a.txt-b.txt-모두-수정-후" class="nav-link" data-scroll-target="#c.-변경된-파일이-여러개일-때-한번에-올리기-readme.md-a.txt-b.txt-모두-수정-후">C. 변경된 파일이 여러개일 때 한번에 올리기 – <code>README.md</code>, <code>a.txt</code>, <code>b.txt</code> 모두 수정 후</a></li>
+  </ul></li>
+  <li><a href="#시간이동" id="toc-시간이동" class="nav-link" data-scroll-target="#시간이동">3. 시간이동</a>
+  <ul class="collapse">
+  <li><a href="#a.-3라인-시점으로-git-reset---hard" id="toc-a.-3라인-시점으로-git-reset---hard" class="nav-link" data-scroll-target="#a.-3라인-시점으로-git-reset---hard">A. 3라인 시점으로 <code>git reset --hard</code></a></li>
+  <li><a href="#b.-다시-5라인-시점으로-git-reset---hard" id="toc-b.-다시-5라인-시점으로-git-reset---hard" class="nav-link" data-scroll-target="#b.-다시-5라인-시점으로-git-reset---hard">B. 다시 5라인 시점으로 <code>git reset --hard</code></a></li>
+  <li><a href="#c.-a.txt-에-한-줄-추가해보고-revert" id="toc-c.-a.txt-에-한-줄-추가해보고-revert" class="nav-link" data-scroll-target="#c.-a.txt-에-한-줄-추가해보고-revert">C. <code>a.txt</code> 에 한 줄 추가해보고 <code>revert</code></a></li>
+  </ul></li>
+  <li><a href="#다른평행세계" id="toc-다른평행세계" class="nav-link" data-scroll-target="#다른평행세계">4. 다른평행세계</a>
+  <ul class="collapse">
+  <li><a href="#a.-성민-브랜치-생성-후-이동" id="toc-a.-성민-브랜치-생성-후-이동" class="nav-link" data-scroll-target="#a.-성민-브랜치-생성-후-이동">A. <code>성민</code> 브랜치 생성 후 이동</a></li>
+  <li><a href="#b.-성민-브랜치에서-복음밥.md-를-한-줄씩-추가하면서-4번-commit" id="toc-b.-성민-브랜치에서-복음밥.md-를-한-줄씩-추가하면서-4번-commit" class="nav-link" data-scroll-target="#b.-성민-브랜치에서-복음밥.md-를-한-줄씩-추가하면서-4번-commit">B. <code>성민</code> 브랜치에서 <code>복음밥.md</code> 를 한 줄씩 추가하면서 4번 commit</a></li>
+  <li><a href="#c.-main-으로-돌아간-뒤-효은-브랜치-생성" id="toc-c.-main-으로-돌아간-뒤-효은-브랜치-생성" class="nav-link" data-scroll-target="#c.-main-으로-돌아간-뒤-효은-브랜치-생성">C. main 으로 돌아간 뒤 <code>효은</code> 브랜치 생성</a></li>
+  <li><a href="#d.-효은-브랜치에서-짬뽕주문.md-작성-후-commit" id="toc-d.-효은-브랜치에서-짬뽕주문.md-작성-후-commit" class="nav-link" data-scroll-target="#d.-효은-브랜치에서-짬뽕주문.md-작성-후-commit">D. <code>효은</code> 브랜치에서 <code>짬뽕주문.md</code> 작성 후 commit</a></li>
+  <li><a href="#e.-main-으로-돌아온-뒤-짜장면.md-작성-후-commit-main-자체도-작업함" id="toc-e.-main-으로-돌아온-뒤-짜장면.md-작성-후-commit-main-자체도-작업함" class="nav-link" data-scroll-target="#e.-main-으로-돌아온-뒤-짜장면.md-작성-후-commit-main-자체도-작업함">E. main 으로 돌아온 뒤 <code>짜장면.md</code> 작성 후 commit (main 자체도 작업함)</a></li>
+  <li><a href="#f.-이-시점에서-세-평행세계의-상태" id="toc-f.-이-시점에서-세-평행세계의-상태" class="nav-link" data-scroll-target="#f.-이-시점에서-세-평행세계의-상태">F. 이 시점에서 세 평행세계의 상태</a></li>
+  <li><a href="#g.-main-에서-성민-효은-순서로-merge" id="toc-g.-main-에서-성민-효은-순서로-merge" class="nav-link" data-scroll-target="#g.-main-에서-성민-효은-순서로-merge">G. main 에서 <code>성민</code> → <code>효은</code> 순서로 merge</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -204,30 +223,175 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="addcommitpush" class="level1">
 <h1>2. add/commit/push</h1>
-<p><code>-</code> <code>a.txt</code>와 <code>b.txt</code>를 만듦</p>
-<p><code>-</code> 아래를 실행</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add a.txt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"add a.txt"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>-</code> <code>a.txt</code> 와 <code>b.txt</code> 를 만든다.</p>
+<section id="a.-a.txt-만-push-선택적으로-stage-가능" class="level2">
+<h2 class="anchored" data-anchor-id="a.-a.txt-만-push-선택적으로-stage-가능">A. <code>a.txt</code> 만 push (선택적으로 stage 가능)</h2>
+<p><code>a.txt</code> 내용:</p>
+<pre><code>a1</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add a.txt</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"a.txt"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p>이 시점에서 깃헙엔 <code>a.txt</code> 만 올라가 있음. <code>b.txt</code> 는 아직 untracked 상태.</p>
+</blockquote>
+</section>
+<section id="b.-b.txt-도-올리고-싶다면-다시-add-commit-push" class="level2">
+<h2 class="anchored" data-anchor-id="b.-b.txt-도-올리고-싶다면-다시-add-commit-push">B. <code>b.txt</code> 도 올리고 싶다면 – 다시 add → commit → push</h2>
+<p><code>b.txt</code> 내용:</p>
+<pre><code>b1
+b2</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add b.txt</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"b를올리고싶네?"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="c.-변경된-파일이-여러개일-때-한번에-올리기-readme.md-a.txt-b.txt-모두-수정-후" class="level2">
+<h2 class="anchored" data-anchor-id="c.-변경된-파일이-여러개일-때-한번에-올리기-readme.md-a.txt-b.txt-모두-수정-후">C. 변경된 파일이 여러개일 때 한번에 올리기 – <code>README.md</code>, <code>a.txt</code>, <code>b.txt</code> 모두 수정 후</h2>
+<p><code>a.txt</code> 와 <code>b.txt</code> 내용을 각각 아래처럼 늘리고:</p>
+<pre><code>a1            b1
+a2            b2
+a3            b3</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .                       <span class="co"># 변경된 모든 파일을 한번에 stage</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"다올리고싶네?"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>-</code> <code>git add &lt;파일명&gt;</code> 과 <code>git add .</code> 의 차이 인지하기</p>
+</section>
 </section>
 <section id="시간이동" class="level1">
 <h1>3. 시간이동</h1>
-<p><code>-</code> <code>add.py</code> 생성후 아래를 한줄씩 쓰면서 commit &amp; push</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="op">+</span><span class="dv">1</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="op">+</span><span class="dv">2</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span><span class="op">+</span><span class="dv">3</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span><span class="op">+</span><span class="dv">4</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span><span class="op">+</span><span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>-</code> 3라인시점으로 git reset –hard</p>
-<p><code>-</code> 5라인시점으로 git reset –hard</p>
-<p><code>-</code> <code>a.txt</code>에 라인을 추가해보고 revert</p>
+<p><code>-</code> <code>code.py</code> 생성 후 아래를 한 줄씩 쓰면서 commit &amp; push</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="op">+</span><span class="dv">1</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="op">+</span><span class="dv">2</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span><span class="op">+</span><span class="dv">3</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span><span class="op">+</span><span class="dv">4</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span><span class="op">*</span><span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>각 라인 추가할 때마다:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Nline"</span>      <span class="co"># 1line, 2line, 3line, 4line, 5line</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="a.-3라인-시점으로-git-reset---hard" class="level2">
+<h2 class="anchored" data-anchor-id="a.-3라인-시점으로-git-reset---hard">A. 3라인 시점으로 <code>git reset --hard</code></h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span>          <span class="co"># 3line commit 해시 확인</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset <span class="at">--hard</span> <span class="op">&lt;</span>3line 해시<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>-</code> <code>code.py</code> 가 3라인 상태로 돌아감</p>
+</section>
+<section id="b.-다시-5라인-시점으로-git-reset---hard" class="level2">
+<h2 class="anchored" data-anchor-id="b.-다시-5라인-시점으로-git-reset---hard">B. 다시 5라인 시점으로 <code>git reset --hard</code></h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reflog                 <span class="co"># 사라진 commit 들을 다시 찾기 (git log 엔 안 보임)</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset <span class="at">--hard</span> <span class="op">&lt;</span>5line 해시<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>-</code> <code>git reset --hard</code> 로 거꾸로 간 commit 은 <code>git log</code> 엔 안 보이지만 <code>git reflog</code> 엔 남음</p>
+</section>
+<section id="c.-a.txt-에-한-줄-추가해보고-revert" class="level2">
+<h2 class="anchored" data-anchor-id="c.-a.txt-에-한-줄-추가해보고-revert">C. <code>a.txt</code> 에 한 줄 추가해보고 <code>revert</code></h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># a.txt 에 한 줄 추가 후</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"a.txt 한줄 추가"</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> revert HEAD            <span class="co"># 방금의 commit 을 되돌리는 새로운 commit 생성</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>-</code> <code>reset</code> vs <code>revert</code> 차이:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>명령</th>
+<th>동작</th>
+<th>이력</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>reset --hard</code></td>
+<td>HEAD 를 과거로 이동</td>
+<td>이후 commit 사라짐 (force push 필요)</td>
+</tr>
+<tr class="even">
+<td><code>revert</code></td>
+<td>되돌리는 새로운 commit 생성</td>
+<td>이력에 그대로 남음</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="다른평행세계" class="level1">
 <h1>4. 다른평행세계</h1>
 <p><code>-</code> main, 성민, 효은 – 3개의 브랜치를 관리</p>
 <p><code>-</code> 각각 독립적으로 작업하고 merge해보기</p>
+<section id="a.-성민-브랜치-생성-후-이동" class="level2">
+<h2 class="anchored" data-anchor-id="a.-성민-브랜치-생성-후-이동">A. <code>성민</code> 브랜치 생성 후 이동</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> 성민</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="b.-성민-브랜치에서-복음밥.md-를-한-줄씩-추가하면서-4번-commit" class="level2">
+<h2 class="anchored" data-anchor-id="b.-성민-브랜치에서-복음밥.md-를-한-줄씩-추가하면서-4번-commit">B. <code>성민</code> 브랜치에서 <code>복음밥.md</code> 를 한 줄씩 추가하면서 4번 commit</h2>
+<p><code>복음밥.md</code> 내용을 4단계로 채워나감:</p>
+<pre><code>1라인:  볶음밥주문
+2라인:  볶음밥 시식
+3라인:  90점 부여
+4라인:  느끼함제거 가산 10점</code></pre>
+<p>각 라인 추가할 때마다:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"복음밥.md 추가"</span>            <span class="co"># 1라인</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"복음밥.md 2라인 추가"</span>      <span class="co"># 2라인</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"복음밥.md 3라인 추가"</span>      <span class="co"># 3라인</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"복음밥.md 4라인 추가"</span>      <span class="co"># 4라인</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="c.-main-으로-돌아간-뒤-효은-브랜치-생성" class="level2">
+<h2 class="anchored" data-anchor-id="c.-main-으로-돌아간-뒤-효은-브랜치-생성">C. main 으로 돌아간 뒤 <code>효은</code> 브랜치 생성</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> 효은</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="d.-효은-브랜치에서-짬뽕주문.md-작성-후-commit" class="level2">
+<h2 class="anchored" data-anchor-id="d.-효은-브랜치에서-짬뽕주문.md-작성-후-commit">D. <code>효은</code> 브랜치에서 <code>짬뽕주문.md</code> 작성 후 commit</h2>
+<p><code>짬뽕주문.md</code> 내용:</p>
+<pre><code>짬뽕시식
+90점</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"짬뽕주문.md 추가"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="e.-main-으로-돌아온-뒤-짜장면.md-작성-후-commit-main-자체도-작업함" class="level2">
+<h2 class="anchored" data-anchor-id="e.-main-으로-돌아온-뒤-짜장면.md-작성-후-commit-main-자체도-작업함">E. main 으로 돌아온 뒤 <code>짜장면.md</code> 작성 후 commit (main 자체도 작업함)</h2>
+<p><code>짜장면.md</code> 내용:</p>
+<pre><code>간짜장주문</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"짜장면.md 추가"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="f.-이-시점에서-세-평행세계의-상태" class="level2">
+<h2 class="anchored" data-anchor-id="f.-이-시점에서-세-평행세계의-상태">F. 이 시점에서 세 평행세계의 상태</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>브랜치</th>
+<th>가지고 있는 파일</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>main</td>
+<td><code>짜장면.md</code></td>
+</tr>
+<tr class="even">
+<td>성민</td>
+<td><code>복음밥.md</code> (4 commits)</td>
+</tr>
+<tr class="odd">
+<td>효은</td>
+<td><code>짬뽕주문.md</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="g.-main-에서-성민-효은-순서로-merge" class="level2">
+<h2 class="anchored" data-anchor-id="g.-main-에서-성민-효은-순서로-merge">G. main 에서 <code>성민</code> → <code>효은</code> 순서로 merge</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge 성민</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge 효은</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>-</code> 서로 다른 파일을 수정했기 때문에 충돌 없이 merge 됨</p>
+<p><code>-</code> 최종적으로 main 에는 <code>짜장면.md</code>, <code>복음밥.md</code>, <code>짬뽕주문.md</code> 가 모두 모임</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

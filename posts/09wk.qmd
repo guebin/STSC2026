@@ -1,0 +1,209 @@
+---
+title: '09wk: `git`: add, commit, reset, revert, branch, checkout, merge'
+author: 최규빈
+date: 04/29/2026 23:00
+draft: false
+---
+
+# 1. 준비 
+
+`-` repo를 만들자. (Add README 를 TRUE로 설정)
+
+`-` 아래에 접속해서 codespace를 만들자. 
+
+- <https://github.com/codespaces>
+
+# 2. add/commit/push
+
+`-` `a.txt` 와 `b.txt` 를 만든다.
+
+## A. `a.txt` 만 push (선택적으로 stage 가능)
+
+`a.txt` 내용:
+
+```
+a1
+```
+
+```bash
+git add a.txt
+git commit -m "a.txt"
+git push
+```
+
+> 이 시점에서 깃헙엔 `a.txt` 만 올라가 있음. `b.txt` 는 아직 untracked 상태.
+
+## B. `b.txt` 도 올리고 싶다면 -- 다시 add → commit → push
+
+`b.txt` 내용:
+
+```
+b1
+b2
+```
+
+```bash
+git add b.txt
+git commit -m "b를올리고싶네?"
+git push
+```
+
+## C. 변경된 파일이 여러개일 때 한번에 올리기 -- `README.md`, `a.txt`, `b.txt` 모두 수정 후
+
+`a.txt` 와 `b.txt` 내용을 각각 아래처럼 늘리고:
+
+```
+a1            b1
+a2            b2
+a3            b3
+```
+
+```bash
+git add .                       # 변경된 모든 파일을 한번에 stage
+git commit -m "다올리고싶네?"
+git push
+```
+
+`-` `git add <파일명>` 과 `git add .` 의 차이 인지하기
+
+# 3. 시간이동
+
+`-` `code.py` 생성 후 아래를 한 줄씩 쓰면서 commit & push
+
+```Python
+1+1
+2+2
+3+3
+4+4
+5*5
+```
+
+각 라인 추가할 때마다:
+
+```bash
+git add .
+git commit -m "Nline"      # 1line, 2line, 3line, 4line, 5line
+git push
+```
+
+## A. 3라인 시점으로 `git reset --hard`
+
+```bash
+git log --oneline          # 3line commit 해시 확인
+git reset --hard <3line 해시>
+```
+
+`-` `code.py` 가 3라인 상태로 돌아감
+
+## B. 다시 5라인 시점으로 `git reset --hard`
+
+```bash
+git reflog                 # 사라진 commit 들을 다시 찾기 (git log 엔 안 보임)
+git reset --hard <5line 해시>
+```
+
+`-` `git reset --hard` 로 거꾸로 간 commit 은 `git log` 엔 안 보이지만 `git reflog` 엔 남음
+
+## C. `a.txt` 에 한 줄 추가해보고 `revert`
+
+```bash
+# a.txt 에 한 줄 추가 후
+git add .
+git commit -m "a.txt 한줄 추가"
+git revert HEAD            # 방금의 commit 을 되돌리는 새로운 commit 생성
+```
+
+`-` `reset` vs `revert` 차이:
+
+| 명령 | 동작 | 이력 |
+|------|------|------|
+| `reset --hard` | HEAD 를 과거로 이동 | 이후 commit 사라짐 (force push 필요) |
+| `revert` | 되돌리는 새로운 commit 생성 | 이력에 그대로 남음 |
+
+
+# 4. 다른평행세계
+
+`-` main, 성민, 효은 -- 3개의 브랜치를 관리
+
+`-` 각각 독립적으로 작업하고 merge해보기
+
+## A. `성민` 브랜치 생성 후 이동
+
+```bash
+git checkout -b 성민
+```
+
+## B. `성민` 브랜치에서 `복음밥.md` 를 한 줄씩 추가하면서 4번 commit
+
+`복음밥.md` 내용을 4단계로 채워나감:
+
+```
+1라인:  볶음밥주문
+2라인:  볶음밥 시식
+3라인:  90점 부여
+4라인:  느끼함제거 가산 10점
+```
+
+각 라인 추가할 때마다:
+
+```bash
+git add .
+git commit -m "복음밥.md 추가"            # 1라인
+git commit -m "복음밥.md 2라인 추가"      # 2라인
+git commit -m "복음밥.md 3라인 추가"      # 3라인
+git commit -m "복음밥.md 4라인 추가"      # 4라인
+```
+
+## C. main 으로 돌아간 뒤 `효은` 브랜치 생성
+
+```bash
+git checkout main
+git checkout -b 효은
+```
+
+## D. `효은` 브랜치에서 `짬뽕주문.md` 작성 후 commit
+
+`짬뽕주문.md` 내용:
+
+```
+짬뽕시식
+90점
+```
+
+```bash
+git add .
+git commit -m "짬뽕주문.md 추가"
+```
+
+## E. main 으로 돌아온 뒤 `짜장면.md` 작성 후 commit (main 자체도 작업함)
+
+`짜장면.md` 내용:
+
+```
+간짜장주문
+```
+
+```bash
+git checkout main
+git add .
+git commit -m "짜장면.md 추가"
+```
+
+## F. 이 시점에서 세 평행세계의 상태
+
+| 브랜치 | 가지고 있는 파일 |
+|--------|------------------|
+| main   | `짜장면.md` |
+| 성민   | `복음밥.md` (4 commits) |
+| 효은   | `짬뽕주문.md` |
+
+## G. main 에서 `성민` → `효은` 순서로 merge
+
+```bash
+git merge 성민
+git merge 효은
+```
+
+`-` 서로 다른 파일을 수정했기 때문에 충돌 없이 merge 됨
+
+`-` 최종적으로 main 에는 `짜장면.md`, `복음밥.md`, `짬뽕주문.md` 가 모두 모임

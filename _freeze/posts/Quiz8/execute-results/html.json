@@ -1,0 +1,12 @@
+{
+  "hash": "c5a1c8138cf2f2a7dbf51a8647437617",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Quiz8 (2026.05.06)\"\nauthor: \"최규빈\"\ndate: \"05/06/2026\"\ndraft: false\n---\n\n<a href=\"https://colab.research.google.com/github/guebin/STSC2026/blob/master/posts/Quiz8.qmd\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" style=\"text-align: left\"></a>\n\n::: {#4bddd595 .cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\n```\n:::\n\n\n# 1. `__call__` -- 50점\n\n아래와 같은 기능을 하도록 클래스 `Counter` 를 설계하라. (호출할 때마다 1씩 증가한 값을 출력)\n\n`# 예시`\n\n```python\nc = Counter()\nc()\n```\n```bash\n1\n```\n```python\nc()\n```\n```bash\n2\n```\n```python\nc()\nc()\nc()\n```\n```bash\n5\n```\n\n# 2. 상속 -- 50점\n\n아래와 같은 클래스 `Animal` 이 주어져 있다.\n\n```python\nclass Animal:\n    def __init__(self, name):\n        self.name = name\n    def __repr__(self):\n        return f\"이름: {self.name}\"\n```\n\n`Animal` 을 상속받아 `bark` 메서드를 가지는 클래스 `Dog` 를 설계하라.\n\n`# 예시`\n\n```python\nd = Dog(\"바둑이\")\nd\n```\n```bash\n이름: 바둑이\n```\n```python\nd.bark()\n```\n```bash\n멍멍!\n```\n\n",
+    "supporting": [
+      "Quiz8_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

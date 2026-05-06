@@ -1,0 +1,31 @@
+@miruetoto ➜ /workspaces/test260429 (main) $ git reflog
+bfc8aaf (HEAD -> main) HEAD@{0}: merge 효은: Merge made by the 'ort' strategy.
+351f988 HEAD@{1}: merge 성민: Merge made by the 'ort' strategy.
+6fe0f93 HEAD@{2}: commit: 짜장면.md 추가
+562246c (origin/main, origin/HEAD) HEAD@{3}: checkout: moving from 효은 to main
+6d64fbf (효은) HEAD@{4}: commit: 짬뽕주문.md 추가
+562246c (origin/main, origin/HEAD) HEAD@{5}: checkout: moving from main to 효은
+562246c (origin/main, origin/HEAD) HEAD@{6}: checkout: moving from 성민 to main
+e97c172 (성민) HEAD@{7}: commit: 복음밥.md 4라인 추가
+ef97b07 HEAD@{8}: commit: 복음밥.md 3라인 추가
+3cae550 HEAD@{9}: commit: 복음밥.md 2라인 추가
+8014601 HEAD@{10}: commit: 복음밥.md 추가
+562246c (origin/main, origin/HEAD) HEAD@{11}: checkout: moving from main to 성민
+562246c (origin/main, origin/HEAD) HEAD@{12}: reset: moving to origin/main
+562246c (origin/main, origin/HEAD) HEAD@{13}: checkout: moving from main to main
+562246c (origin/main, origin/HEAD) HEAD@{14}: reset: moving to origin/main
+0c7e3a0 HEAD@{15}: checkout: moving from main to main
+0c7e3a0 HEAD@{16}: merge 효은: Merge made by the 'ort' strategy.
+c179c2d HEAD@{17}: merge 성민: Merge made by the 'ort' strategy.
+214bc85 HEAD@{18}: checkout: moving from main to main
+214bc85 HEAD@{19}: commit: 짜장면.md 추가
+562246c (origin/main, origin/HEAD) HEAD@{20}: checkout: moving from 효은 to main
+7238ee4 HEAD@{21}: commit: 짬뽕주문.md 추가
+562246c (origin/main, origin/HEAD) HEAD@{22}: checkout: moving from main to 효은
+562246c (origin/main, origin/HEAD) HEAD@{23}: checkout: moving from 성민 to main
+e6d003a HEAD@{24}: commit: 복음밥.md 4라인 추가
+b7a1f89 HEAD@{25}: commit: 복음밥.md 3라인 추가
+e668ed6 HEAD@{26}: commit: 복음밥.md 2라인 추가
+894a1e0 HEAD@{27}: commit: 복음밥.md 추가
+562246c (origin/main, origin/HEAD) HEAD@{28}: checkout: moving from main to 성민
+562246c (origin/main, origin/HEAD) HEAD@{29}: reset: moving to origin/main
