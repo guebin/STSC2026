@@ -84,6 +84,13 @@
     "text": "주의: 어떠한 패키지도 import 하지 말 것\n\n\n1. 파이썬문법 – 80점\n\n과일리스트 = [\n    ['사과', 3000], ['바나나', 2500], ['포도', 4000], ['오렌지', 3500], ['멜론', 5000],\n    ['망고', 4500], ['파인애플', 4200], ['배', 2800], ['딸기', 3800], ['블루베리', 5500],\n    ['사과', 3200], ['포도', 4100], ['오렌지', 3600], ['수박', 7000], ['복숭아', 3200],\n    ['자두', 3100], ['체리', 4800], ['레몬', 2700], ['키위', 3300], ['감', 2900],\n\n    ['귤', 2600], ['석류', 5200], ['사과', 3100], ['바나나', 2400], ['포도', 4300],\n    ['오렌지', 3400], ['멜론', 5100], ['망고', 4700], ['배', 2900], ['딸기', 3900],\n    ['사과', 3300], ['포도', 4200], ['수박', 7100], ['복숭아', 3400], ['체리', 5000],\n    ['레몬', 2800], ['감', 3000], ['귤', 2700], ['사과', 3400], ['바나나', 2600],\n\n    ['포도', 4400], ['오렌지', 3700], ['멜론', 5300], ['배', 3000], ['딸기', 4100],\n    ['블루베리', 5600], ['라즈베리', 6100], ['수박', 7300], ['복숭아', 3500], ['자두', 3300],\n    ['체리', 5100], ['레몬', 2900], ['키위', 3500], ['감', 3100], ['귤', 2800],\n    ['사과', 3500], ['포도', 4500], ['오렌지', 3800], ['멜론', 5200], ['망고', 4800],\n\n    ['파인애플', 4400], ['배', 3100], ['딸기', 4200], ['수박', 7200], ['복숭아', 3600],\n    ['레몬', 3000], ['키위', 3600], ['감', 3200], ['귤', 2900], ['석류', 5400],\n    ['사과', 3600], ['바나나', 2700], ['포도', 4600], ['오렌지', 3900], ['멜론', 5400],\n    ['망고', 4900], ['배', 3200], ['딸기', 4300], ['블루베리', 5800], ['수박', 7400],\n\n    ['복숭아', 3700], ['자두', 3400], ['체리', 5200], ['레몬', 3100], ['감', 3300],\n    ['귤', 3000], ['사과', 3700], ['포도', 4700], ['오렌지', 4000], ['멜론', 5500],\n    ['배', 3300], ['딸기', 4400], ['수박', 7500], ['복숭아', 3800], ['체리', 5300],\n    ['레몬', 3200], ['키위', 3700], ['사과', 3800], ['포도', 4800], ['귤', 3100]\n]\n\n\n과일분류사전 = {\n    '열대과일': ['바나나', '멜론', '망고', '파인애플', '키위'],\n    '일반과일': ['사과', '포도', '오렌지', '배', '수박', '복숭아', '자두', '레몬', '감', '귤', '석류'],\n    '딸기류': ['딸기', '블루베리', '라즈베리', '체리']\n}\n\n(1) 자료에서 가장 많이 등장하는 과일은 무엇인가? – 10점\n(2) 자료에 포함된 과일들을 일반과일, 딸기류, 열대과일로 나눌 때, 가장 많이 나타나는 분류는 무엇인가? – 10점\n(3) 포도의 평균가격을 계산하라. – 10점\n(4) 자료를 이용하여, 각 과일별 가격들을 값으로 가지는 아래 형태의 딕셔너리를 만들어라. – 30점\n{'파인애플': [4200, 4400],\n '멜론': [5000, 5100, 5300, 5200, 5400, 5500],\n '복숭아': [3200, 3400, 3500, 3600, 3700, 3800],\n '블루베리': [5500, 5600, 5800],\n '라즈베리': [6100],\n '레몬': [2700, 2800, 2900, 3000, 3100, 3200],\n '바나나': [2500, 2400, 2600, 2700],\n '배': [2800, 2900, 3000, 3100, 3200, 3300],\n '감': [2900, 3000, 3100, 3200, 3300],\n '망고': [4500, 4700, 4800, 4900],\n '포도': [4000, 4100, 4300, 4200, 4400, 4500, 4600, 4700, 4800],\n '사과': [3000, 3200, 3100, 3300, 3400, 3500, 3600, 3700, 3800],\n '자두': [3100, 3300, 3400],\n '오렌지': [3500, 3600, 3400, 3700, 3800, 3900, 4000],\n '체리': [4800, 5000, 5100, 5200, 5300],\n '귤': [2600, 2700, 2800, 2900, 3000, 3100],\n '수박': [7000, 7100, 7300, 7200, 7400, 7500],\n '딸기': [3800, 3900, 4100, 4200, 4300, 4400],\n '석류': [5200, 5400],\n '키위': [3300, 3500, 3600, 3700]}\n(5) 평균가격이 가장 높은 과일은 무엇인가? – 20점\n\n주의사항: 눈으로 평균가격이 가장 높은 과일을 찾지말고 알고리즘을 제시해야함.\n\n\n\n2. 대면수업내용 – 20점\n아래문항의 참거짓을 판단하라.\n1. 윈도우 터미널 명령어 mkdir은 디렉터리(폴더)를 삭제할 때 사용한다.\n2. 아나콘다(Anaconda)를 설치하면 파이썬이 자동으로 함께 설치된다.\n3. 두 개의 파이썬 프롬프트를 실행했을 때, 한쪽에서 선언한 변수는 다른 쪽 프롬프트와 공유된다.\n4. IPython에서 명령어 앞에 !를 붙이면 터미널 명령어를 훔쳐서 사용할 수 있다.\n5. 주피터랩(Jupyterlab)은 파이썬뿐만 아니라 R과 같은 다른 언어와도 연결하여 사용할 수 있다."
   },
   {
+    "objectID": "posts/Quiz9.html",
+    "href": "posts/Quiz9.html",
+    "title": "Quiz9 (2026.05.13)",
+    "section": "",
+    "text": "1. Repeat 클래스\n주어진 값을 n번 반복하여 반환하는 이터레이터 클래스 Repeat를 작성하라.\nfor x in Repeat(\"안녕\", 3):\n    print(x)\n안녕\n안녕\n안녕\n\n\n2. Countdown 클래스\nn부터 1까지 카운트다운하는 이터레이터 클래스 Countdown를 작성하라.\nfor x in Countdown(5):\n    print(x)\n5\n4\n3\n2\n1\n\n\n3. UpDown 클래스\n1부터 n까지 올라갔다가 다시 내려오는 이터레이터 클래스 UpDown을 작성하라.\nfor x in UpDown(3):\n    print(x)\n1 2 3 2 1"
+  },
+  {
     "objectID": "posts/03wk.html",
     "href": "posts/03wk.html",
     "title": "03wk: 생성형 인공지능의 발전 (2)",
@@ -165,7 +172,7 @@
     "href": "index.html",
     "title": "통계전산특강 (2026)",
     "section": "",
-    "text": "질문하는 방법\n\n이메일: guebin@jbnu.ac.kr\n직접방문: 자연과학대학 본관 205호\nZoom: 이메일로 미리 시간을 정할 것\n\n강의노트\n\n\n\n\n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMay 6, 2026\n\n\n10wk: github을 써야하는 이유?\n\n\n최규빈 \n\n\n\n\n\n\nMay 6, 2026\n\n\nQuiz8 (2026.05.06)\n\n\n최규빈 \n\n\n\n\n\n\nApr 29, 2026\n\n\n09wk: git: add, commit, reset, revert, branch, checkout, merge\n\n\n최규빈 \n\n\n\n\n\n\nApr 29, 2026\n\n\nQuiz7 (2026.04.29)\n\n\n최규빈 \n\n\n\n\n\n\nApr 22, 2026\n\n\nQuiz6 (2026.04.22)\n\n\n최규빈 \n\n\n\n\n\n\nApr 15, 2026\n\n\n07wk: 원격/클라우드 컴퓨터 ~ 코드스페이스\n\n\n최규빈 \n\n\n\n\n\n\nApr 15, 2026\n\n\nQuiz5 (2026.04.15)\n\n\n최규빈 \n\n\n\n\n\n\nApr 8, 2026\n\n\nQuiz4 (2026.04.08)\n\n\n최규빈 \n\n\n\n\n\n\nApr 1, 2026\n\n\n05wk: 터미널의 이해 ~ Jupyterlab\n\n\n최규빈 \n\n\n\n\n\n\nApr 1, 2026\n\n\nQuiz3 (2026.04.01)\n\n\n최규빈 \n\n\n\n\n\n\nMar 25, 2026\n\n\nQuiz2 (2026.03.25)\n\n\n최규빈 \n\n\n\n\n\n\nMar 18, 2026\n\n\n03wk: 생성형 인공지능의 발전 (2)\n\n\n최규빈 \n\n\n\n\n\n\nMar 11, 2026\n\n\n02wk: 생성형 인공지능의 발전 (1)\n\n\n최규빈 \n\n\n\n\n\n\nMar 4, 2026\n\n\nQuiz1: 레벨테스트\n\n\n최규빈 \n\n\n\n\n\n\nNo matching items"
+    "text": "질문하는 방법\n\n이메일: guebin@jbnu.ac.kr\n직접방문: 자연과학대학 본관 205호\nZoom: 이메일로 미리 시간을 정할 것\n\n강의노트\n\n\n\n\n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMay 13, 2026\n\n\n11wk: ssh우회하기, 183서버셋팅, 가상환경\n\n\n최규빈 \n\n\n\n\n\n\nMay 13, 2026\n\n\nQuiz9 (2026.05.13)\n\n\n최규빈 \n\n\n\n\n\n\nMay 6, 2026\n\n\n10wk: github을 써야하는 이유?\n\n\n최규빈 \n\n\n\n\n\n\nMay 6, 2026\n\n\nQuiz8 (2026.05.06)\n\n\n최규빈 \n\n\n\n\n\n\nApr 29, 2026\n\n\n09wk: git: add, commit, reset, revert, branch, checkout, merge\n\n\n최규빈 \n\n\n\n\n\n\nApr 29, 2026\n\n\nQuiz7 (2026.04.29)\n\n\n최규빈 \n\n\n\n\n\n\nApr 22, 2026\n\n\nQuiz6 (2026.04.22)\n\n\n최규빈 \n\n\n\n\n\n\nApr 15, 2026\n\n\n07wk: 원격/클라우드 컴퓨터 ~ 코드스페이스\n\n\n최규빈 \n\n\n\n\n\n\nApr 15, 2026\n\n\nQuiz5 (2026.04.15)\n\n\n최규빈 \n\n\n\n\n\n\nApr 8, 2026\n\n\nQuiz4 (2026.04.08)\n\n\n최규빈 \n\n\n\n\n\n\nApr 1, 2026\n\n\n05wk: 터미널의 이해 ~ Jupyterlab\n\n\n최규빈 \n\n\n\n\n\n\nApr 1, 2026\n\n\nQuiz3 (2026.04.01)\n\n\n최규빈 \n\n\n\n\n\n\nMar 25, 2026\n\n\nQuiz2 (2026.03.25)\n\n\n최규빈 \n\n\n\n\n\n\nMar 18, 2026\n\n\n03wk: 생성형 인공지능의 발전 (2)\n\n\n최규빈 \n\n\n\n\n\n\nMar 11, 2026\n\n\n02wk: 생성형 인공지능의 발전 (1)\n\n\n최규빈 \n\n\n\n\n\n\nMar 4, 2026\n\n\nQuiz1: 레벨테스트\n\n\n최규빈 \n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/07wk.html",
@@ -264,6 +271,139 @@
     "title": "02wk: 생성형 인공지능의 발전 (1)",
     "section": "Footnotes",
     "text": "Footnotes\n\n\n이라고 하는데 사실 저도 잘 모르겠습니다↩︎"
+  },
+  {
+    "objectID": "posts/11wk.html",
+    "href": "posts/11wk.html",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "",
+    "text": "- 내부와이파이에서 182 접속해보기 – 성공\nssh stsc@210.117.173.182\n# 비밀번호는 stsc\n- 내부와이파이에서 183 접속해보기 – 성공\nssh s12345@210.117.173.183\n# 비밀번호는 s12345\n- 외부와이파이에서 182 접속해보기 – 실패\nssh stsc@210.117.173.182\n- 외부와이파이에서 183 접속해보기 – 실패\nssh s12345@210.117.173.183\n\n\n\n- 포트변경 – 실습X\n\n\n\n\n\n\nNote\n\n\n\n포트가뭐야?\n\n네트워크로 데이터가 드나드는 문\n네트워크로 데이터를 옮겨야 하는 경우 무조건 port를 이용해야한다.\n프로그램마다 암묵적으로 애용하는 포트가 있음!!\n\n아래는 well-known port 임\n\n\n\n\n\n\n\n\n프로그램\n포트 번호\n설명\n\n\n\n\nSSH\n22\n원격 접속 및 파일 전송 (보안)\n\n\nSMTP\n25\n이메일 전송\n\n\nDNS\n53\n도메인 이름 해석\n\n\nHTTP\n80\n웹사이트 전송\n\n\nPOP3\n110\n이메일 수신\n\n\nIMAP\n143\n이메일 수신 (POP3보다 발전된 방식)\n\n\nHTTPS\n443\n보안 웹사이트 전송\n\n\nMySQL\n3306\n데이터베이스\n\n\n리그 오브 레전드\n5223\nPVP.net 클라이언트\n\n\n리그 오브 레전드\n2099, 5222\n게임 데이터 전송\n\n\n스타크래프트\n6112\n배틀넷 및 게임 데이터 전송\n\n\n마인크래프트\n25565\n서버 호스팅 및 클라이언트 통신\n\n\nZoom\n8801-8802\n화상 회의\n\n\nJupyter\n8888\n데이터 분석\n\n\nRStudio\n8787\n데이터 분석\n\n\n\n\n\nvi /etc/ssh/sshd_config\n...\nPort 1226\n...\nservice ssh restart\n\n\n\n- 내부와이파이에서 182접속하기 – 실패\nssh stsc@210.117.173.182\n- 내부와이파이에서 182접속하기 – 성공, (문법이 조금 바뀌었네?)\nssh stsc@210.117.173.182 -p 1226 \n- 외부와이파이에서 182접속하기 – 성공!!\nssh stsc@210.117.173.182 -p 1226\n- 내부와이파이에서 183접속하기 – 성공 (이건 원래 되던거였음)\nssh s12345@210.117.173.183\n- 외부와이파이에서 183접속하기 (?? 못하지않나??)\nssh s12345@210.117.173.183\n\n그런데 할 수 있어요"
+  },
+  {
+    "objectID": "posts/11wk.html#a.-기본상태",
+    "href": "posts/11wk.html#a.-기본상태",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "",
+    "text": "- 내부와이파이에서 182 접속해보기 – 성공\nssh stsc@210.117.173.182\n# 비밀번호는 stsc\n- 내부와이파이에서 183 접속해보기 – 성공\nssh s12345@210.117.173.183\n# 비밀번호는 s12345\n- 외부와이파이에서 182 접속해보기 – 실패\nssh stsc@210.117.173.182\n- 외부와이파이에서 183 접속해보기 – 실패\nssh s12345@210.117.173.183"
+  },
+  {
+    "objectID": "posts/11wk.html#b.-182---포트변경",
+    "href": "posts/11wk.html#b.-182---포트변경",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "",
+    "text": "- 포트변경 – 실습X\n\n\n\n\n\n\nNote\n\n\n\n포트가뭐야?\n\n네트워크로 데이터가 드나드는 문\n네트워크로 데이터를 옮겨야 하는 경우 무조건 port를 이용해야한다.\n프로그램마다 암묵적으로 애용하는 포트가 있음!!\n\n아래는 well-known port 임\n\n\n\n\n\n\n\n\n프로그램\n포트 번호\n설명\n\n\n\n\nSSH\n22\n원격 접속 및 파일 전송 (보안)\n\n\nSMTP\n25\n이메일 전송\n\n\nDNS\n53\n도메인 이름 해석\n\n\nHTTP\n80\n웹사이트 전송\n\n\nPOP3\n110\n이메일 수신\n\n\nIMAP\n143\n이메일 수신 (POP3보다 발전된 방식)\n\n\nHTTPS\n443\n보안 웹사이트 전송\n\n\nMySQL\n3306\n데이터베이스\n\n\n리그 오브 레전드\n5223\nPVP.net 클라이언트\n\n\n리그 오브 레전드\n2099, 5222\n게임 데이터 전송\n\n\n스타크래프트\n6112\n배틀넷 및 게임 데이터 전송\n\n\n마인크래프트\n25565\n서버 호스팅 및 클라이언트 통신\n\n\nZoom\n8801-8802\n화상 회의\n\n\nJupyter\n8888\n데이터 분석\n\n\nRStudio\n8787\n데이터 분석\n\n\n\n\n\nvi /etc/ssh/sshd_config\n...\nPort 1226\n...\nservice ssh restart"
+  },
+  {
+    "objectID": "posts/11wk.html#c.-포트변경-이후",
+    "href": "posts/11wk.html#c.-포트변경-이후",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "",
+    "text": "- 내부와이파이에서 182접속하기 – 실패\nssh stsc@210.117.173.182\n- 내부와이파이에서 182접속하기 – 성공, (문법이 조금 바뀌었네?)\nssh stsc@210.117.173.182 -p 1226 \n- 외부와이파이에서 182접속하기 – 성공!!\nssh stsc@210.117.173.182 -p 1226\n- 내부와이파이에서 183접속하기 – 성공 (이건 원래 되던거였음)\nssh s12345@210.117.173.183\n- 외부와이파이에서 183접속하기 (?? 못하지않나??)\nssh s12345@210.117.173.183\n\n그런데 할 수 있어요"
+  },
+  {
+    "objectID": "posts/11wk.html#a.-ssh-연결",
+    "href": "posts/11wk.html#a.-ssh-연결",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "A. ssh 연결",
+    "text": "A. ssh 연결\n- 183번 컴퓨터에 접속하기\nssh s12345@210.117.173.183"
+  },
+  {
+    "objectID": "posts/11wk.html#b.-password-변경",
+    "href": "posts/11wk.html#b.-password-변경",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "B. password 변경",
+    "text": "B. password 변경\n- 아래를 실행하여 비밀번호를 바꿀 것\npasswd\n- 이후 ssh로 접속할때 바뀐 pw를 입력한다.\nssh s12345@210.117.173.183"
+  },
+  {
+    "objectID": "posts/11wk.html#c.-아나콘다-설치",
+    "href": "posts/11wk.html#c.-아나콘다-설치",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "C. 아나콘다 설치",
+    "text": "C. 아나콘다 설치\n- https://www.anaconda.com/download\n\n아나콘다를 다운받을 수 있는 주소 get // Linux 64-Bit (x86) Installer\nwget 으로 다운로드\nbash 로 실행\n동의할 내용 동의하고 설치 (글을 넘길때는 space이용)\n\n- 설치다하면 exit 하고 재접속.. 맨앞에 (base) 가 보이면 올바르게 설치된것임"
+  },
+  {
+    "objectID": "posts/11wk.html#d.-주피터랩-설치-및-실행",
+    "href": "posts/11wk.html#d.-주피터랩-설치-및-실행",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "D. 주피터랩 설치 및 실행",
+    "text": "D. 주피터랩 설치 및 실행\n- 가상환경 셋팅\nconda create -n first # 가상환경생성 \nconda activate first # 가상환경 활성화 \nconda install -c conda-forge notebook # 주피터랩설치\n- 접속하는 방법1: 토큰으로 접속\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}\n이후에\n\nhttp://127.0.0.1:8052/lab?token=????\n\n와 같은 주소 형식을\n\nhttp://210.117.173.183:8052/lab?token=????\n\n와 같이 바꾸고 들어오세요\n- 접속하는 방법2: password로 접속\njupyter notebook password\n를 이용하여 passwd를 설정한 뒤 다시 아래를 실행\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}"
+  },
+  {
+    "objectID": "posts/11wk.html#a.-파이썬-버전확인하기",
+    "href": "posts/11wk.html#a.-파이썬-버전확인하기",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "A. 파이썬 버전확인하기",
+    "text": "A. 파이썬 버전확인하기\n- 기본명령\npython --version \n- 두 환경 (base), (first)에서 파이썬 버전을 확인하자.\n- 코랩의 파이썬 버전을 확인해보자."
+  },
+  {
+    "objectID": "posts/11wk.html#b.-base-판다스-버전확인",
+    "href": "posts/11wk.html#b.-base-판다스-버전확인",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "B. (base) 판다스 버전확인",
+    "text": "B. (base) 판다스 버전확인\n- 우리의 무기1: pip list\npip list\n\n너무많죠? pip list | grep pandas 어때요?\n\n- 우리의 무기2: conda list\nconda list \n- 우릭의 무기3: 파이썬에서\nimport pandas as pd\npd.__version__"
+  },
+  {
+    "objectID": "posts/11wk.html#c.-first-pandas-x",
+    "href": "posts/11wk.html#c.-first-pandas-x",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "C. (first) – pandas X",
+    "text": "C. (first) – pandas X\n- first에 판다스가 설치되었는지 살펴보자.\n- 우리의 무기1: pip list\npip list\n- 우리의 무기2: conda list\nconda list \n- 두 환경은 그냥 다른 컴퓨터라고 생각하자."
+  },
+  {
+    "objectID": "posts/11wk.html#d.-py310_pip_pd-생성",
+    "href": "posts/11wk.html#d.-py310_pip_pd-생성",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "D. py310_pip_pd – 생성",
+    "text": "D. py310_pip_pd – 생성\n- 새로운 환경 py310_pip_pd를 생성하자.\n(base) guebin@cgb3-desktop:~$ conda create -n py310_pip_pd python=3.10\n(base) guebin@cgb3-desktop:~$ conda activate py310_pip_pd\n(py310_pip_pd) guebin@cgb3-desktop:~$ python --version"
+  },
+  {
+    "objectID": "posts/11wk.html#e.-py310_pip_pd-pandas-설치",
+    "href": "posts/11wk.html#e.-py310_pip_pd-pandas-설치",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "E. py310_pip_pd– pandas 설치",
+    "text": "E. py310_pip_pd– pandas 설치\n- 새로운 환경 py310_pip_pd 에 판다스를 설치하자.\n\n이상한곳에 깔지 말고, py310_pip_pd 환경에 설치할것\n\n- 버전을 확인"
+  },
+  {
+    "objectID": "posts/11wk.html#f.-py310_pip_pd15",
+    "href": "posts/11wk.html#f.-py310_pip_pd15",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "F. py310_pip_pd15",
+    "text": "F. py310_pip_pd15\n- 새로운 환경 py310_pip_pd15 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 1.5 로 고정하여서..\n(base) guebin@cgb3-desktop:~$ conda create -n py310_pip_pd15 python=3.10\n(base) guebin@cgb3-desktop:~$ conda activate py310_pip_pd15\n(py310_pip_pd15) guebin@cgb3-desktop:~$ pip install pandas==1.5\n- 파이썬과 판다스 버전을 확인\n- 판다스 import 가능한가?? (불가능)"
+  },
+  {
+    "objectID": "posts/11wk.html#g.-py310_conda_pd15",
+    "href": "posts/11wk.html#g.-py310_conda_pd15",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "G. py310_conda_pd15",
+    "text": "G. py310_conda_pd15\n- 새로운 환경 py310_conda_pd15 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 1.5 로 고정하여서..\n(base) guebin@cgb3-desktop:~$ conda create -n py310_conda_pd15 python=3.10\n(base) guebin@cgb3-desktop:~$ conda activate py310_conda_pd15\n(py310_conda_pd15) guebin@cgb3-desktop:~$ conda install -c conda-forge pandas==1.5\n- 파이썬과 판다스 버전을 확인\n- 판다스 import 가능한가?? (가능함)"
+  },
+  {
+    "objectID": "posts/11wk.html#h.-conda-env-list",
+    "href": "posts/11wk.html#h.-conda-env-list",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "H. conda env list",
+    "text": "H. conda env list\n- 지금까지 만든 환경을 보고 싶다면?\nconda env list"
+  },
+  {
+    "objectID": "posts/11wk.html#i.-동일한-코드-다른결과-1",
+    "href": "posts/11wk.html#i.-동일한-코드-다른결과-1",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "I. 동일한 코드, 다른결과 (1)",
+    "text": "I. 동일한 코드, 다른결과 (1)\n- 현재 아래의 env 중에서\n\npy310_pip_pd\npy310_pip_pd15\npy310_conda_pd15\n\n판다스를 쓸수있는 환경은 아래와 같다.\n\npy310_pip_pd\npy310_conda_pd15\n\n- 각각의 환경에서 아래의 코드를 실행한다.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- 어? (기억하고 싶지 않은 흑역사: https://guebin.github.io/DV2023/posts/13wk-2.html)\n- 어쩌면 좋을까?\npip install pandas -U # 이거 맞어?\n- 판다스버전만 올린거지.. 다른버전은 그대로..\n\npy310_conda_pd15 을 수정해서.. py310_pip_pd 와 동일한 코드결과를 얻었지만\n두 환경이 같다고 볼 수는 없다."
+  },
+  {
+    "objectID": "posts/11wk.html#j.-제-컴퓨터에서는-안돼요",
+    "href": "posts/11wk.html#j.-제-컴퓨터에서는-안돼요",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "J. 제 컴퓨터에서는 안돼요",
+    "text": "J. 제 컴퓨터에서는 안돼요\n- 학생들 질문: 제 컴퓨터에서는 안되는데요.. 어쩌죠?\n\n답변1: 코랩에서 하세요..\n\n- 학생들 질문2: pip install pandas 해도 안되는데요, 어쩌죠?\n\n답변1: 코랩해서 하세요..\n진짜 많이 겪는 상황: 저는 꼭 제 노트북으로 해야겠습니다.. -&gt; 아나콘다 쓰시나요? -&gt; 쓰긴쓰는데…….. -&gt; 환경분리해서 실습했어요? -&gt; ????? -&gt; 제가 볼게요.. (찾아보니까) base에 있음..\n답변2: 일단은 pip install pandas -U 해보세요\n\n- 답변2가 적절할까?\n- 가장 좋아하는 답변: 환경 새로 파세요\n- 최악의 상황\n\n일단 아나콘다는 깔아놓았음.\n잘 몰라서 (base) 상태에서 이것저것 깔기 시작함.\n교수랑 코드 “똑.같.이.” 쳤는데 내 컴퓨터에서는 안됨.\n교수가 맥이라서 그런가보다 하고 인터넷에서 해결책 찾기 시작함.\n뭐 하라는 대로 해서 이제까지 해결해 왔음. (버전은 점점 엉키기 시작함)\n안되는건 잘하는 선배찾아가서 물어봤는데 귀신같이 해결해줌. (하지만 버전은 점점 더 엉키고 있음)\n그런데 또 문제가 생겼고 이제는 해결못하겠음.\n교수한테 찾아감 -&gt; 교수가 해준다면서 (base)에서 새로운 환경 (py310_pip_pd)을 만들어서 이것저것 시도해 봄.\n성공하면 다행인데, 실패함1\n이건 방법이 없다며 아나콘다를 지우고 재설치 시도. 그런데 윈도우에서는 아나콘다 지우는게 까다로움. (먼가 설정이 자꾸 남아있단 말이에요)\n새로 계정만들어서 아나콘다 설치시도 -&gt; 실패\n교수도 사실 윈도우 잘 모른다고 하면서 회피.\n포맷\n1로 다시 돌아간 다음 아나콘다 깔고 1-13을 반복함.\n\n- 제발 (base)에 패키지 좀 설치하지 말것\n\n\n\n\n\n\nNote\n\n\n\n언제 pip install을 쓰고 언제 conda install을 써야할까? 답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)\n\n만만한 패키지는 pip install 로 설치: numpy, pandas\n까다로운 패키지는 conda install 로 설치: torch, transformers, autogluon"
+  },
+  {
+    "objectID": "posts/11wk.html#footnotes",
+    "href": "posts/11wk.html#footnotes",
+    "title": "11wk: ssh우회하기, 183서버셋팅, 가상환경",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n4학년쯤에는 이미 (base) 가 손쓸 수 없는 상태로 깨져있는 경우가 허다함. 공부를 열심히 한 학생일수록 그러함. 이럴경우 소생가능성이 없음↩︎"
   },
   {
     "objectID": "posts/Quiz7.html",
